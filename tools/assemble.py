@@ -29,14 +29,14 @@ SPEED = 1.5  # source footage plays 1.5x (research/tnp_pacing.md)
 
 
 def shots_for(line, dur, rnd):
-    """Split the line's source ranges into 0.6-1.2 s OUTPUT shots (each eats 1.5x that of source), cycling ranges."""
+    """Split the line's source ranges into 0.5-1.0 s OUTPUT shots (each eats 1.5x that of source), cycling ranges."""
     ranges = [tuple(map(sec, c.split("-"))) for c in line["src"]]
     out, used, k = [], 0.0, 0
     cursor = {i: a for i, (a, b) in enumerate(ranges)}
     while used < dur - 1e-3:
         i = k % len(ranges)
         a, b = ranges[i]
-        ln = min(rnd.uniform(0.6, 1.2), dur - used)
+        ln = min(rnd.uniform(0.5, 1.0), dur - used)
         st = cursor[i]
         if st + ln * SPEED > b:
             st = a

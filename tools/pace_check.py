@@ -4,7 +4,7 @@ import os, re, subprocess, sys
 import numpy as np
 
 FF = os.environ.get("FFMPEG") or (r"C:\Users\hp\Desktop\100\tools\ffmpeg\ffmpeg.exe" if os.name == "nt" else "ffmpeg")
-TARGET = {"scene_changes": 50, "motion": 3.5, "max_still_s": 1.0, "vo_dead_air_s": 0.6}
+TARGET = {"scene_changes": 45, "motion": 3.5, "max_still_s": 1.0, "vo_dead_air_s": 0.6}
 
 
 def main():
