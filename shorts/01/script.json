@@ -42,8 +42,8 @@
    "phase": "why",
    "text": "So he hits it with 85 amps which is almost ten times a normal charger to shake them loose.",
    "src": [
-    "2:24-2:26",
-    "2:32-2:34"
+    "2:24.8-2:25.8",
+    "2:32-2:34.5"
    ],
    "original": false,
    "insert": "same cutaway: current arrows shatter crystals; dial 85 A",
@@ -68,7 +68,7 @@
    "type": "story",
    "text": "But six rounds later it's only up to 446 and it still can't start the tractor.",
    "src": [
-    "4:31-4:35",
+    "4:44-4:47",
     "5:08-5:12"
    ],
    "original": false,
@@ -79,8 +79,8 @@
    "phase": "conflict",
    "text": "So he tries the internet's favorite fix with Epsom salt but to add it he drains the acid.",
    "src": [
-    "5:40-5:46",
-    "6:05-6:10"
+    "6:10-6:13",
+    "5:47-5:50"
    ],
    "original": false,
    "fx": "? on Epsom bag",
