@@ -1,0 +1,151 @@
+{
+ "short": "01",
+ "source": "https://youtu.be/a2XRR9aFWPo",
+ "target_seconds": 56,
+ "max_seconds": 59,
+ "lines": [
+  {
+   "id": 1,
+   "phase": "hook",
+   "text": "What happens if you hook a dead car battery up to a welder?",
+   "src": [
+    "10:23-10:25",
+    "2:06-2:08"
+   ],
+   "original": false,
+   "fx": "punch-in on clamps, ? pop",
+   "type": "story"
+  },
+  {
+   "id": 2,
+   "phase": "rising",
+   "text": "This battery should make 825 amps but it only makes 204 which isn't even lawnmower power.",
+   "src": [
+    "1:03-1:08"
+   ],
+   "original": true,
+   "fx": "circle 204 on tester, lawnmower icon",
+   "type": "analysis",
+   "insert": "animated gauge 825 rated vs 204 actual, battery icon 25 % full"
+  },
+  {
+   "id": 3,
+   "phase": "why",
+   "text": "Because when a battery sits dead crystals grow on its lead plates and the acid can't reach the metal.",
+   "src": [],
+   "original": true,
+   "insert": "3D cutaway: lead plates, white lead-sulfate crystals growing, acid blocked",
+   "type": "analysis"
+  },
+  {
+   "id": 4,
+   "phase": "why",
+   "text": "So he hits it with 85 amps which is almost ten times a normal charger to shake them loose.",
+   "src": [
+    "2:24-2:27"
+   ],
+   "original": false,
+   "insert": "same cutaway: current arrows shatter crystals; dial 85 A",
+   "type": "analysis"
+  },
+  {
+   "id": 5,
+   "phase": "danger",
+   "text": "And those bubbles are hydrogen and oxygen so it's basically a bomb in a box.",
+   "src": [
+    "2:27-2:31",
+    "2:14-2:17"
+   ],
+   "original": true,
+   "insert": "H2 + O2 bubble graphic, red DON'T TRY THIS banner",
+   "type": "analysis"
+  },
+  {
+   "id": 6,
+   "phase": "conflict",
+   "type": "story",
+   "text": "But six rounds later it's only up to 446 and it still can't start the tractor.",
+   "src": [
+    "4:31-4:35",
+    "5:08-5:12"
+   ],
+   "original": false,
+   "fx": "counter 204->446, red X on tractor"
+  },
+  {
+   "id": 7,
+   "phase": "conflict",
+   "text": "So he tries the internet's favorite fix with Epsom salt but to add it he drains the acid.",
+   "src": [
+    "5:40-5:46",
+    "6:05-6:10"
+   ],
+   "original": false,
+   "fx": "? on Epsom bag",
+   "type": "story"
+  },
+  {
+   "id": 8,
+   "phase": "conflict-peak",
+   "text": "Which is like filling your gas tank with bath water so it drops from 600 amps to 51.",
+   "src": [
+    "6:28-6:33"
+   ],
+   "original": true,
+   "insert": "cartoon gas tank filled with bubbly bath water; big counter 600 -> 51 in red",
+   "type": "analysis"
+  },
+  {
+   "id": 10,
+   "phase": "comeback",
+   "text": "But battery five starts at just 62 amps and after six rounds on the welder it hits 961 which is fifteen times stronger.",
+   "src": [
+    "9:01-9:04",
+    "10:23-10:27"
+   ],
+   "original": true,
+   "insert": "animated gauge 62 -> 680 -> 961 A, plates clearing in cutaway",
+   "type": "analysis"
+  },
+  {
+   "id": 11,
+   "phase": "payoff",
+   "text": "And it cranks a big block V8 for thirteen straight seconds.",
+   "src": [
+    "11:07-11:12"
+   ],
+   "original": false,
+   "fx": "13 s timer overlay, SFX engine crank",
+   "type": "story"
+  },
+  {
+   "id": 12,
+   "phase": "caveat",
+   "text": "The catch is it fixes crystals and not damage because another battery died again overnight.",
+   "src": [
+    "11:20-11:26"
+   ],
+   "original": true,
+   "insert": "cutaway: cracked plate, crystals vs damage split screen",
+   "type": "analysis"
+  },
+  {
+   "id": 13,
+   "phase": "loop",
+   "text": "So would you hook your dead battery up to a welder?",
+   "src": [
+    "2:06-2:09"
+   ],
+   "original": false,
+   "fx": "loops into line 1",
+   "type": "story"
+  }
+ ],
+ "notes": "Analysis lines (3,4,5,8,12) = our own WHY/joke/limit, not on-screen description. Original insert lines target >= 45% of runtime. Never use Todd's narration or music.",
+ "source_audio": false,
+ "facts_checked": "all numbers from source transcript a2XRR9aFWPo (204/825 A 1:03, 85 A 2:27, 446 A 4:31, Epsom 600->51 A 6:28, battery 5 62 A/6% 9:01, 961 A/81% 10:23, 454 13 s 11:07, Ranger 10 V next day 11:20); 961/62 = 15.5x; 204/825 = 25 %; 85 A vs ~10 A charger = 8.5x ('almost ten times')",
+ "safety": "on-screen: DON'T TRY THIS - explosive hydrogen + acid; no step-by-step settings",
+ "title": "He Shocked a DEAD Car Battery With a Welder 😳 (@ProjectFarm/YT)",
+ "description": "Can a welder really bring a dead car battery back to life? Project Farm tested it on 5 batteries - one went from 62 to 961 cranking amps, and Epsom salt made one worse. Original video: @ProjectFarm https://youtu.be/a2XRR9aFWPo | Science explained + animations by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #carbattery #experiment #cars #science",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which (Moneyworks PLAYBOOK_SHORTS §2 + STYLE_3D §0.11)"
+}

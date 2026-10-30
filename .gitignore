@@ -1,0 +1,13 @@
+# PUBLIC repo: allow-list only. NEVER publish other creators' footage, research, strategy or voice models.
+/*
+!/.gitignore
+!/.github/
+!/render/
+!/shorts/
+/shorts/*/*
+!/shorts/*/script.json
+!/shorts/*/durations.json
+/render/node_modules/
+/render/out/
+*.mp4
+*.wav

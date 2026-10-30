@@ -1,0 +1,40 @@
+name: inserts
+run-name: inserts S${{ inputs.short }}
+
+# Renders the ORIGINAL animated inserts of one Short (compositions S<short>L<line> in render/src).
+# Only our own animation is rendered here; source footage never enters this repo.
+on:
+  workflow_dispatch:
+    inputs:
+      short:
+        description: Short number (e.g. 01)
+        default: '01'
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: render
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: npm install --no-audit --no-fund
+      - run: npx tsc -p .
+      - name: Render every S${{ inputs.short }}L* composition
+        run: |
+          mkdir -p out/sheets
+          ids=$(npx remotion compositions src/index.ts --quiet | tr ' ' '\n' | grep "^S${{ inputs.short }}L" || true)
+          test -n "$ids"
+          for id in $ids; do
+            npx remotion render src/index.ts "$id" "out/$id.mp4" --codec=h264 --crf=18 --pixel-format=yuv420p --concurrency=100% --log=warn
+            ffmpeg -v error -i "out/$id.mp4" -vf "fps=4,scale=270:-1,tile=6x4" -frames:v 1 "out/sheets/$id.jpg"
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: inserts-S${{ inputs.short }}
+          path: render/out
+          retention-days: 14
