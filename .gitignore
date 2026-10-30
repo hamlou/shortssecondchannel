@@ -4,6 +4,11 @@
 !/.github/
 !/render/
 !/shorts/
+!/tools/
+/tools/*
+!/tools/*.py
+!/tools/*.sh
+!/tools/fonts/
 /shorts/*/*
 !/shorts/*/script.json
 !/shorts/*/durations.json
@@ -11,3 +16,5 @@
 /render/out/
 *.mp4
 *.wav
+/tools/channel_scan*.py
+/tools/get_source.py

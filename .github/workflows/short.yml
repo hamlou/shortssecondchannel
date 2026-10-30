@@ -1,0 +1,85 @@
+name: short
+run-name: short S${{ inputs.short }}
+
+# Builds one Short end to end on the runner (the owner's PC only downloads the source, see tools/send_source.sh).
+# Third-party footage only exists here ENCRYPTED (release asset src-<nn>, key = secret SRC_KEY); the finished Short
+# leaves the runner encrypted too. Fails if the monetization gate (tools/mono_check.py) fails.
+on:
+  workflow_dispatch:
+    inputs:
+      short:
+        description: Short number (e.g. 02)
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    defaults:
+      run:
+        shell: bash
+    env:
+      S: ${{ inputs.short }}
+      FFMPEG: ffmpeg
+      SRC_KEY: ${{ secrets.SRC_KEY }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install -q kokoro-onnx soundfile numpy pillow
+      - uses: actions/cache@v4
+        with:
+          path: tools/voice
+          key: kokoro-v1.0-int8
+      - name: Voice model (Kokoro-82M, Apache 2.0)
+        run: |
+          mkdir -p tools/voice
+          for f in kokoro-v1.0.int8.onnx voices-v1.0.bin; do
+            [ -f tools/voice/$f ] || curl -sSL -o tools/voice/$f https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/$f
+          done
+      - name: Source (decrypt)
+        run: |
+          mkdir -p shorts/$S/source
+          gh release download src-$S -p source.mp4.enc -D /tmp
+          openssl enc -d -aes-256-cbc -pbkdf2 -pass env:SRC_KEY -in /tmp/source.mp4.enc -out shorts/$S/source/source.mp4
+          rm /tmp/source.mp4.enc
+      - name: Voice-over
+        run: python tools/tts.py shorts/$S/script.json
+      - name: Monetization gate
+        run: python tools/mono_check.py shorts/$S/script.json --durations shorts/$S/durations.json | tee gate.txt
+      - name: Music bed
+        run: python tools/musicbed.py $((10#$S))
+      - name: Render inserts
+        run: |
+          python tools/gen_root.py shorts/$S
+          cd render
+          npm install --no-audit --no-fund --silent
+          npx tsc -p .
+          mkdir -p ../shorts/$S/build/inserts/sheets
+          for id in $(npx remotion compositions src/index.ts --quiet | tr ' ' '\n' | grep "^S${S}L"); do
+            npx remotion render src/index.ts "$id" "../shorts/$S/build/inserts/$id.mp4" --codec=h264 --crf=18 --pixel-format=yuv420p --concurrency=100% --log=warn
+            ffmpeg -v error -i "../shorts/$S/build/inserts/$id.mp4" -vf "fps=4,scale=270:-1,tile=6x4" -frames:v 1 "../shorts/$S/build/inserts/sheets/$id.jpg"
+          done
+      - name: Assemble
+        run: python tools/assemble.py shorts/$S
+      - name: Pacing check
+        run: python tools/pace_check.py shorts/$S | tee pace.txt
+      - name: Encrypt outputs
+        run: |
+          mkdir -p out
+          for f in final.mp4 final_sheet.jpg; do
+            openssl enc -aes-256-cbc -pbkdf2 -pass env:SRC_KEY -in shorts/$S/build/$f -out out/$f.enc
+          done
+          cp shorts/$S/durations.json gate.txt pace.txt out/
+          cp -r shorts/$S/build/inserts/sheets out/insert_sheets
+      - uses: actions/upload-artifact@v4
+        with:
+          name: short-${{ inputs.short }}
+          path: out
+          retention-days: 7

@@ -1,0 +1,35 @@
+{
+ "short": "01",
+ "lines": [
+  {
+   "id": 2,
+   "frames": 179,
+   "insert": "animated gauge 825 rated vs 204 actual, battery icon 25 % full"
+  },
+  {
+   "id": 3,
+   "frames": 150,
+   "insert": "3D cutaway: lead plates, white lead-sulfate crystals growing, acid blocked"
+  },
+  {
+   "id": 5,
+   "frames": 123,
+   "insert": "H2 + O2 bubble graphic, red DON'T TRY THIS banner"
+  },
+  {
+   "id": 8,
+   "frames": 145,
+   "insert": "cartoon gas tank filled with bubbly bath water; big counter 600 -> 51 in red"
+  },
+  {
+   "id": 10,
+   "frames": 229,
+   "insert": "animated gauge 62 -> 680 -> 961 A, plates clearing in cutaway"
+  },
+  {
+   "id": 12,
+   "frames": 142,
+   "insert": "cutaway: cracked plate, crystals vs damage split screen"
+  }
+ ]
+}

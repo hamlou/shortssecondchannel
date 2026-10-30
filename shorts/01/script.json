@@ -60,7 +60,13 @@
    ],
    "original": true,
    "insert": "H2 + O2 bubble graphic, red DON'T TRY THIS banner",
-   "type": "analysis"
+   "type": "analysis",
+   "sfx": [
+    [
+     "boom",
+     2.4
+    ]
+   ]
   },
   {
    "id": 6,
@@ -72,7 +78,11 @@
     "5:08-5:12"
    ],
    "original": false,
-   "fx": "counter 204->446, red X on tractor"
+   "fx": "counter 204->446, red X on tractor",
+   "mark": [
+    "x",
+    -1.4
+   ]
   },
   {
    "id": 7,
@@ -107,7 +117,13 @@
    ],
    "original": true,
    "insert": "animated gauge 62 -> 680 -> 961 A, plates clearing in cutaway",
-   "type": "analysis"
+   "type": "analysis",
+   "sfx": [
+    [
+     "ding",
+     5.3
+    ]
+   ]
   },
   {
    "id": 11,
