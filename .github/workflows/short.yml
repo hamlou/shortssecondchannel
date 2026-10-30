@@ -49,6 +49,8 @@ jobs:
           gh release download src-$S -p source.mp4.enc -D /tmp
           openssl enc -d -aes-256-cbc -pbkdf2 -pass env:SRC_KEY -in /tmp/source.mp4.enc -out shorts/$S/source/source.mp4
           rm /tmp/source.mp4.enc
+      - name: Source frame sheet (verify shots)
+        run: mkdir -p shorts/$S/build && python tools/src_sheet.py shorts/$S
       - name: Voice-over
         run: python tools/tts.py shorts/$S/script.json
       - name: Monetization gate
@@ -73,7 +75,7 @@ jobs:
       - name: Encrypt outputs
         run: |
           mkdir -p out
-          for f in final.mp4 final_sheet.jpg; do
+          for f in final.mp4 final_sheet.jpg src_sheet.jpg; do
             openssl enc -aes-256-cbc -pbkdf2 -pass env:SRC_KEY -in shorts/$S/build/$f -out out/$f.enc
           done
           cp shorts/$S/durations.json gate.txt pace.txt out/
