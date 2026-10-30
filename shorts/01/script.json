@@ -9,8 +9,8 @@
    "phase": "hook",
    "text": "What happens if you hook a dead car battery up to a welder?",
    "src": [
-    "10:23-10:25",
-    "2:06-2:08"
+    "9:56-9:58",
+    "2:38-2:40"
    ],
    "original": false,
    "fx": "punch-in on clamps, ? pop",
@@ -42,7 +42,8 @@
    "phase": "why",
    "text": "So he hits it with 85 amps which is almost ten times a normal charger to shake them loose.",
    "src": [
-    "2:24-2:27"
+    "2:24-2:26",
+    "2:32-2:34"
    ],
    "original": false,
    "insert": "same cutaway: current arrows shatter crystals; dial 85 A",
@@ -53,8 +54,9 @@
    "phase": "danger",
    "text": "And those bubbles are hydrogen and oxygen so it's basically a bomb in a box.",
    "src": [
-    "2:27-2:31",
-    "2:14-2:17"
+    "2:34-2:37",
+    "2:40-2:42",
+    "2:52-2:54"
    ],
    "original": true,
    "insert": "H2 + O2 bubble graphic, red DON'T TRY THIS banner",
@@ -134,7 +136,8 @@
    "phase": "loop",
    "text": "So would you hook your dead battery up to a welder?",
    "src": [
-    "2:06-2:09"
+    "9:30-9:32",
+    "9:56-9:57"
    ],
    "original": false,
    "fx": "loops into line 1",
@@ -147,5 +150,6 @@
  "safety": "on-screen: DON'T TRY THIS - explosive hydrogen + acid; no step-by-step settings",
  "title": "He Shocked a DEAD Car Battery With a Welder 😳 (@ProjectFarm/YT)",
  "description": "Can a welder really bring a dead car battery back to life? Project Farm tested it on 5 batteries - one went from 62 to 961 cranking amps, and Epsom salt made one worse. Original video: @ProjectFarm https://youtu.be/a2XRR9aFWPo | Science explained + animations by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #carbattery #experiment #cars #science",
- "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which (Moneyworks PLAYBOOK_SHORTS §2 + STYLE_3D §0.11)"
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which (Moneyworks PLAYBOOK_SHORTS §2 + STYLE_3D §0.11)",
+ "src_verified": "frames checked 30 Oct 2026 (build/sheetA/B, scanA/B)"
 }

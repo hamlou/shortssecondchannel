@@ -6,7 +6,7 @@ import {Bg, BIG, C, Check, Counter, Cross, Cutaway, Gauge, Label, SM, lerp, useP
 // Bottom ~420 px kept clear for the word captions added at assembly.
 
 const Mower: React.FC<{p: number}> = ({p}) => (
-	<svg width={360} height={240} style={{position: 'absolute', left: 360, top: 1180, transform: `scale(${p})`}}>
+	<svg width={360} height={240} style={{position: 'absolute', left: 360, top: 1290, transform: `scale(${p})`}}>
 		<rect x={60} y={90} width={220} height={90} rx={22} fill={C.g} />
 		<rect x={90} y={60} width={120} height={40} rx={10} fill="#2E7D32" />
 		<line x1={250} y1={100} x2={340} y2={10} stroke={C.grey} strokeWidth={12} strokeLinecap="round" />
@@ -24,14 +24,14 @@ export const L2: React.FC = () => {
 		<Bg tint={bad ? '#3A1620' : '#1B2A4A'}>
 			<Label text={bad ? 'ACTUAL' : 'RATED'} delay={bad ? 62 : 4} y={150} size={120} color={bad ? C.r : C.y} />
 			<Gauge value={v} max={1000} mark={825} color={bad ? C.r : C.y} y={300} label="CRANKING AMPS" />
-			<Counter keys={bad ? [[62, 825], [100, 204]] : [[6, 0], [50, 825]]} y={720} size={220} color={bad ? C.r : C.y} unit="A" />
-			<div style={{position: 'absolute', top: 990, width: '100%', textAlign: 'center', transform: `scale(${pBat})`}}>
+			<Counter keys={bad ? [[62, 825], [100, 204]] : [[6, 0], [50, 825]]} y={880} size={220} color={bad ? C.r : C.y} unit="A" />
+			<div style={{position: 'absolute', top: 1130, width: '100%', textAlign: 'center', transform: `scale(${pBat})`}}>
 				<span style={{fontFamily: BIG, fontSize: 130, color: C.w}}>= </span>
 				<span style={{fontFamily: BIG, fontSize: 150, color: C.r}}>25%</span>
 				<span style={{fontFamily: SM, fontWeight: 900, fontSize: 48, color: C.grey}}> OF A BATTERY</span>
 			</div>
 			<Mower p={usePop(140)} />
-			<Cross x={640} y={1150} s={150} p={usePop(150)} />
+			<Cross x={640} y={1260} s={150} p={usePop(150)} />
 		</Bg>
 	);
 };
@@ -150,7 +150,7 @@ export const L8: React.FC = () => {
 			<div style={{position: 'absolute', left: 330, top: tankTop - 70, width: 120, height: 90, borderRadius: 16, background: C.r, opacity: dropShown ? 0.35 : 1}} />
 			{fill > 0.3 && !dropShown && <Duck x={460} y={waterY - 95} />}
 			{dropShown && <Counter keys={[[80, 600], [130, 51]]} y={560} size={300} color={C.r} unit="AMPS" />}
-			{dropShown && <Label text="-92%" delay={128} y={930} size={120} color={C.r} />}
+			{dropShown && <Label text="-92%" delay={128} y={1080} size={140} color={C.r} />}
 		</Bg>
 	);
 };
@@ -163,10 +163,10 @@ export const L10: React.FC = () => {
 		<Bg tint={v > 800 ? '#123A20' : '#1B2A4A'}>
 			<Label text="BATTERY 5" delay={0} y={110} size={110} color={C.w} />
 			<Gauge value={v} max={1000} color={col} y={240} label="CRANKING AMPS" />
-			<Counter keys={[[0, 62], [40, 62], [85, 680], [105, 680], [160, 961]]} y={640} size={230} color={col} unit="A" />
-			<Cutaway grow={1} clear={lerp(f, 40, 170, 0, 1)} y={930} w={520} plates={6} />
-			{f >= 172 && <Label text="×15" delay={172} y={860} size={260} color={C.g} />}
-			{f >= 172 && <Label text="STRONGER" delay={180} y={1100} size={110} color={C.w} />}
+			<Counter keys={[[0, 62], [40, 62], [85, 680], [105, 680], [160, 961]]} y={800} size={230} color={col} unit="A" />
+			<div style={{opacity: lerp(f, 166, 174, 1, 0)}}><Cutaway grow={1} clear={lerp(f, 40, 160, 0, 1)} y={1060} w={520} plates={6} /></div>
+			{f >= 172 && <Label text="×15" delay={172} y={1060} size={280} color={C.g} />}
+			{f >= 172 && <Label text="STRONGER" delay={180} y={1330} size={110} color={C.w} />}
 		</Bg>
 	);
 };
