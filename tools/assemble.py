@@ -53,11 +53,13 @@ def cut(src, st, ln, zoom, out):
     w = int(h * 4 / 5) // 2 * 2
     y = (SAFE_H - h) // 2
     fh = 1350
-    z = f"(1+0.14*t/{ln:.3f})" if not zoom else f"(1.14-0.14*t/{ln:.3f})"
-    vf = (f"[0:v]setpts=PTS/{SPEED},crop=iw:{SAFE_H}:0:0,split[a][b];"
+    nf = max(round(ln * FPS), 1)
+    z = f"1+0.14*on/{nf}" if not zoom else f"1.14-0.14*on/{nf}"
+    vf = (f"[0:v]setpts=PTS/{SPEED},fps={FPS},crop=iw:{SAFE_H}:0:0,split[a][b];"
           f"[a]scale=270:480:force_original_aspect_ratio=increase,crop=270:480,boxblur=6:2,eq=brightness=-0.18:saturation=0.8,scale={W}:{H}[bg];"
-          f"[b]crop={w}:{h}:(iw-{w})/2:{y},scale=w='{W}*{z}':h='{fh}*{z}':eval=frame:flags=bicubic,crop={W}:{fh},eq=contrast=1.06:saturation=1.12[fg];"
-          f"[bg][fg]overlay=0:{(H - fh) // 2 - 120},setsar=1,fps={FPS}[v]")
+          f"[b]crop={w}:{h}:(iw-{w})/2:{y},scale={W}:{fh}:flags=lanczos,"
+          f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{fh}:fps={FPS},eq=contrast=1.06:saturation=1.12[fg];"
+          f"[bg][fg]overlay=0:{(H - fh) // 2 - 120},setsar=1[v]")
     ff("-ss", f"{st:.3f}", "-t", f"{ln * SPEED + 0.2:.3f}", "-i", src, "-an", "-filter_complex", vf, "-map", "[v]", "-frames:v", str(round(ln * FPS)),
        "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-threads", "1", "-x264-params", "rc-lookahead=8:ref=1:sync-lookahead=0", "-pix_fmt", "yuv420p", out)
 
