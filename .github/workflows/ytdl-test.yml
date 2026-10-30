@@ -1,0 +1,15 @@
+name: ytdl-test
+on: workflow_dispatch
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - run: pip install -q -U yt-dlp
+      - name: try clients
+        run: |
+          for c in default tv web_safari ios mweb; do
+            echo "== client $c"
+            if [ $c = default ]; then a=""; else a="--extractor-args youtube:player_client=$c"; fi
+            timeout 120 yt-dlp $a --no-warnings -f "bv*[height<=1080][ext=mp4]+ba[ext=m4a]/b" --merge-output-format mp4 --download-sections "*00:01:00-00:01:10" -o "t_$c.%(ext)s" a2XRR9aFWPo 2>&1 | tail -3
+            ls -la t_$c.* 2>/dev/null || true
+          done
