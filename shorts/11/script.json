@@ -1,0 +1,174 @@
+{
+ "short": "11",
+ "source": "https://youtu.be/fm2CE2e_3To",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "phase": "hook",
+   "type": "story",
+   "text": "Which drain cleaner actually eats a hair clog?",
+   "src": [
+    "6:59-7:03"
+   ],
+   "original": false
+  },
+  {
+   "id": 2,
+   "phase": "rising",
+   "type": "story",
+   "text": "He drops hair and soap and grease and even tape into every product for twelve hours.",
+   "src": [
+    "2:06-2:10",
+    "4:49-4:53"
+   ],
+   "original": false
+  },
+  {
+   "id": 3,
+   "phase": "payoff-early",
+   "type": "story",
+   "text": "And the clear winner on hair is plain lye.",
+   "src": [
+    "7:00-7:04"
+   ],
+   "original": false
+  },
+  {
+   "id": 4,
+   "phase": "why",
+   "type": "analysis",
+   "text": "Because hair is made of protein and lye chops those protein chains apart until the clog dissolves.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "protein"
+   }
+  },
+  {
+   "id": 5,
+   "phase": "why",
+   "type": "analysis",
+   "text": "Drano and Liquid Plumber tie with it because they're mostly lye too with some bleach.",
+   "src": [
+    "2:25-2:30"
+   ],
+   "original": true,
+   "insert": {
+    "kind": "bars",
+    "title": "HAIR CLOG (HIS A B C GRADES)",
+    "unit": "",
+    "grades": true,
+    "items": [
+     {
+      "label": "LYE",
+      "value": 3,
+      "color": "g"
+     },
+     {
+      "label": "DRANO",
+      "value": 3,
+      "color": "g"
+     },
+     {
+      "label": "ACIDS",
+      "value": 2,
+      "color": "y"
+     },
+     {
+      "label": "ENZYMES",
+      "value": 1,
+      "color": "r"
+     }
+    ]
+   }
+  },
+  {
+   "id": 6,
+   "phase": "conflict",
+   "type": "analysis",
+   "text": "The enzyme sticks just turn everything blue because bacteria work slowly over days.",
+   "src": [
+    "5:55-6:00"
+   ],
+   "original": true,
+   "insert": {
+    "kind": "stamp",
+    "big": "12 HOURS",
+    "sub": "BACTERIA NEED DAYS",
+    "color": "y"
+   }
+  },
+  {
+   "id": 7,
+   "phase": "conflict",
+   "type": "story",
+   "text": "And the acids eat a carrot but also strip the plating off a steel pipe.",
+   "src": [
+    "10:05-10:09",
+    "7:45-7:50"
+   ],
+   "original": false
+  },
+  {
+   "id": 8,
+   "phase": "why",
+   "type": "analysis",
+   "text": "So acid works on food clogs but it attacks metal which is why it's only safe for plastic pipes.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "stamp",
+    "big": "PLASTIC PIPES ONLY",
+    "sub": "ACID EATS METAL",
+    "color": "r"
+   }
+  },
+  {
+   "id": 9,
+   "phase": "limit",
+   "type": "analysis",
+   "text": "Nothing touched the paper towel or tape so for solid stuff a drain snake beats every bottle here.",
+   "src": [
+    "7:29-7:33"
+   ],
+   "original": true,
+   "insert": {
+    "kind": "stamp",
+    "big": "DRAIN SNAKE",
+    "sub": "FOR PAPER + TAPE",
+    "color": "w"
+   }
+  },
+  {
+   "id": 10,
+   "phase": "safety",
+   "type": "analysis",
+   "text": "And never mix them because bleach plus acid makes toxic chlorine gas.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "stamp",
+    "big": "NEVER MIX",
+    "sub": "BLEACH + ACID = TOXIC GAS",
+    "color": "r"
+   }
+  },
+  {
+   "id": 11,
+   "phase": "loop",
+   "type": "story",
+   "text": "So what's really clogging your drain?",
+   "src": [
+    "4:49-4:52"
+   ],
+   "original": false
+  }
+ ],
+ "facts_checked": "numbers from source transcript shorts/11/source/transcript.txt; src timestamps verified on frames before render",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "Which Drain Cleaner Actually Eats Hair? 🧪 (@ProjectFarm/YT)",
+ "description": "Project Farm soaked hair, soap, grease and even tape in every kind of drain opener. Plain lye won on hair, and the reason is simple chemistry. Original video: @ProjectFarm https://youtu.be/fm2CE2e_3To | Science explained + animations by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #plumbing #chemistry #home #science",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
+}

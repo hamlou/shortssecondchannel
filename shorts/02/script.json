@@ -1,0 +1,162 @@
+{
+ "short": "02",
+ "source": "https://youtu.be/st8dkGzJWtg",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "phase": "hook",
+   "type": "story",
+   "text": "Can brake fluid free a rusted bolt better than the stuff that's made for it?",
+   "src": [
+    "2:06-2:10",
+    "3:15-3:18"
+   ],
+   "original": false
+  },
+  {
+   "id": 2,
+   "phase": "rising",
+   "type": "story",
+   "text": "He rusts a pile of bolts on purpose and drips six fluids on them.",
+   "src": [
+    "1:21-1:25",
+    "2:23-2:27"
+   ],
+   "original": false
+  },
+  {
+   "id": 3,
+   "phase": "why",
+   "type": "analysis",
+   "text": "The trick is capillary action which pulls a thin liquid into tiny gaps like a paper towel drinking a spill.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "capillary",
+    "mode": "pull"
+   }
+  },
+  {
+   "id": 4,
+   "phase": "conflict",
+   "type": "story",
+   "text": "The brake fluid just sits on the washer like it gave up.",
+   "src": [
+    "3:15-3:20"
+   ],
+   "original": false
+  },
+  {
+   "id": 5,
+   "phase": "twist",
+   "type": "analysis",
+   "text": "But when he cuts the bolt open it crept all the way to the bottom.",
+   "src": [
+    "4:58-5:02"
+   ],
+   "original": true,
+   "insert": {
+    "kind": "stamp",
+    "big": "ALL THE WAY DOWN",
+    "sub": "BRAKE FLUID",
+    "color": "g"
+   }
+  },
+  {
+   "id": 6,
+   "phase": "why",
+   "type": "analysis",
+   "text": "Fluid Film coats everything like slime but it's too thick to squeeze into the threads.",
+   "src": [
+    "5:15-5:20"
+   ],
+   "original": true,
+   "insert": {
+    "kind": "capillary",
+    "mode": "thick"
+   }
+  },
+  {
+   "id": 7,
+   "phase": "conflict",
+   "type": "analysis",
+   "text": "Then viewers beg him to mix them all into one super oil which is risky because chemicals can react.",
+   "src": [
+    "8:34-8:40"
+   ],
+   "original": false
+  },
+  {
+   "id": 8,
+   "phase": "conflict-peak",
+   "type": "analysis",
+   "text": "And the mix never crept down so a nut that was only hand tight needed 56 foot pounds.",
+   "src": [
+    "9:09-9:14"
+   ],
+   "original": true,
+   "insert": {
+    "kind": "versus",
+    "title": "TO BREAK IT LOOSE",
+    "left": {
+     "label": "HAND TIGHT",
+     "value": 0,
+     "unit": "FT-LB",
+     "color": "y"
+    },
+    "right": {
+     "label": "SUPER MIX",
+     "value": 56,
+     "unit": "FT-LB",
+     "color": "r"
+    }
+   }
+  },
+  {
+   "id": 9,
+   "phase": "payoff",
+   "type": "story",
+   "text": "The winner is Seafoam Deep Creep with CRC Knocker Loose right behind it.",
+   "src": [
+    "10:03-10:08"
+   ],
+   "original": true,
+   "insert": {
+    "kind": "podium",
+    "items": [
+     "SEAFOAM DEEP CREEP",
+     "CRC KNOCK'ER LOOSE"
+    ]
+   }
+  },
+  {
+   "id": 10,
+   "phase": "lesson",
+   "type": "analysis",
+   "text": "Because in rusty threads the gaps are microscopic so only the thinnest fluid gets in.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "capillary",
+    "mode": "race"
+   }
+  },
+  {
+   "id": 11,
+   "phase": "loop",
+   "type": "story",
+   "text": "So would you trust brake fluid on your next rusted bolt?",
+   "src": [
+    "2:06-2:09"
+   ],
+   "original": false
+  }
+ ],
+ "facts_checked": "numbers from source transcript shorts/02/source/transcript.txt; src timestamps verified on frames before render",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "Can BRAKE FLUID Free a Rusted Bolt? 🤔 (@ProjectFarm/YT)",
+ "description": "Project Farm dripped six fluids on rusted bolts and even mixed them all into one super oil. The winner came down to one thing: how thin the fluid is. Original video: @ProjectFarm https://youtu.be/st8dkGzJWtg | Science explained + animations by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #rust #mechanic #diy #science",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
+}

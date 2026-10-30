@@ -244,3 +244,24 @@ export const Check: React.FC<{x: number; y: number; s: number; p: number}> = ({x
 		<path d={`M ${s * 0.27} ${s * 0.52} L ${s * 0.44} ${s * 0.68} L ${s * 0.74} ${s * 0.34}`} stroke="#fff" strokeWidth={s * 0.1} strokeLinecap="round" strokeLinejoin="round" fill="none" />
 	</svg>
 );
+
+// Camera for every insert (research/tnp_pacing.md): slow zoom + a punch-in "beat" every ~1.2 s + short shake on each beat,
+// so no frame holds still longer than TNP's 1 s.
+export const Camera: React.FC<{children: React.ReactNode; beat?: number}> = ({children, beat = 36}) => {
+	const f = useCurrentFrame();
+	const b = Math.floor(f / beat);
+	const local = f - b * beat;
+	const base = b % 2 ? 1.12 : 1.0;
+	const drift = interpolate(local, [0, beat], [0, 0.05]);
+	const shake = Math.max(0, 6 - local) / 6;
+	const sx = Math.sin(f * 2.7) * 14 * shake;
+	const sy = Math.cos(f * 3.1) * 10 * shake;
+	const rot = (b % 2 ? 0.6 : -0.6) * (1 - local / beat);
+	return (
+		<AbsoluteFill style={{overflow: 'hidden', background: C.bg}}>
+			<AbsoluteFill style={{transform: `translate(${sx}px, ${sy}px) scale(${base + drift}) rotate(${rot}deg)`, transformOrigin: '50% 42%'}}>
+				{children}
+			</AbsoluteFill>
+		</AbsoluteFill>
+	);
+};

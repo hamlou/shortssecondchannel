@@ -1,0 +1,163 @@
+{
+ "short": "05",
+ "source": "https://youtu.be/V7-ghrTqA44",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "phase": "hook",
+   "type": "story",
+   "text": "Why does a dead battery bounce and a brand new one just thuds?",
+   "src": [
+    "1:40-1:44",
+    "1:50-1:54"
+   ],
+   "original": false
+  },
+  {
+   "id": 2,
+   "phase": "why",
+   "type": "analysis",
+   "text": "Because inside a fresh AA the zinc is a soft gel that soaks up the hit.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "zinc",
+    "mode": "gel"
+   }
+  },
+  {
+   "id": 3,
+   "phase": "why",
+   "type": "analysis",
+   "text": "And as the battery drains that zinc turns into zinc oxide which is stiff and springy so the dead one bounces.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "zinc",
+    "mode": "oxide"
+   }
+  },
+  {
+   "id": 4,
+   "phase": "rising",
+   "type": "story",
+   "text": "Then he drains every brand on a machine to see which one really lasts.",
+   "src": [
+    "2:18-2:22",
+    "3:04-3:08"
+   ],
+   "original": false
+  },
+  {
+   "id": 5,
+   "phase": "conflict",
+   "type": "story",
+   "text": "The dollar store battery costs thirteen cents and dies in 26 minutes.",
+   "src": [
+    "3:35-3:40"
+   ],
+   "original": false
+  },
+  {
+   "id": 6,
+   "phase": "conflict",
+   "type": "analysis",
+   "text": "And the Duracell lasts 381 minutes which is almost fifteen times longer.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "bars",
+    "title": "MINUTES OF POWER",
+    "unit": "MIN",
+    "items": [
+     {
+      "label": "DOLLAR STORE",
+      "value": 26,
+      "color": "r"
+     },
+     {
+      "label": "DURACELL",
+      "value": 381,
+      "color": "g"
+     }
+    ]
+   }
+  },
+  {
+   "id": 7,
+   "phase": "rising",
+   "type": "analysis",
+   "text": "The Energizer lithium lasts 723 minutes which is almost double the Duracell but it costs a dollar fifty each.",
+   "src": [
+    "5:45-5:50"
+   ],
+   "original": false
+  },
+  {
+   "id": 8,
+   "phase": "twist",
+   "type": "story",
+   "text": "But the real winner is the one nobody expected.",
+   "src": [
+    "4:25-4:29"
+   ],
+   "original": false
+  },
+  {
+   "id": 9,
+   "phase": "payoff",
+   "type": "analysis",
+   "text": "Amazon Basics gives you 32 milliamp hours for every single penny which beats every brand he tested.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "bars",
+    "title": "POWER PER PENNY",
+    "unit": "mAh",
+    "items": [
+     {
+      "label": "AMAZON BASICS",
+      "value": 32,
+      "color": "g"
+     },
+     {
+      "label": "ENERGIZER",
+      "value": 26,
+      "color": "y"
+     }
+    ]
+   }
+  },
+  {
+   "id": 10,
+   "phase": "lesson",
+   "type": "analysis",
+   "text": "So the best battery and the best deal are two completely different things.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "stamp",
+    "big": "BEST BATTERY",
+    "sub": "IS NOT THE BEST DEAL",
+    "color": "y"
+   }
+  },
+  {
+   "id": 11,
+   "phase": "loop",
+   "type": "story",
+   "text": "And now you know why the dead one bounces.",
+   "src": [
+    "1:50-1:53"
+   ],
+   "original": false
+  }
+ ],
+ "facts_checked": "numbers from source transcript shorts/05/source/transcript.txt; src timestamps verified on frames before render",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "Why Dead Batteries BOUNCE 🔋 + Which AA Lasts Longest (@ProjectFarm/YT)",
+ "description": "A dead AA bounces and a new one thuds, and there's real chemistry behind it. Then Project Farm drained every brand to find the best battery per penny. Original video: @ProjectFarm https://youtu.be/V7-ghrTqA44 | Science explained + animations by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #batteries #science #experiment #lifehack",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
+}

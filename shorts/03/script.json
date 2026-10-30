@@ -1,0 +1,181 @@
+{
+ "short": "03",
+ "source": "https://youtu.be/4pXM5bHSk2Y",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "phase": "hook",
+   "type": "story",
+   "text": "This thirty dollar fake Makita claims almost twice the torque of the real one.",
+   "src": [
+    "0:45-0:49",
+    "1:01-1:04"
+   ],
+   "original": false
+  },
+  {
+   "id": 2,
+   "phase": "rising",
+   "type": "analysis",
+   "text": "And the real one costs 138 dollars so on paper you'd be crazy to pay five times more.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "versus",
+    "title": "ON THE BOX",
+    "left": {
+     "label": "FAKE $30",
+     "value": 384,
+     "unit": "FT-LB",
+     "color": "y"
+    },
+    "right": {
+     "label": "MAKITA $138",
+     "value": 210,
+     "unit": "FT-LB",
+     "color": "w"
+    }
+   }
+  },
+  {
+   "id": 3,
+   "phase": "rising",
+   "type": "story",
+   "text": "They even weigh the same down to one single gram.",
+   "src": [
+    "1:16-1:20"
+   ],
+   "original": false
+  },
+  {
+   "id": 4,
+   "phase": "conflict",
+   "type": "story",
+   "text": "But on the torque rig the fake makes just 91 foot pounds.",
+   "src": [
+    "5:18-5:23"
+   ],
+   "original": false
+  },
+  {
+   "id": 5,
+   "phase": "conflict-peak",
+   "type": "analysis",
+   "text": "That's less than a quarter of what the box promised so the spec sheet is basically fan fiction.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "claim",
+    "claimed": 384,
+    "actual": 91,
+    "unit": "FT-LB",
+    "label": "FAKE MAKITA"
+   }
+  },
+  {
+   "id": 6,
+   "phase": "comeback",
+   "type": "story",
+   "text": "And the real Makita hits 178 out of its promised 210.",
+   "src": [
+    "5:49-5:54"
+   ],
+   "original": false
+  },
+  {
+   "id": 7,
+   "phase": "why",
+   "type": "analysis",
+   "text": "Because inside an impact wrench a spinning hammer slams the anvil thousands of times a minute.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "hammer",
+    "mode": "explain"
+   }
+  },
+  {
+   "id": 8,
+   "phase": "why",
+   "type": "analysis",
+   "text": "And the Makita's hammer is 44 grams heavier and spins faster so every hit carries more energy.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "hammer",
+    "mode": "compare",
+    "a": 253,
+    "b": 297
+   }
+  },
+  {
+   "id": 9,
+   "phase": "payoff",
+   "type": "analysis",
+   "text": "So it pulls lug nuts in 35 seconds instead of 49 which is almost a third faster.",
+   "src": [
+    "6:49-6:52"
+   ],
+   "original": true,
+   "insert": {
+    "kind": "bars",
+    "title": "SECONDS TO PULL LUG NUTS",
+    "unit": "S",
+    "lowWins": true,
+    "items": [
+     {
+      "label": "FAKE",
+      "value": 49,
+      "color": "r"
+     },
+     {
+      "label": "MAKITA",
+      "value": 35,
+      "color": "g"
+     }
+    ]
+   }
+  },
+  {
+   "id": 10,
+   "phase": "twist",
+   "type": "story",
+   "text": "Then he drops both onto an anvil and the fake's handle snaps.",
+   "src": [
+    "10:00-10:05"
+   ],
+   "original": false
+  },
+  {
+   "id": 11,
+   "phase": "verdict",
+   "type": "analysis",
+   "text": "But thirty bucks for a brushless motor is still a crazy good deal.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "stamp",
+    "big": "STILL A DEAL",
+    "sub": "BRUSHLESS FOR $30",
+    "color": "y"
+   }
+  },
+  {
+   "id": 12,
+   "phase": "loop",
+   "type": "story",
+   "text": "So would you pay five times more for the real one?",
+   "src": [
+    "1:01-1:04"
+   ],
+   "original": false
+  }
+ ],
+ "facts_checked": "numbers from source transcript shorts/03/source/transcript.txt; src timestamps verified on frames before render",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "$30 FAKE Makita vs The Real One 😳 (@ProjectFarm/YT)",
+ "description": "A $30 knockoff claims almost double the torque of a $138 Makita. Project Farm measured both, and the reason the real one wins is hidden inside. Original video: @ProjectFarm https://youtu.be/4pXM5bHSk2Y | Science explained + animations by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #tools #makita #mechanic #engineering",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
+}

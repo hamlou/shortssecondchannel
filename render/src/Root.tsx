@@ -2,6 +2,7 @@ import React from 'react';
 import {Composition} from 'remotion';
 import d01 from '../../shorts/01/durations.json';
 import {L10, L12, L2, L3, L5, L8} from './s01';
+import {Camera} from './kit';
 
 const FPS = 30;
 const frames = (d: Record<string, number>, id: number) => Math.ceil(d[String(id)] * FPS);
@@ -19,7 +20,7 @@ const S01: [number, React.FC][] = [
 export const Root: React.FC = () => (
 	<>
 		{S01.map(([id, C]) => (
-			<Composition key={id} id={`S01L${id}`} component={C} durationInFrames={frames(d01, id)} fps={FPS} width={1080} height={1920} />
+			<Composition key={id} id={`S01L${id}`} component={() => <Camera><C /></Camera>} durationInFrames={frames(d01, id)} fps={FPS} width={1080} height={1920} />
 		))}
 	</>
 );

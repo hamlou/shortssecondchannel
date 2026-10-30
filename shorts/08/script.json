@@ -1,0 +1,161 @@
+{
+ "short": "08",
+ "source": "https://youtu.be/-zHlxeu_yuM",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "phase": "hook",
+   "type": "story",
+   "text": "Someone mailed him a steel box bolted shut with a coffee can welded inside.",
+   "src": [
+    "0:15-0:20",
+    "0:52-0:56"
+   ],
+   "original": false
+  },
+  {
+   "id": 2,
+   "phase": "question",
+   "type": "story",
+   "text": "And inside is a can of 1950s motor oil so would it still protect an engine?",
+   "src": [
+    "1:00-1:05"
+   ],
+   "original": false
+  },
+  {
+   "id": 3,
+   "phase": "rising",
+   "type": "story",
+   "text": "He cooks it at 410 degrees right next to modern oil.",
+   "src": [
+    "3:00-3:05",
+    "3:48-3:52"
+   ],
+   "original": false
+  },
+  {
+   "id": 4,
+   "phase": "conflict",
+   "type": "analysis",
+   "text": "And the old oil loses 42 percent more weight so it's literally cooking off into the air.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "bars",
+    "title": "GRAMS LOST TO HEAT",
+    "unit": "g",
+    "items": [
+     {
+      "label": "MODERN",
+      "value": 6.63,
+      "color": "y"
+     },
+     {
+      "label": "1950s",
+      "value": 9.43,
+      "color": "r"
+     }
+    ]
+   }
+  },
+  {
+   "id": 5,
+   "phase": "conflict",
+   "type": "story",
+   "text": "In a minus forty freezer it barely moves.",
+   "src": [
+    "9:18-9:24"
+   ],
+   "original": false
+  },
+  {
+   "id": 6,
+   "phase": "conflict-peak",
+   "type": "analysis",
+   "text": "And after an engine run the cylinder head is crusty because oil that can't take heat bakes onto hot metal.",
+   "src": [
+    "8:20-8:25"
+   ],
+   "original": false
+  },
+  {
+   "id": 7,
+   "phase": "why",
+   "type": "analysis",
+   "text": "The lab report shows why because there's just 6 parts per million of calcium.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "stamp",
+    "big": "6 PPM",
+    "sub": "CALCIUM DETERGENT",
+    "color": "r"
+   }
+  },
+  {
+   "id": 8,
+   "phase": "why",
+   "type": "analysis",
+   "text": "Calcium is the detergent that grabs soot and acid so without it everything turns to sludge.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "detergent"
+   }
+  },
+  {
+   "id": 9,
+   "phase": "payoff",
+   "type": "analysis",
+   "text": "And its acid fighting reserve is zero point four versus six point two for modern oil which is fifteen times less.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "bars",
+    "title": "ACID FIGHTING RESERVE (TBN)",
+    "unit": "",
+    "items": [
+     {
+      "label": "1950s",
+      "value": 0.4,
+      "color": "r"
+     },
+     {
+      "label": "MODERN",
+      "value": 6.2,
+      "color": "g"
+     }
+    ]
+   }
+  },
+  {
+   "id": 10,
+   "phase": "verdict",
+   "type": "analysis",
+   "text": "So it still lubricates but it's like a shield that's already used up and your engine would sludge fast.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "shield"
+   }
+  },
+  {
+   "id": 11,
+   "phase": "loop",
+   "type": "story",
+   "text": "So would you put it in your car?",
+   "src": [
+    "0:52-0:55"
+   ],
+   "original": false
+  }
+ ],
+ "facts_checked": "numbers from source transcript shorts/08/source/transcript.txt; src timestamps verified on frames before render",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "He Tested 70 Year Old Motor Oil 😱 (@ProjectFarm/YT)",
+ "description": "A viewer mailed Project Farm a welded steel box with a 1950s can of oil inside. The lab report explains why it fails, and it's not what you'd guess. Original video: @ProjectFarm https://youtu.be/-zHlxeu_yuM | Science explained + animations by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #cars #oil #mechanic #science",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
+}

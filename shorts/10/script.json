@@ -1,0 +1,144 @@
+{
+ "short": "10",
+ "source": "https://youtu.be/cM6rVfUnYP8",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "phase": "hook",
+   "type": "story",
+   "text": "Why would a car ramp that holds 25000 pounds still be a death trap?",
+   "src": [
+    "14:23-14:27",
+    "7:28-7:32"
+   ],
+   "original": false
+  },
+  {
+   "id": 2,
+   "phase": "rising",
+   "type": "story",
+   "text": "He crushes eleven brands in a press and the 60 dollar plastic ramps take almost 25000 pounds.",
+   "src": [
+    "14:07-14:12",
+    "14:23-14:27"
+   ],
+   "original": false
+  },
+  {
+   "id": 3,
+   "phase": "why",
+   "type": "analysis",
+   "text": "That's almost eight times their rating because the plastic ribs spread the load like a honeycomb.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "ribs"
+   }
+  },
+  {
+   "id": 4,
+   "phase": "conflict",
+   "type": "story",
+   "text": "Meanwhile a pair of steel ramps folds under a tractor.",
+   "src": [
+    "13:35-13:41"
+   ],
+   "original": false
+  },
+  {
+   "id": 5,
+   "phase": "why",
+   "type": "analysis",
+   "text": "Because thin steel buckles once it starts to bend while the ribs keep sharing the load.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "ribs",
+    "mode": "buckle"
+   }
+  },
+  {
+   "id": 6,
+   "phase": "twist",
+   "type": "analysis",
+   "text": "So crushing is the one thing you don't need to worry about.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "stamp",
+    "big": "CRUSHING?",
+    "sub": "NOT THE PROBLEM",
+    "color": "g"
+   }
+  },
+  {
+   "id": 7,
+   "phase": "conflict-peak",
+   "type": "story",
+   "text": "On smooth concrete almost every ramp slides and two shoot out from under a car.",
+   "src": [
+    "7:28-7:34",
+    "8:16-8:20"
+   ],
+   "original": false
+  },
+  {
+   "id": 8,
+   "phase": "why",
+   "type": "analysis",
+   "text": "That's friction because a climbing or braking tire shoves the ramp forward and one rubber stop can't hold it.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "rampforce"
+   }
+  },
+  {
+   "id": 9,
+   "phase": "comeback",
+   "type": "analysis",
+   "text": "A damp towel underneath adds grip and helped most of them which is a free fix anyone can do.",
+   "src": [
+    "1:15-1:20"
+   ],
+   "original": true,
+   "insert": {
+    "kind": "stamp",
+    "big": "DAMP TOWEL",
+    "sub": "FREE EXTRA GRIP",
+    "color": "g"
+   }
+  },
+  {
+   "id": 10,
+   "phase": "lesson",
+   "type": "analysis",
+   "text": "So check for grip and set the parking brake before you crawl under.",
+   "src": [],
+   "original": true,
+   "insert": {
+    "kind": "stamp",
+    "big": "GRIP + PARKING BRAKE",
+    "sub": "BEFORE YOU CRAWL UNDER",
+    "color": "g"
+   }
+  },
+  {
+   "id": 11,
+   "phase": "loop",
+   "type": "story",
+   "text": "So is your car ramp a death trap?",
+   "src": [
+    "7:30-7:33"
+   ],
+   "original": false
+  }
+ ],
+ "facts_checked": "numbers from source transcript shorts/10/source/transcript.txt; src timestamps verified on frames before render",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "These Car Ramps Held 25000 lb… So Why Are They Dangerous? 😳 (@ProjectFarm/YT)",
+ "description": "Project Farm crushed 11 car ramps in a hydraulic press and the cheap plastic ones were shockingly strong. The real danger showed up on smooth concrete. Original video: @ProjectFarm https://youtu.be/cM6rVfUnYP8 | Science explained + animations by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #cars #mechanic #safety #engineering",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
+}
