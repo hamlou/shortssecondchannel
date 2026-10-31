@@ -13,7 +13,13 @@
     "1:40-1:44",
     "1:50-1:54"
    ],
-   "original": false
+   "ai": [
+    "an AA battery bouncing high off a table in slow motion"
+   ],
+   "first": "ai",
+   "red": [
+    "dead"
+   ]
   },
   {
    "id": 2,
@@ -21,11 +27,10 @@
    "type": "analysis",
    "text": "Because inside a fresh AA the zinc is a soft gel that soaks up the hit.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "zinc",
-    "mode": "gel"
-   }
+   "ai": [
+    "cutaway of an AA battery showing soft grey gel inside",
+    "a soft gel cube absorbing a falling steel ball slow motion"
+   ]
   },
   {
    "id": 3,
@@ -33,11 +38,11 @@
    "type": "analysis",
    "text": "And as the battery drains that zinc turns into zinc oxide which is stiff and springy so the dead one bounces.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "zinc",
-    "mode": "oxide"
-   }
+   "ai": [
+    "white zinc oxide crystals forming inside a battery macro",
+    "a springy rubber ball bouncing off concrete slow motion",
+    "a cutaway AA battery with white crystals inside"
+   ]
   },
   {
    "id": 4,
@@ -48,7 +53,10 @@
     "2:18-2:22",
     "3:04-3:08"
    ],
-   "original": false
+   "ai": [
+    "many AA batteries lined up in a row on a workbench"
+   ],
+   "first": "src"
   },
   {
    "id": 5,
@@ -58,7 +66,13 @@
    "src": [
     "3:35-3:40"
    ],
-   "original": false
+   "ai": [
+    "a cheap AA battery with a tiny flickering flashlight"
+   ],
+   "first": "src",
+   "red": [
+    "26"
+   ]
   },
   {
    "id": 6,
@@ -66,24 +80,10 @@
    "type": "analysis",
    "text": "And the Duracell lasts 381 minutes which is almost fifteen times longer.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "bars",
-    "title": "MINUTES OF POWER",
-    "unit": "MIN",
-    "items": [
-     {
-      "label": "DOLLAR STORE",
-      "value": 26,
-      "color": "r"
-     },
-     {
-      "label": "DURACELL",
-      "value": 381,
-      "color": "g"
-     }
-    ]
-   }
+   "ai": [
+    "a glowing AA battery with a bright beam of light",
+    "an hourglass with sand running on a workbench"
+   ]
   },
   {
    "id": 7,
@@ -93,7 +93,10 @@
    "src": [
     "5:45-5:50"
    ],
-   "original": false
+   "ai": [
+    "a silver lithium AA battery glowing on clouds"
+   ],
+   "first": "ai"
   },
   {
    "id": 8,
@@ -103,7 +106,14 @@
    "src": [
     "4:25-4:29"
    ],
-   "original": false
+   "ai": [
+    "a mystery box with light shining out of it"
+   ],
+   "first": "src",
+   "mark": [
+    "q",
+    0.2
+   ]
   },
   {
    "id": 9,
@@ -111,24 +121,10 @@
    "type": "analysis",
    "text": "Amazon Basics gives you 32 milliamp hours for every single penny which beats every brand he tested.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "bars",
-    "title": "POWER PER PENNY",
-    "unit": "mAh",
-    "items": [
-     {
-      "label": "AMAZON BASICS",
-      "value": 32,
-      "color": "g"
-     },
-     {
-      "label": "ENERGIZER",
-      "value": 26,
-      "color": "y"
-     }
-    ]
-   }
+   "ai": [
+    "a single copper penny next to an AA battery macro",
+    "a pile of pennies glowing with blue electric energy"
+   ]
   },
   {
    "id": 10,
@@ -136,13 +132,10 @@
    "type": "analysis",
    "text": "So the best battery and the best deal are two completely different things.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "stamp",
-    "big": "BEST BATTERY",
-    "sub": "IS NOT THE BEST DEAL",
-    "color": "y"
-   }
+   "ai": [
+    "two AA batteries on a scale balancing with coins",
+    "a gold medal next to a price tag on a table"
+   ]
   },
   {
    "id": 11,
@@ -152,12 +145,15 @@
    "src": [
     "1:50-1:53"
    ],
-   "original": false
+   "ai": [
+    "an AA battery bouncing high off a table in slow motion"
+   ],
+   "first": "src"
   }
  ],
  "facts_checked": "numbers from source transcript shorts/05/source/transcript.txt; src timestamps verified on frames before render",
  "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
  "title": "Why Dead Batteries BOUNCE 🔋 + Which AA Lasts Longest (@ProjectFarm/YT)",
- "description": "A dead AA bounces and a new one thuds, and there's real chemistry behind it. Then Project Farm drained every brand to find the best battery per penny. Original video: @ProjectFarm https://youtu.be/V7-ghrTqA44 | Science explained + animations by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #batteries #science #experiment #lifehack",
+ "description": "A dead AA bounces and a new one thuds, and there's real chemistry behind it. Then Project Farm drained every brand to find the best battery per penny. Original video: @ProjectFarm https://youtu.be/V7-ghrTqA44 | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #batteries #science #experiment #lifehack",
  "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
 }

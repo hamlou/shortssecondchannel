@@ -13,7 +13,10 @@
     "0:15-0:19",
     "1:16-1:20"
    ],
-   "original": false
+   "ai": [
+    "two red small gas engines facing off on a garage floor under dramatic light"
+   ],
+   "first": "ai"
   },
   {
    "id": 2,
@@ -24,7 +27,10 @@
     "0:30-0:34",
     "0:55-0:59"
    ],
-   "original": false
+   "ai": [
+    "a shiny red small gas engine with a big horsepower sticker"
+   ],
+   "first": "src"
   },
   {
    "id": 3,
@@ -32,23 +38,10 @@
    "type": "analysis",
    "text": "But a sticker is just a sticker so the only way to know is to test it.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "versus",
-    "title": "ON THE STICKER",
-    "left": {
-     "label": "CLONE",
-     "value": 7.5,
-     "unit": "HP",
-     "color": "y"
-    },
-    "right": {
-     "label": "HONDA",
-     "value": 5.5,
-     "unit": "HP",
-     "color": "w"
-    }
-   }
+   "ai": [
+    "a peeling sticker on a red engine macro",
+    "a stopwatch and a test bench in a workshop"
+   ]
   },
   {
    "id": 4,
@@ -58,7 +51,13 @@
    "src": [
     "4:24-4:29"
    ],
-   "original": false
+   "ai": [
+    "a small engine shaking violently with motion blur"
+   ],
+   "first": "src",
+   "red": [
+    "shakes"
+   ]
   },
   {
    "id": 5,
@@ -66,10 +65,11 @@
    "type": "analysis",
    "text": "Because a one cylinder engine needs a weighted crankshaft to cancel its own shake and the clone skipped that.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "crank"
-   }
+   "ai": [
+    "a steel crankshaft with heavy counterweights spinning macro",
+    "a washing machine shaking violently on a tiled floor",
+    "cutaway of a single cylinder engine piston and crankshaft"
+   ]
   },
   {
    "id": 6,
@@ -80,7 +80,14 @@
     "5:11-5:16",
     "5:43-5:48"
    ],
-   "original": false
+   "ai": [
+    "a leaky wooden boat taking on water",
+    "golden motor oil pouring from a bottle into an engine"
+   ],
+   "first": "ai",
+   "blue": [
+    "oil"
+   ]
   },
   {
    "id": 7,
@@ -90,10 +97,14 @@
    "src": [
     "6:24-6:29"
    ],
-   "original": true,
-   "insert": {
-    "kind": "rings"
-   }
+   "ai": [
+    "macro of a spark plug caked in black carbon",
+    "oil sneaking past a piston ring inside an engine cylinder macro"
+   ],
+   "first": "ai",
+   "blue": [
+    "oil"
+   ]
   },
   {
    "id": 8,
@@ -103,24 +114,10 @@
    "src": [
     "9:05-9:10"
    ],
-   "original": true,
-   "insert": {
-    "kind": "bars",
-    "title": "PULLING FORCE",
-    "unit": "LB",
-    "items": [
-     {
-      "label": "CLONE 7.5 HP",
-      "value": 200,
-      "color": "r"
-     },
-     {
-      "label": "HONDA 5.5 HP",
-      "value": 239,
-      "color": "g"
-     }
-    ]
-   }
+   "ai": [
+    "a thick rope pulled tight with tension and dust"
+   ],
+   "first": "src"
   },
   {
    "id": 9,
@@ -131,7 +128,10 @@
     "9:21-9:26",
     "1:44-1:48"
    ],
-   "original": false
+   "ai": [
+    "a red small engine under a spotlight with a plot twist mood"
+   ],
+   "first": "src"
   },
   {
    "id": 10,
@@ -139,24 +139,13 @@
    "type": "analysis",
    "text": "That's within three percent of the Honda for way less money and it used the least fuel.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "bars",
-    "title": "PULL (LB) FOR THE PRICE",
-    "unit": "LB",
-    "items": [
-     {
-      "label": "HONDA $600",
-      "value": 239,
-      "color": "w"
-     },
-     {
-      "label": "PREDATOR $150",
-      "value": 233,
-      "color": "g"
-     }
-    ]
-   }
+   "ai": [
+    "a stack of cash next to a small red engine",
+    "a fuel can with a few drops left glowing"
+   ],
+   "red": [
+    "least"
+   ]
   },
   {
    "id": 11,
@@ -166,12 +155,19 @@
    "src": [
     "1:44-1:47"
    ],
-   "original": false
+   "ai": [
+    "two red small gas engines facing off on a garage floor under dramatic light"
+   ],
+   "first": "src",
+   "mark": [
+    "q",
+    0.2
+   ]
   }
  ],
  "facts_checked": "numbers from shorts/04/source/transcript.txt (7.5 vs 5.5 hp sticker 0:55/1:16; vibration 4:24; 178 g oil/24h 5:27, topped twice 5:43; carbon plug 6:29; pull 200/239/233 lb 9:05-9:21; fuel 56/57/59/60 lb 8:49); src timestamps verified on frames before render",
  "safety": "none needed",
  "title": "Which $150 Engine Can Keep Up With a $600 Honda? 🤔 (@ProjectFarm/YT)",
- "description": "Project Farm ran a Honda, a Honda clone, a Predator and a Briggs for 48 hours and pulled a trailer with each. The fake's sticker lies, and the cheap surprise is the Predator. Original video: @ProjectFarm https://youtu.be/vtUtORbNLsA | Science explained + animations by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #engine #honda #mechanic #smallengine",
+ "description": "Project Farm ran a Honda, a Honda clone, a Predator and a Briggs for 48 hours and pulled a trailer with each. The fake's sticker lies, and the cheap surprise is the Predator. Original video: @ProjectFarm https://youtu.be/vtUtORbNLsA | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #engine #honda #mechanic #smallengine",
  "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
 }

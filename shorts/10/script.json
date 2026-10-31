@@ -13,7 +13,13 @@
     "14:23-14:27",
     "7:28-7:32"
    ],
-   "original": false
+   "ai": [
+    "a car up on black plastic ramps in a dark garage with dramatic light"
+   ],
+   "first": "ai",
+   "red": [
+    "death"
+   ]
   },
   {
    "id": 2,
@@ -24,7 +30,10 @@
     "14:07-14:12",
     "14:23-14:27"
    ],
-   "original": false
+   "ai": [
+    "a hydraulic press crushing a black plastic car ramp"
+   ],
+   "first": "src"
   },
   {
    "id": 3,
@@ -32,10 +41,11 @@
    "type": "analysis",
    "text": "That's almost eight times their rating because the plastic ribs spread the load like a honeycomb.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "ribs"
-   }
+   "ai": [
+    "macro of a golden honeycomb structure under pressure",
+    "black plastic ribs inside a car ramp cutaway",
+    "a honeycomb holding a heavy steel weight"
+   ]
   },
   {
    "id": 4,
@@ -45,7 +55,13 @@
    "src": [
     "13:35-13:41"
    ],
-   "original": false
+   "ai": [
+    "a steel car ramp bending under a heavy tractor tire"
+   ],
+   "first": "src",
+   "red": [
+    "folds"
+   ]
   },
   {
    "id": 5,
@@ -53,11 +69,10 @@
    "type": "analysis",
    "text": "Because thin steel buckles once it starts to bend while the ribs keep sharing the load.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "ribs",
-    "mode": "buckle"
-   }
+   "ai": [
+    "a thin steel sheet buckling in slow motion",
+    "plastic ribs flexing and holding a heavy load"
+   ]
   },
   {
    "id": 6,
@@ -65,13 +80,10 @@
    "type": "analysis",
    "text": "So crushing is the one thing you don't need to worry about.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "stamp",
-    "big": "CRUSHING?",
-    "sub": "NOT THE PROBLEM",
-    "color": "g"
-   }
+   "ai": [
+    "a giant hydraulic press resting idle in a dim factory",
+    "a person relaxing next to a car ramp"
+   ]
   },
   {
    "id": 7,
@@ -82,7 +94,14 @@
     "7:28-7:34",
     "8:16-8:20"
    ],
-   "original": false
+   "ai": [
+    "a car ramp sliding across smooth concrete with motion blur"
+   ],
+   "first": "src",
+   "mark": [
+    "x",
+    -1.0
+   ]
   },
   {
    "id": 8,
@@ -90,10 +109,10 @@
    "type": "analysis",
    "text": "That's friction because a climbing or braking tire shoves the ramp forward and one rubber stop can't hold it.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "rampforce"
-   }
+   "ai": [
+    "a car tire pushing a plastic ramp forward on concrete",
+    "a small rubber stopper slipping on a floor macro"
+   ]
   },
   {
    "id": 9,
@@ -103,13 +122,13 @@
    "src": [
     "1:15-1:20"
    ],
-   "original": true,
-   "insert": {
-    "kind": "stamp",
-    "big": "DAMP TOWEL",
-    "sub": "FREE EXTRA GRIP",
-    "color": "g"
-   }
+   "ai": [
+    "a damp towel under a car ramp on concrete"
+   ],
+   "first": "ai",
+   "blue": [
+    "damp"
+   ]
   },
   {
    "id": 10,
@@ -117,13 +136,13 @@
    "type": "analysis",
    "text": "So check for grip and set the parking brake before you crawl under.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "stamp",
-    "big": "GRIP + PARKING BRAKE",
-    "sub": "BEFORE YOU CRAWL UNDER",
-    "color": "g"
-   }
+   "ai": [
+    "a hand pulling up a car parking brake lever",
+    "a mechanic on a creeper next to a car on ramps"
+   ],
+   "red": [
+    "parking"
+   ]
   },
   {
    "id": 11,
@@ -133,12 +152,19 @@
    "src": [
     "7:30-7:33"
    ],
-   "original": false
+   "ai": [
+    "a car up on black plastic ramps in a dark garage with dramatic light"
+   ],
+   "first": "src",
+   "mark": [
+    "q",
+    0.2
+   ]
   }
  ],
  "facts_checked": "numbers from source transcript shorts/10/source/transcript.txt; src timestamps verified on frames before render",
  "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
  "title": "These Car Ramps Held 25000 lb… So Why Are They Dangerous? 😳 (@ProjectFarm/YT)",
- "description": "Project Farm crushed 11 car ramps in a hydraulic press and the cheap plastic ones were shockingly strong. The real danger showed up on smooth concrete. Original video: @ProjectFarm https://youtu.be/cM6rVfUnYP8 | Science explained + animations by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #cars #mechanic #safety #engineering",
+ "description": "Project Farm crushed 11 car ramps in a hydraulic press and the cheap plastic ones were shockingly strong. The real danger showed up on smooth concrete. Original video: @ProjectFarm https://youtu.be/cM6rVfUnYP8 | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #cars #mechanic #safety #engineering",
  "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
 }

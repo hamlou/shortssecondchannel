@@ -13,7 +13,13 @@
     "3:13-3:17",
     "3:26-3:30"
    ],
-   "original": false
+   "ai": [
+    "a water filter pitcher pouring crystal clear water into a glass"
+   ],
+   "first": "ai",
+   "blue": [
+    "water"
+   ]
   },
   {
    "id": 2,
@@ -23,7 +29,13 @@
    "src": [
     "0:59-1:03"
    ],
-   "original": false
+   "ai": [
+    "tiny glowing particles floating in a glass of tap water macro"
+   ],
+   "first": "src",
+   "red": [
+    "259"
+   ]
   },
   {
    "id": 3,
@@ -34,7 +46,10 @@
     "0:40-0:46",
     "1:03-1:06"
    ],
-   "original": false
+   "ai": [
+    "a homemade plastic bottle filter with layers of sand and black charcoal"
+   ],
+   "first": "src"
   },
   {
    "id": 4,
@@ -42,29 +57,10 @@
    "type": "analysis",
    "text": "And the 28 dollar Brita lands at 234 which is basically the same as the five dollar bottle.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "bars",
-    "title": "DISSOLVED SOLIDS (PPM)",
-    "unit": "",
-    "items": [
-     {
-      "label": "TAP",
-      "value": 259,
-      "color": "w"
-     },
-     {
-      "label": "$5 BOTTLE",
-      "value": 237,
-      "color": "y"
-     },
-     {
-      "label": "BRITA $28",
-      "value": 234,
-      "color": "y"
-     }
-    ]
-   }
+   "ai": [
+    "a water filter pitcher next to a plastic bottle filter on a kitchen counter",
+    "two glasses of water side by side under a spotlight"
+   ]
   },
   {
    "id": 5,
@@ -74,11 +70,11 @@
    "src": [
     "12:58-13:02"
    ],
-   "original": true,
-   "insert": {
-    "kind": "filter",
-    "mode": "carbon"
-   }
+   "ai": [
+    "macro of black activated carbon granules with water flowing through",
+    "tiny minerals sliding through charcoal macro"
+   ],
+   "first": "ai"
   },
   {
    "id": 6,
@@ -88,15 +84,11 @@
    "src": [
     "6:08-6:12"
    ],
-   "original": true,
-   "insert": {
-    "kind": "claim",
-    "claimed": 259,
-    "actual": 284,
-    "unit": "PPM",
-    "label": "BERKEY $300",
-    "up": true
-   }
+   "ai": [
+    "a tall stainless steel water filter tank in a kitchen",
+    "brand new water filter cartridges in a box"
+   ],
+   "first": "ai"
   },
   {
    "id": 7,
@@ -106,7 +98,13 @@
    "src": [
     "4:18-4:22"
    ],
-   "original": false
+   "ai": [
+    "a perfectly clear glass of water with a glowing light behind it"
+   ],
+   "first": "src",
+   "blue": [
+    "zero"
+   ]
   },
   {
    "id": 8,
@@ -116,11 +114,11 @@
    "src": [
     "13:04-13:08"
    ],
-   "original": true,
-   "insert": {
-    "kind": "filter",
-    "mode": "ion"
-   }
+   "ai": [
+    "macro of tiny amber resin beads with water flowing over them",
+    "glowing beads swapping particles in water macro"
+   ],
+   "first": "ai"
   },
   {
    "id": 9,
@@ -128,13 +126,10 @@
    "type": "analysis",
    "text": "But a high number doesn't mean your water is unsafe because a lot of it is just calcium and magnesium.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "stamp",
-    "big": "HIGH IS NOT UNSAFE",
-    "sub": "MOSTLY MINERALS",
-    "color": "y"
-   }
+   "ai": [
+    "white calcium crystals in a glass of water macro",
+    "a calm glass of mineral water on a stone table"
+   ]
   },
   {
    "id": 10,
@@ -144,12 +139,22 @@
    "src": [
     "0:59-1:02"
    ],
-   "original": false
+   "ai": [
+    "a water filter pitcher pouring crystal clear water into a glass"
+   ],
+   "first": "src",
+   "mark": [
+    "q",
+    0.2
+   ],
+   "blue": [
+    "water"
+   ]
   }
  ],
  "facts_checked": "numbers from source transcript shorts/09/source/transcript.txt; src timestamps verified on frames before render",
  "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
  "title": "Is Your Brita Actually Cleaning Your Water? 🤔 (@ProjectFarm/YT)",
- "description": "Project Farm measured dissolved solids through 11 filters, including a $5 homemade one. The difference comes down to carbon vs ion exchange. Original video: @ProjectFarm https://youtu.be/ja0ioX6GSz0 | Science explained + animations by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #water #brita #science #home",
+ "description": "Project Farm measured dissolved solids through 11 filters, including a $5 homemade one. The difference comes down to carbon vs ion exchange. Original video: @ProjectFarm https://youtu.be/ja0ioX6GSz0 | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #water #brita #science #home",
  "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
 }

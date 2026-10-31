@@ -13,7 +13,10 @@
     "0:15-0:20",
     "0:52-0:56"
    ],
-   "original": false
+   "ai": [
+    "a rusty steel box bolted shut on a workbench with dramatic light"
+   ],
+   "first": "ai"
   },
   {
    "id": 2,
@@ -23,7 +26,14 @@
    "src": [
     "1:00-1:05"
    ],
-   "original": false
+   "ai": [
+    "an old rusty vintage motor oil can from the 1950s on a shelf"
+   ],
+   "first": "src",
+   "mark": [
+    "q",
+    -1.2
+   ]
   },
   {
    "id": 3,
@@ -34,7 +44,10 @@
     "3:00-3:05",
     "3:48-3:52"
    ],
-   "original": false
+   "ai": [
+    "two glass beakers of motor oil heating on a glowing hot plate"
+   ],
+   "first": "src"
   },
   {
    "id": 4,
@@ -42,24 +55,13 @@
    "type": "analysis",
    "text": "And the old oil loses 42 percent more weight so it's literally cooking off into the air.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "bars",
-    "title": "GRAMS LOST TO HEAT",
-    "unit": "g",
-    "items": [
-     {
-      "label": "MODERN",
-      "value": 6.63,
-      "color": "y"
-     },
-     {
-      "label": "1950s",
-      "value": 9.43,
-      "color": "r"
-     }
-    ]
-   }
+   "ai": [
+    "golden motor oil steaming and evaporating into the air",
+    "wisps of smoke rising from hot oil in slow motion"
+   ],
+   "red": [
+    "42"
+   ]
   },
   {
    "id": 5,
@@ -69,7 +71,13 @@
    "src": [
     "9:18-9:24"
    ],
-   "original": false
+   "ai": [
+    "thick frozen motor oil covered in frost"
+   ],
+   "first": "src",
+   "blue": [
+    "freezer"
+   ]
   },
   {
    "id": 6,
@@ -79,7 +87,11 @@
    "src": [
     "8:20-8:25"
    ],
-   "original": false
+   "ai": [
+    "a crusty black engine cylinder head macro",
+    "oil baking onto hot metal with smoke"
+   ],
+   "first": "src"
   },
   {
    "id": 7,
@@ -87,13 +99,10 @@
    "type": "analysis",
    "text": "The lab report shows why because there's just 6 parts per million of calcium.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "stamp",
-    "big": "6 PPM",
-    "sub": "CALCIUM DETERGENT",
-    "color": "r"
-   }
+   "ai": [
+    "a lab report sheet on a clipboard next to test tubes of oil",
+    "a single tiny white grain under a magnifying glass"
+   ]
   },
   {
    "id": 8,
@@ -101,10 +110,13 @@
    "type": "analysis",
    "text": "Calcium is the detergent that grabs soot and acid so without it everything turns to sludge.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "detergent"
-   }
+   "ai": [
+    "tiny particles grabbing black soot inside oil macro",
+    "thick black sludge dripping inside an engine"
+   ],
+   "red": [
+    "sludge"
+   ]
   },
   {
    "id": 9,
@@ -112,24 +124,10 @@
    "type": "analysis",
    "text": "And its acid fighting reserve is zero point four versus six point two for modern oil which is fifteen times less.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "bars",
-    "title": "ACID FIGHTING RESERVE (TBN)",
-    "unit": "",
-    "items": [
-     {
-      "label": "1950s",
-      "value": 0.4,
-      "color": "r"
-     },
-     {
-      "label": "MODERN",
-      "value": 6.2,
-      "color": "g"
-     }
-    ]
-   }
+   "ai": [
+    "a nearly empty battery shaped glass of oil",
+    "acid droplets eating a metal surface macro"
+   ]
   },
   {
    "id": 10,
@@ -137,10 +135,13 @@
    "type": "analysis",
    "text": "So it still lubricates but it's like a shield that's already used up and your engine would sludge fast.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "shield"
-   }
+   "ai": [
+    "a cracked used up metal shield on a dark floor",
+    "black sludge filling an engine macro"
+   ],
+   "red": [
+    "sludge"
+   ]
   },
   {
    "id": 11,
@@ -150,12 +151,19 @@
    "src": [
     "0:52-0:55"
    ],
-   "original": false
+   "ai": [
+    "an old rusty vintage motor oil can from the 1950s on a shelf"
+   ],
+   "first": "src",
+   "mark": [
+    "q",
+    0.2
+   ]
   }
  ],
  "facts_checked": "numbers from source transcript shorts/08/source/transcript.txt; src timestamps verified on frames before render",
  "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
  "title": "He Tested 70 Year Old Motor Oil 😱 (@ProjectFarm/YT)",
- "description": "A viewer mailed Project Farm a welded steel box with a 1950s can of oil inside. The lab report explains why it fails, and it's not what you'd guess. Original video: @ProjectFarm https://youtu.be/-zHlxeu_yuM | Science explained + animations by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #cars #oil #mechanic #science",
+ "description": "A viewer mailed Project Farm a welded steel box with a 1950s can of oil inside. The lab report explains why it fails, and it's not what you'd guess. Original video: @ProjectFarm https://youtu.be/-zHlxeu_yuM | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #cars #oil #mechanic #science",
  "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
 }

@@ -13,7 +13,13 @@
     "2:06-2:10",
     "3:15-3:18"
    ],
-   "original": false
+   "ai": [
+    "a heavily rusted bolt and nut glistening with a drop of golden oil"
+   ],
+   "first": "ai",
+   "red": [
+    "rusted"
+   ]
   },
   {
    "id": 2,
@@ -24,7 +30,10 @@
     "1:21-1:25",
     "2:23-2:27"
    ],
-   "original": false
+   "ai": [
+    "a pile of bright orange rusted bolts on a wooden workbench",
+    "six small bottles of different coloured oils in a row"
+   ]
   },
   {
    "id": 3,
@@ -32,11 +41,14 @@
    "type": "analysis",
    "text": "The trick is capillary action which pulls a thin liquid into tiny gaps like a paper towel drinking a spill.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "capillary",
-    "mode": "pull"
-   }
+   "ai": [
+    "macro of thin golden oil creeping up into tiny cracks of rusty metal",
+    "a white paper towel soaking up a spilled blue drink",
+    "macro of a liquid droplet disappearing into a hairline crack"
+   ],
+   "blue": [
+    "liquid"
+   ]
   },
   {
    "id": 4,
@@ -46,7 +58,14 @@
    "src": [
     "3:15-3:20"
    ],
-   "original": false
+   "ai": [
+    "a single drop of fluid sitting on a rusty washer like a bead"
+   ],
+   "first": "src",
+   "mark": [
+    "q",
+    -1.2
+   ]
   },
   {
    "id": 5,
@@ -56,13 +75,10 @@
    "src": [
     "4:58-5:02"
    ],
-   "original": true,
-   "insert": {
-    "kind": "stamp",
-    "big": "ALL THE WAY DOWN",
-    "sub": "BRAKE FLUID",
-    "color": "g"
-   }
+   "ai": [
+    "a steel bolt sliced in half lengthwise showing oil inside the threads macro"
+   ],
+   "first": "ai"
   },
   {
    "id": 6,
@@ -72,11 +88,11 @@
    "src": [
     "5:15-5:20"
    ],
-   "original": true,
-   "insert": {
-    "kind": "capillary",
-    "mode": "thick"
-   }
+   "ai": [
+    "thick green slime coating a rusty bolt macro",
+    "thick honey failing to enter a narrow crack macro"
+   ],
+   "first": "ai"
   },
   {
    "id": 7,
@@ -86,7 +102,14 @@
    "src": [
     "8:34-8:40"
    ],
-   "original": false
+   "ai": [
+    "six different coloured oils swirling together in a glass beaker",
+    "two chemicals reacting with smoke in a glass flask"
+   ],
+   "first": "src",
+   "red": [
+    "risky"
+   ]
   },
   {
    "id": 8,
@@ -96,23 +119,13 @@
    "src": [
     "9:09-9:14"
    ],
-   "original": true,
-   "insert": {
-    "kind": "versus",
-    "title": "TO BREAK IT LOOSE",
-    "left": {
-     "label": "HAND TIGHT",
-     "value": 0,
-     "unit": "FT-LB",
-     "color": "y"
-    },
-    "right": {
-     "label": "SUPER MIX",
-     "value": 56,
-     "unit": "FT-LB",
-     "color": "r"
-    }
-   }
+   "ai": [
+    "a wrench straining on a stuck rusty nut with motion blur"
+   ],
+   "first": "ai",
+   "red": [
+    "56"
+   ]
   },
   {
    "id": 9,
@@ -122,14 +135,11 @@
    "src": [
     "10:03-10:08"
    ],
-   "original": true,
-   "insert": {
-    "kind": "podium",
-    "items": [
-     "SEAFOAM DEEP CREEP",
-     "CRC KNOCK'ER LOOSE"
-    ]
-   }
+   "ai": [
+    "a golden trophy on a podium in a garage spotlight",
+    "a silver trophy next to a gold trophy under spotlights"
+   ],
+   "first": "src"
   },
   {
    "id": 10,
@@ -137,11 +147,11 @@
    "type": "analysis",
    "text": "Because in rusty threads the gaps are microscopic so only the thinnest fluid gets in.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "capillary",
-    "mode": "race"
-   }
+   "ai": [
+    "extreme macro of microscopic gaps inside rusty bolt threads",
+    "a thin liquid racing a thick syrup down a crack macro",
+    "macro of oil flowing into a rusted thread"
+   ]
   },
   {
    "id": 11,
@@ -151,12 +161,19 @@
    "src": [
     "2:06-2:09"
    ],
-   "original": false
+   "ai": [
+    "a heavily rusted bolt and nut glistening with a drop of golden oil"
+   ],
+   "first": "src",
+   "mark": [
+    "q",
+    0.2
+   ]
   }
  ],
  "facts_checked": "numbers from source transcript shorts/02/source/transcript.txt; src timestamps verified on frames before render",
  "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
  "title": "Can BRAKE FLUID Free a Rusted Bolt? 🤔 (@ProjectFarm/YT)",
- "description": "Project Farm dripped six fluids on rusted bolts and even mixed them all into one super oil. The winner came down to one thing: how thin the fluid is. Original video: @ProjectFarm https://youtu.be/st8dkGzJWtg | Science explained + animations by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #rust #mechanic #diy #science",
+ "description": "Project Farm dripped six fluids on rusted bolts and even mixed them all into one super oil. The winner came down to one thing: how thin the fluid is. Original video: @ProjectFarm https://youtu.be/st8dkGzJWtg | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #rust #mechanic #diy #science",
  "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
 }

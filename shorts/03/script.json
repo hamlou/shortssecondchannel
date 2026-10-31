@@ -13,7 +13,13 @@
     "0:45-0:49",
     "1:01-1:04"
    ],
-   "original": false
+   "ai": [
+    "two teal cordless impact wrenches facing each other on a dark workbench with dramatic light"
+   ],
+   "first": "ai",
+   "red": [
+    "fake"
+   ]
   },
   {
    "id": 2,
@@ -21,23 +27,13 @@
    "type": "analysis",
    "text": "And the real one costs 138 dollars so on paper you'd be crazy to pay five times more.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "versus",
-    "title": "ON THE BOX",
-    "left": {
-     "label": "FAKE $30",
-     "value": 384,
-     "unit": "FT-LB",
-     "color": "y"
-    },
-    "right": {
-     "label": "MAKITA $138",
-     "value": 210,
-     "unit": "FT-LB",
-     "color": "w"
-    }
-   }
+   "ai": [
+    "a stack of dollar bills next to a cheap cordless impact wrench",
+    "a man holding his head in disbelief silhouette"
+   ],
+   "red": [
+    "138"
+   ]
   },
   {
    "id": 3,
@@ -47,7 +43,10 @@
    "src": [
     "1:16-1:20"
    ],
-   "original": false
+   "ai": [
+    "two power tools balanced on an old brass scale"
+   ],
+   "first": "src"
   },
   {
    "id": 4,
@@ -57,7 +56,14 @@
    "src": [
     "5:18-5:23"
    ],
-   "original": false
+   "ai": [
+    "a cordless impact wrench struggling on a big bolt with sparks"
+   ],
+   "first": "src",
+   "mark": [
+    "x",
+    -1.0
+   ]
   },
   {
    "id": 5,
@@ -65,14 +71,10 @@
    "type": "analysis",
    "text": "That's less than a quarter of what the box promised so the spec sheet is basically fan fiction.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "claim",
-    "claimed": 384,
-    "actual": 91,
-    "unit": "FT-LB",
-    "label": "FAKE MAKITA"
-   }
+   "ai": [
+    "a glossy product box with a giant exaggerated torque number glowing",
+    "a fantasy book glowing with magic on a workbench"
+   ]
   },
   {
    "id": 6,
@@ -82,7 +84,10 @@
    "src": [
     "5:49-5:54"
    ],
-   "original": false
+   "ai": [
+    "a teal impact wrench spinning a lug nut with motion blur"
+   ],
+   "first": "src"
   },
   {
    "id": 7,
@@ -90,11 +95,11 @@
    "type": "analysis",
    "text": "Because inside an impact wrench a spinning hammer slams the anvil thousands of times a minute.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "hammer",
-    "mode": "explain"
-   }
+   "ai": [
+    "cutaway inside an impact wrench showing a spinning steel hammer hitting an anvil",
+    "macro of two steel blocks colliding with sparks",
+    "slow motion steel hammer striking metal with a shockwave"
+   ]
   },
   {
    "id": 8,
@@ -102,13 +107,13 @@
    "type": "analysis",
    "text": "And the Makita's hammer is 44 grams heavier and spins faster so every hit carries more energy.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "hammer",
-    "mode": "compare",
-    "a": 253,
-    "b": 297
-   }
+   "ai": [
+    "two steel hammer parts side by side on a scale macro",
+    "a heavy steel part spinning fast with motion trails"
+   ],
+   "red": [
+    "heavier"
+   ]
   },
   {
    "id": 9,
@@ -118,25 +123,10 @@
    "src": [
     "6:49-6:52"
    ],
-   "original": true,
-   "insert": {
-    "kind": "bars",
-    "title": "SECONDS TO PULL LUG NUTS",
-    "unit": "S",
-    "lowWins": true,
-    "items": [
-     {
-      "label": "FAKE",
-      "value": 49,
-      "color": "r"
-     },
-     {
-      "label": "MAKITA",
-      "value": 35,
-      "color": "g"
-     }
-    ]
-   }
+   "ai": [
+    "a lug nut flying off a car wheel in slow motion"
+   ],
+   "first": "ai"
   },
   {
    "id": 10,
@@ -146,7 +136,13 @@
    "src": [
     "10:00-10:05"
    ],
-   "original": false
+   "ai": [
+    "a black plastic tool handle shattering into pieces slow motion"
+   ],
+   "first": "src",
+   "red": [
+    "snaps"
+   ]
   },
   {
    "id": 11,
@@ -154,13 +150,13 @@
    "type": "analysis",
    "text": "But thirty bucks for a brushless motor is still a crazy good deal.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "stamp",
-    "big": "STILL A DEAL",
-    "sub": "BRUSHLESS FOR $30",
-    "color": "y"
-   }
+   "ai": [
+    "a glowing copper brushless electric motor macro",
+    "a small pile of thirty dollars in cash under a spotlight"
+   ],
+   "red": [
+    "deal"
+   ]
   },
   {
    "id": 12,
@@ -170,12 +166,19 @@
    "src": [
     "1:01-1:04"
    ],
-   "original": false
+   "ai": [
+    "two teal cordless impact wrenches facing each other on a dark workbench with dramatic light"
+   ],
+   "first": "src",
+   "mark": [
+    "q",
+    0.2
+   ]
   }
  ],
  "facts_checked": "numbers from source transcript shorts/03/source/transcript.txt; src timestamps verified on frames before render",
  "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
  "title": "$30 FAKE Makita vs The Real One 😳 (@ProjectFarm/YT)",
- "description": "A $30 knockoff claims almost double the torque of a $138 Makita. Project Farm measured both, and the reason the real one wins is hidden inside. Original video: @ProjectFarm https://youtu.be/4pXM5bHSk2Y | Science explained + animations by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #tools #makita #mechanic #engineering",
+ "description": "A $30 knockoff claims almost double the torque of a $138 Makita. Project Farm measured both, and the reason the real one wins is hidden inside. Original video: @ProjectFarm https://youtu.be/4pXM5bHSk2Y | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #tools #makita #mechanic #engineering",
  "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
 }

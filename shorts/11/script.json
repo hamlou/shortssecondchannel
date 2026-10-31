@@ -12,7 +12,13 @@
    "src": [
     "6:59-7:03"
    ],
-   "original": false
+   "ai": [
+    "a bathroom sink drain clogged with a clump of hair under dramatic light"
+   ],
+   "first": "ai",
+   "red": [
+    "hair"
+   ]
   },
   {
    "id": 2,
@@ -23,7 +29,10 @@
     "2:06-2:10",
     "4:49-4:53"
    ],
-   "original": false
+   "ai": [
+    "clear glass jars with hair and grease and soap inside"
+   ],
+   "first": "src"
   },
   {
    "id": 3,
@@ -33,7 +42,13 @@
    "src": [
     "7:00-7:04"
    ],
-   "original": false
+   "ai": [
+    "a jar of white lye crystals on a dark shelf"
+   ],
+   "first": "src",
+   "red": [
+    "lye"
+   ]
   },
   {
    "id": 4,
@@ -41,10 +56,11 @@
    "type": "analysis",
    "text": "Because hair is made of protein and lye chops those protein chains apart until the clog dissolves.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "protein"
-   }
+   "ai": [
+    "macro of a single human hair dissolving in liquid",
+    "glowing protein chains snapping apart macro",
+    "hair strands dissolving into bubbles in a glass"
+   ]
   },
   {
    "id": 5,
@@ -54,35 +70,10 @@
    "src": [
     "2:25-2:30"
    ],
-   "original": true,
-   "insert": {
-    "kind": "bars",
-    "title": "HAIR CLOG (HIS A B C GRADES)",
-    "unit": "",
-    "grades": true,
-    "items": [
-     {
-      "label": "LYE",
-      "value": 3,
-      "color": "g"
-     },
-     {
-      "label": "DRANO",
-      "value": 3,
-      "color": "g"
-     },
-     {
-      "label": "ACIDS",
-      "value": 2,
-      "color": "y"
-     },
-     {
-      "label": "ENZYMES",
-      "value": 1,
-      "color": "r"
-     }
-    ]
-   }
+   "ai": [
+    "three drain cleaner bottles in a row on a bathroom floor"
+   ],
+   "first": "ai"
   },
   {
    "id": 6,
@@ -92,13 +83,14 @@
    "src": [
     "5:55-6:00"
    ],
-   "original": true,
-   "insert": {
-    "kind": "stamp",
-    "big": "12 HOURS",
-    "sub": "BACTERIA NEED DAYS",
-    "color": "y"
-   }
+   "ai": [
+    "bright blue liquid swirling in a drain",
+    "tiny bacteria under a microscope glowing"
+   ],
+   "first": "ai",
+   "blue": [
+    "blue"
+   ]
   },
   {
    "id": 7,
@@ -109,7 +101,10 @@
     "10:05-10:09",
     "7:45-7:50"
    ],
-   "original": false
+   "ai": [
+    "a carrot dissolving in a glass of bubbling acid"
+   ],
+   "first": "src"
   },
   {
    "id": 8,
@@ -117,13 +112,13 @@
    "type": "analysis",
    "text": "So acid works on food clogs but it attacks metal which is why it's only safe for plastic pipes.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "stamp",
-    "big": "PLASTIC PIPES ONLY",
-    "sub": "ACID EATS METAL",
-    "color": "r"
-   }
+   "ai": [
+    "acid eating the shiny plating off a steel pipe macro",
+    "a clean white plastic pipe under a sink"
+   ],
+   "red": [
+    "acid"
+   ]
   },
   {
    "id": 9,
@@ -133,13 +128,10 @@
    "src": [
     "7:29-7:33"
    ],
-   "original": true,
-   "insert": {
-    "kind": "stamp",
-    "big": "DRAIN SNAKE",
-    "sub": "FOR PAPER + TAPE",
-    "color": "w"
-   }
+   "ai": [
+    "a metal drain snake coiled on a bathroom floor"
+   ],
+   "first": "ai"
   },
   {
    "id": 10,
@@ -147,13 +139,14 @@
    "type": "analysis",
    "text": "And never mix them because bleach plus acid makes toxic chlorine gas.",
    "src": [],
-   "original": true,
-   "insert": {
-    "kind": "stamp",
-    "big": "NEVER MIX",
-    "sub": "BLEACH + ACID = TOXIC GAS",
-    "color": "r"
-   }
+   "ai": [
+    "a toxic green cloud of gas rising from a sink",
+    "two cleaning bottles with a red warning glow"
+   ],
+   "red": [
+    "never",
+    "toxic"
+   ]
   },
   {
    "id": 11,
@@ -163,12 +156,19 @@
    "src": [
     "4:49-4:52"
    ],
-   "original": false
+   "ai": [
+    "a bathroom sink drain clogged with a clump of hair under dramatic light"
+   ],
+   "first": "src",
+   "mark": [
+    "q",
+    0.2
+   ]
   }
  ],
  "facts_checked": "numbers from source transcript shorts/11/source/transcript.txt; src timestamps verified on frames before render",
  "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
  "title": "Which Drain Cleaner Actually Eats Hair? 🧪 (@ProjectFarm/YT)",
- "description": "Project Farm soaked hair, soap, grease and even tape in every kind of drain opener. Plain lye won on hair, and the reason is simple chemistry. Original video: @ProjectFarm https://youtu.be/fm2CE2e_3To | Science explained + animations by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #plumbing #chemistry #home #science",
+ "description": "Project Farm soaked hair, soap, grease and even tape in every kind of drain opener. Plain lye won on hair, and the reason is simple chemistry. Original video: @ProjectFarm https://youtu.be/fm2CE2e_3To | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #plumbing #chemistry #home #science",
  "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
 }
