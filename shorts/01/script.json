@@ -12,9 +12,15 @@
     "9:56-9:58",
     "2:38-2:40"
    ],
-   "original": false,
-   "fx": "punch-in on clamps, ? pop",
-   "type": "story"
+   "type": "story",
+   "ai": [
+    "a dead car battery on a dark garage floor with thick welding cables clamped to its terminals and bright orange sparks flying"
+   ],
+   "first": "ai",
+   "red": [
+    "dead",
+    "welder"
+   ]
   },
   {
    "id": 2,
@@ -23,19 +29,31 @@
    "src": [
     "1:03-1:08"
    ],
-   "original": true,
-   "fx": "circle 204 on tester, lawnmower icon",
    "type": "analysis",
-   "insert": "animated gauge 825 rated vs 204 actual, battery icon 25 % full"
+   "ai": [
+    "a car battery with a weak dim red glowing charge light in a dark workshop",
+    "a small red push lawn mower on green grass at golden hour"
+   ],
+   "first": "ai",
+   "mark": [
+    "circle",
+    -1.6
+   ]
   },
   {
    "id": 3,
    "phase": "why",
    "text": "Because when a battery sits dead crystals grow on its lead plates and the acid can't reach the metal.",
    "src": [],
-   "original": true,
-   "insert": "3D cutaway: lead plates, white lead-sulfate crystals growing, acid blocked",
-   "type": "analysis"
+   "type": "analysis",
+   "ai": [
+    "extreme macro of grey lead plates inside a car battery covered in white fuzzy crystals",
+    "macro of white sulfate crystals slowly growing over dark metal",
+    "macro of clear acid droplets stopped by a wall of white crystals on a lead plate"
+   ],
+   "blue": [
+    "acid"
+   ]
   },
   {
    "id": 4,
@@ -45,9 +63,12 @@
     "2:24.8-2:25.8",
     "2:32-2:34.5"
    ],
-   "original": false,
-   "insert": "same cutaway: current arrows shatter crystals; dial 85 A",
-   "type": "analysis"
+   "type": "analysis",
+   "ai": [
+    "blue electric lightning arcs shattering white crystals into dust macro",
+    "a tiny household battery charger next to a huge industrial welding machine"
+   ],
+   "first": "ai"
   },
   {
    "id": 5,
@@ -58,14 +79,22 @@
     "2:40-2:42",
     "2:52-2:54"
    ],
-   "original": true,
-   "insert": "H2 + O2 bubble graphic, red DON'T TRY THIS banner",
    "type": "analysis",
    "sfx": [
     [
      "boom",
      2.4
     ]
+   ],
+   "ai": [
+    "thousands of tiny bubbles rising through battery acid backlit macro",
+    "a black car battery shaped like a cartoon bomb with a lit sparkling fuse"
+   ],
+   "red": [
+    "bomb"
+   ],
+   "blue": [
+    "bubbles"
    ]
   },
   {
@@ -77,12 +106,14 @@
     "4:44-4:47",
     "5:08-5:12"
    ],
-   "original": false,
-   "fx": "counter 204->446, red X on tractor",
    "mark": [
     "x",
     -1.4
-   ]
+   ],
+   "ai": [
+    "an old red farm tractor in a dusty barn at dusk"
+   ],
+   "first": "src"
   },
   {
    "id": 7,
@@ -92,9 +123,11 @@
     "6:10-6:13",
     "5:47-5:50"
    ],
-   "original": false,
-   "fx": "? on Epsom bag",
-   "type": "story"
+   "type": "story",
+   "ai": [
+    "white epsom salt crystals pouring onto a silver spoon macro"
+   ],
+   "first": "src"
   },
   {
    "id": 8,
@@ -103,9 +136,14 @@
    "src": [
     "6:28-6:33"
    ],
-   "original": true,
-   "insert": "cartoon gas tank filled with bubbly bath water; big counter 600 -> 51 in red",
-   "type": "analysis"
+   "type": "analysis",
+   "ai": [
+    "an open car gas tank full of foamy bath water with a yellow rubber duck floating",
+    "bath foam bubbles overflowing from a metal fuel tank"
+   ],
+   "blue": [
+    "water"
+   ]
   },
   {
    "id": 10,
@@ -115,15 +153,19 @@
     "9:01-9:04",
     "10:23-10:27"
    ],
-   "original": true,
-   "insert": "animated gauge 62 -> 680 -> 961 A, plates clearing in cutaway",
    "type": "analysis",
    "sfx": [
     [
      "ding",
      5.3
     ]
-   ]
+   ],
+   "ai": [
+    "a car battery glowing with powerful blue energy floating above white clouds",
+    "a lightning bolt striking a car battery at night",
+    "a car battery surrounded by a bright blue electric aura in a workshop"
+   ],
+   "first": "src"
   },
   {
    "id": 11,
@@ -132,9 +174,8 @@
    "src": [
     "11:07-11:12"
    ],
-   "original": false,
-   "fx": "13 s timer overlay, SFX engine crank",
-   "type": "story"
+   "type": "story",
+   "payoff": true
   },
   {
    "id": 12,
@@ -143,9 +184,15 @@
    "src": [
     "11:20-11:26"
    ],
-   "original": true,
-   "insert": "cutaway: cracked plate, crystals vs damage split screen",
-   "type": "analysis"
+   "type": "analysis",
+   "ai": [
+    "macro of a cracked broken lead plate inside a car battery",
+    "a dead car battery covered in frost on a cold dark night"
+   ],
+   "first": "ai",
+   "red": [
+    "damage"
+   ]
   },
   {
    "id": 13,
@@ -155,17 +202,27 @@
     "9:30-9:32",
     "9:56-9:57"
    ],
-   "original": false,
-   "fx": "loops into line 1",
-   "type": "story"
+   "type": "story",
+   "ai": [
+    "a dead car battery on a dark garage floor with thick welding cables clamped to its terminals and bright orange sparks flying"
+   ],
+   "first": "src",
+   "mark": [
+    "q",
+    0.2
+   ],
+   "red": [
+    "dead",
+    "welder"
+   ]
   }
  ],
- "notes": "Analysis lines (3,4,5,8,12) = our own WHY/joke/limit, not on-screen description. Original insert lines target >= 45% of runtime. Never use Todd's narration or music.",
+ "notes": "TNP style (research/tnp_breakdown.md): full-screen source + photoreal AI beauty clips (FLUX.1-schnell, Apache 2.0) as the original footage. Analysis lines (2,3,4,5,8,10,12) keep our own WHY/joke/limit. Never use Todd's narration or music.",
  "source_audio": false,
  "facts_checked": "all numbers from source transcript a2XRR9aFWPo (204/825 A 1:03, 85 A 2:27, 446 A 4:31, Epsom 600->51 A 6:28, battery 5 62 A/6% 9:01, 961 A/81% 10:23, 454 13 s 11:07, Ranger 10 V next day 11:20); 961/62 = 15.5x; 204/825 = 25 %; 85 A vs ~10 A charger = 8.5x ('almost ten times')",
  "safety": "on-screen: DON'T TRY THIS - explosive hydrogen + acid; no step-by-step settings",
  "title": "He Shocked a DEAD Car Battery With a Welder 😳 (@ProjectFarm/YT)",
- "description": "Can a welder really bring a dead car battery back to life? Project Farm tested it on 5 batteries - one went from 62 to 961 cranking amps, and Epsom salt made one worse. Original video: @ProjectFarm https://youtu.be/a2XRR9aFWPo | Science explained + animations by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #carbattery #experiment #cars #science",
+ "description": "Can a welder really bring a dead car battery back to life? Project Farm tested it on 5 batteries - one went from 62 to 961 cranking amps, and Epsom salt made one worse. Original video: @ProjectFarm https://youtu.be/a2XRR9aFWPo | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #carbattery #experiment #cars #science",
  "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which (Moneyworks PLAYBOOK_SHORTS §2 + STYLE_3D §0.11)",
  "src_verified": "frames checked 30 Oct 2026 (build/sheetA/B, scanA/B)"
 }

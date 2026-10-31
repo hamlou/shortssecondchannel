@@ -23,8 +23,11 @@ def main():
     an = sum(1 for l in lines if l.get("type") == "analysis")
     res.append(("2a every line typed analysis/story", len(typed) == len(lines), f"{len(typed)}/{len(lines)}"))
     res.append(("2b analysis >= 50 % of lines", an / len(lines) >= 0.5, f"{an}/{len(lines)} = {an / len(lines):.0%}"))
-    orig = sum(t[l["id"]] for l in lines if l.get("original"))
-    res.append(("3 original visuals >= 50 % runtime", orig / total >= 0.5, f"{orig / total:.0%}"))
+    # AI clips (tools/assemble.py plan_line): whole line if it has no source, else min(75 %, 1.4 s per prompt); payoff = 0
+    ai_t = lambda l: 0 if l.get("payoff") else t[l["id"]] if not l.get("src") else min(0.75 * t[l["id"]], 1.4 * len(l["ai"]))
+    orig = sum(ai_t(l) if "ai" in l or l.get("payoff") else t[l["id"]] * bool(l.get("original")) for l in lines)
+    res.append(("3 original (AI) visuals >= 50 % runtime", orig / total >= 0.5, f"{orig:.1f}s = {orig / total:.0%}"))
+    res.append(("3b frame 0 = AI hero shot", bool(lines[0].get("ai")) and lines[0].get("first") == "ai", "ok" if lines[0].get("ai") else "line 1 needs ai + first=ai"))
     clips = [(c, secs(c.split("-")[1]) - secs(c.split("-")[0])) for l in lines for c in l.get("src", [])]
     long_ = [f"{c} ({s:.0f}s src span; cut to <=2 s pieces)" for c, s in clips if s > 6]
     res.append(("4a source spans short (<= 6 s span, cut into <= 2 s shots)", not long_, "; ".join(long_) or "ok"))
