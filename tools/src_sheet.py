@@ -17,7 +17,9 @@ def main():
     tiles = []
     font = ImageFont.truetype(os.path.join(ROOT, "tools", "fonts", "BebasNeue-Regular.ttf"), 34)
     for l in d["lines"]:
-        for c in l.get("src", []):
+        for w, c in l.get("beats", [[None, c] for c in l.get("src", [])]):
+            if c.startswith("ai:"):
+                continue
             a, b = map(sec, c.split("-"))
             for k, t in enumerate([a + 0.1, (a + b) / 2, b - 0.15]):
                 p = os.path.join(tmp, f"{len(tiles):03d}.jpg")
@@ -25,7 +27,7 @@ def main():
                 im = Image.open(p).convert("RGB")
                 dr = ImageDraw.Draw(im)
                 dr.rectangle((0, 0, 400, 40), fill=(0, 0, 0))
-                dr.text((6, 2), f"L{l['id']}  {int(t // 60)}:{t % 60:04.1f}  {l['text'][:28]}", font=font, fill=(255, 212, 0))
+                dr.text((6, 2), f"L{l['id']}  {int(t // 60)}:{t % 60:04.1f}  {(w or l['text'])[:28]}", font=font, fill=(255, 212, 0))
                 tiles.append(im)
     cols = 6
     w, h = tiles[0].size
