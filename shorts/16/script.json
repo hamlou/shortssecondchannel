@@ -16,7 +16,7 @@
     [
      "shell",
      "0:03-0:09",
-     0.55
+     0.95
     ],
     [
      "cheap",
@@ -69,7 +69,7 @@
     ],
     [
      "burns",
-     "ai:a blue and orange gasoline flame burning inside a small engine cylinder"
+     "ai:orange and blue combustion flame inside a small engine cylinder seen through glass"
     ]
    ]
   },
@@ -129,7 +129,7 @@
     ],
     [
      "injectors",
-     "ai:a clean fuel injector spraying a fine mist of gasoline"
+     "ai:close up of a car fuel injector nozzle spraying a fine cone of gasoline mist"
     ]
    ]
   },
