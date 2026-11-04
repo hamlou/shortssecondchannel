@@ -6,154 +6,226 @@
  "lines": [
   {
    "id": 1,
-   "phase": "hook",
    "type": "story",
    "text": "Why does a dead battery bounce and a brand new one just thuds?",
-   "src": [
-    "1:40-1:44",
-    "1:50-1:54"
+   "beats": [
+    [
+     "why",
+     "1:33-1:39"
+    ],
+    [
+     "brand",
+     "1:57-2:03"
+    ]
    ],
-   "ai": [
-    "an AA battery bouncing high off a table in slow motion"
-   ],
-   "first": "ai",
    "red": [
     "dead"
+   ],
+   "mark": [
+    "q",
+    "thuds"
    ]
   },
   {
    "id": 2,
-   "phase": "why",
-   "type": "analysis",
-   "text": "Because inside a fresh AA the zinc is a soft gel that soaks up the hit.",
-   "src": [],
-   "ai": [
-    "cutaway of an AA battery showing soft grey gel inside",
-    "a soft gel cube absorbing a falling steel ball slow motion"
+   "type": "story",
+   "text": "He checks them with a meter and the bouncy ones read just 1.2 volts.",
+   "beats": [
+    [
+     "he",
+     "1:15-1:18"
+    ],
+    [
+     "bouncy",
+     "1:21-1:24"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "1.2"
    ]
   },
   {
    "id": 3,
-   "phase": "why",
    "type": "analysis",
-   "text": "And as the battery drains that zinc turns into zinc oxide which is stiff and springy so the dead one bounces.",
-   "src": [],
-   "ai": [
-    "white zinc oxide crystals forming inside a battery macro",
-    "a springy rubber ball bouncing off concrete slow motion",
-    "a cutaway AA battery with white crystals inside"
+   "text": "Because inside a fresh AA the zinc is a soft gel that soaks up the hit.",
+   "beats": [
+    [
+     "because",
+     "ai:cutaway of a fresh AA battery showing soft grey gel inside"
+    ],
+    [
+     "soft",
+     "ai:a soft grey gel cube absorbing a falling steel ball in slow motion"
+    ]
    ]
   },
   {
    "id": 4,
-   "phase": "rising",
-   "type": "story",
-   "text": "Then he drains every brand on a machine to see which one really lasts.",
-   "src": [
-    "2:18-2:22",
-    "3:04-3:08"
-   ],
-   "ai": [
-    "many AA batteries lined up in a row on a workbench"
-   ],
-   "first": "src"
+   "type": "analysis",
+   "text": "And as the battery drains that zinc turns into zinc oxide which is stiff and springy so the dead one bounces.",
+   "beats": [
+    [
+     "and",
+     "ai:white zinc oxide crystals forming inside a battery macro"
+    ],
+    [
+     "springy",
+     "ai:a springy rubber ball bouncing high off concrete in slow motion"
+    ],
+    [
+     "bounces",
+     "2:06-2:12"
+    ]
+   ]
   },
   {
    "id": 5,
-   "phase": "conflict",
    "type": "story",
-   "text": "The dollar store battery costs thirteen cents and dies in 26 minutes.",
-   "src": [
-    "3:35-3:40"
-   ],
-   "ai": [
-    "a cheap AA battery with a tiny flickering flashlight"
-   ],
-   "first": "src",
-   "red": [
-    "26"
+   "text": "Then he drains every brand on a machine to see which one really lasts.",
+   "beats": [
+    [
+     "then",
+     "2:18-2:24"
+    ],
+    [
+     "every",
+     "4:15-4:21"
+    ],
+    [
+     "machine",
+     "3:09-3:15"
+    ]
    ]
   },
   {
    "id": 6,
-   "phase": "conflict",
-   "type": "analysis",
-   "text": "And the Duracell lasts 381 minutes which is almost fifteen times longer.",
-   "src": [],
-   "ai": [
-    "a glowing AA battery with a bright beam of light",
-    "an hourglass with sand running on a workbench"
+   "type": "story",
+   "text": "The dollar store battery costs thirteen cents and dies in 26 minutes.",
+   "beats": [
+    [
+     "the",
+     "3:00-3:06"
+    ],
+    [
+     "26",
+     "3:45-3:50"
+    ]
+   ],
+   "red": [
+    "dies"
    ]
   },
   {
    "id": 7,
-   "phase": "rising",
    "type": "analysis",
-   "text": "The Energizer lithium lasts 723 minutes which is almost double the Duracell but it costs a dollar fifty each.",
-   "src": [
-    "5:45-5:50"
-   ],
-   "ai": [
-    "a silver lithium AA battery glowing on clouds"
-   ],
-   "first": "ai"
+   "text": "And the Duracell lasts 381 minutes which is almost fifteen times longer.",
+   "beats": [
+    [
+     "and",
+     "2:57-3:00"
+    ],
+    [
+     "381",
+     "4:00-4:03"
+    ]
+   ]
   },
   {
    "id": 8,
-   "phase": "twist",
-   "type": "story",
-   "text": "But the real winner is the one nobody expected.",
-   "src": [
-    "4:25-4:29"
-   ],
-   "ai": [
-    "a mystery box with light shining out of it"
-   ],
-   "first": "src",
-   "mark": [
-    "q",
-    0.2
+   "type": "analysis",
+   "text": "The Energizer lithium lasts 723 minutes which is almost double the Duracell but it costs a dollar fifty each.",
+   "beats": [
+    [
+     "the",
+     "5:09-5:15"
+    ],
+    [
+     "723",
+     "5:54-6:00"
+    ],
+    [
+     "costs",
+     "5:15-5:18.5"
+    ]
    ]
   },
   {
    "id": 9,
-   "phase": "payoff",
-   "type": "analysis",
-   "text": "Amazon Basics gives you 32 milliamp hours for every single penny which beats every brand he tested.",
-   "src": [],
-   "ai": [
-    "a single copper penny next to an AA battery macro",
-    "a pile of pennies glowing with blue electric energy"
+   "type": "story",
+   "text": "But the real winner is the one nobody expected.",
+   "beats": [
+    [
+     "but",
+     "7:03-7:06"
+    ],
+    [
+     "nobody",
+     "7:06-7:09"
+    ]
+   ],
+   "mark": [
+    "q",
+    "expected"
    ]
   },
   {
    "id": 10,
-   "phase": "lesson",
    "type": "analysis",
-   "text": "So the best battery and the best deal are two completely different things.",
-   "src": [],
-   "ai": [
-    "two AA batteries on a scale balancing with coins",
-    "a gold medal next to a price tag on a table"
+   "text": "Amazon Basics gives you 32 milliamp hours for every single penny which beats every brand he tested.",
+   "beats": [
+    [
+     "amazon",
+     "7:09-7:12"
+    ],
+    [
+     "32",
+     "7:48-7:54"
+    ],
+    [
+     "penny",
+     "ai:a single shiny copper penny standing next to an AA battery macro"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "32"
    ]
   },
   {
    "id": 11,
-   "phase": "loop",
+   "type": "analysis",
+   "text": "So the best battery and the best deal are two completely different things.",
+   "beats": [
+    [
+     "so",
+     "8:51-8:57"
+    ],
+    [
+     "different",
+     "7:33-7:39"
+    ]
+   ]
+  },
+  {
+   "id": 12,
    "type": "story",
    "text": "And now you know why the dead one bounces.",
-   "src": [
-    "1:50-1:53"
+   "beats": [
+    [
+     "and",
+     "1:39-1:45"
+    ]
    ],
-   "ai": [
-    "an AA battery bouncing high off a table in slow motion"
-   ],
-   "first": "src"
+   "red": [
+    "dead"
+   ]
   }
  ],
- "facts_checked": "numbers from source transcript shorts/05/source/transcript.txt; src timestamps verified on frames before render",
+ "facts_checked": "transcript V7-ghrTqA44 + frames: drop test 1:30-2:15, used 1.22 V vs new 1.62 V 1:18, Dollar General 8 for $1 = 13 c, 26 min 3:45, Duracell 381 min 4:00 (=14.7x), Energizer lithium 723 min 5:54 and $1.50 each 5:13, Amazon Basics 32.37 mAh per penny 7:54. Zinc gel -> zinc oxide bounce = published explanation (Bhadra et al. 2015, J. Mater. Chem. A).",
  "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
  "title": "Why Dead Batteries BOUNCE 🔋 + Which AA Lasts Longest (@ProjectFarm/YT)",
  "description": "A dead AA bounces and a new one thuds, and there's real chemistry behind it. Then Project Farm drained every brand to find the best battery per penny. Original video: @ProjectFarm https://youtu.be/V7-ghrTqA44 | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #batteries #science #experiment #lifehack",
- "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons",
+ "notes": "Footage-first (owner 4 Nov 2026). AI only on the zinc science + the penny."
 }
