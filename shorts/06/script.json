@@ -1,0 +1,207 @@
+{
+ "short": "06",
+ "source": "https://youtu.be/bEf9Fdvx_Sc",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "Is ethanol free gas really worth the extra money?",
+   "beats": [
+    [
+     "is",
+     "2:36-2:41"
+    ],
+    [
+     "ethanol",
+     "0:03-0:09",
+     0.4
+    ]
+   ],
+   "mark": [
+    "q",
+    "money"
+   ]
+  },
+  {
+   "id": 2,
+   "type": "analysis",
+   "text": "First he proves which gas has alcohol by mixing it with water which is a trick anyone can do at home.",
+   "beats": [
+    [
+     "first",
+     "0:18-0:24"
+    ],
+    [
+     "water",
+     "1:21-1:24"
+    ],
+    [
+     "trick",
+     "1:30-1:36"
+    ]
+   ],
+   "blue": [
+    "water"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "analysis",
+   "text": "Because ethanol loves water so it leaves the gas and sinks to the bottom with it.",
+   "beats": [
+    [
+     "because",
+     "1:24-1:30"
+    ],
+    [
+     "sinks",
+     "1:45-1:51"
+    ]
+   ],
+   "blue": [
+    "water"
+   ]
+  },
+  {
+   "id": 4,
+   "type": "story",
+   "text": "And the regular gas turns out to be almost ten percent alcohol.",
+   "beats": [
+    [
+     "and",
+     "1:51-1:57"
+    ],
+    [
+     "ten",
+     "1:36-1:41"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "ten"
+   ]
+  },
+  {
+   "id": 5,
+   "type": "story",
+   "text": "Then he looks inside a see through engine and the flame changes color with each fuel.",
+   "beats": [
+    [
+     "then",
+     "2:21-2:27"
+    ],
+    [
+     "flame",
+     "2:39-2:45"
+    ]
+   ]
+  },
+  {
+   "id": 6,
+   "type": "analysis",
+   "text": "Ethanol carries oxygen inside its molecule so it burns differently but it also packs about a third less energy than gasoline.",
+   "beats": [
+    [
+     "ethanol",
+     "ai:a glowing 3D model of an ethanol molecule with a red oxygen atom floating in the dark"
+    ],
+    [
+     "burns",
+     "2:45-2:51"
+    ],
+    [
+     "packs",
+     "ai:two clear fuel drops side by side one glowing brighter with energy macro"
+    ]
+   ]
+  },
+  {
+   "id": 7,
+   "type": "story",
+   "text": "So he runs a fuel injected generator on each gas with the exact same load.",
+   "beats": [
+    [
+     "so",
+     "2:57-3:03"
+    ],
+    [
+     "load",
+     "4:12-4:18"
+    ]
+   ]
+  },
+  {
+   "id": 8,
+   "type": "analysis",
+   "text": "The ethanol free tank lasts 35 minutes while the E10 dies almost two minutes sooner.",
+   "beats": [
+    [
+     "the",
+     "4:42-4:48"
+    ],
+    [
+     "e10",
+     "5:30-5:34"
+    ]
+   ],
+   "red": [
+    "dies"
+   ]
+  },
+  {
+   "id": 9,
+   "type": "analysis",
+   "text": "That's about 4 percent more running time which matches the energy missing from the ethanol.",
+   "beats": [
+    [
+     "that's",
+     "8:21-8:24",
+     0.75
+    ],
+    [
+     "matches",
+     "4:21-4:27"
+    ]
+   ]
+  },
+  {
+   "id": 10,
+   "type": "analysis",
+   "text": "But the engine kept the same compression and almost the same carbon so it didn't hurt anything in this test.",
+   "beats": [
+    [
+     "but",
+     "6:39-6:42"
+    ],
+    [
+     "carbon",
+     "8:00-8:05"
+    ]
+   ]
+  },
+  {
+   "id": 11,
+   "type": "story",
+   "text": "So is ethanol free gas worth it for you?",
+   "beats": [
+    [
+     "so",
+     "8:30-8:36",
+     0.75
+    ]
+   ],
+   "mark": [
+    "q",
+    "you"
+   ]
+  }
+ ],
+ "facts_checked": "transcript bEf9Fdvx_Sc + frames: water separation test 0:47-1:51 (E10 ~10 % ethanol, non-ethanol ~0), see-through engine flame colours 2:21-2:54, Ryobi EFI 420 cc generator + space heater load 2:56-4:18, out of fuel 35:20 non-ethanol (4:42) vs 33:45 E10 (5:30) = 4 % longer (8:21 caption), compression 95 PSI no change 6:39, carbon little difference 8:00/8:22. Ethanol ~1/3 less energy per litre than gasoline (US DOE AFDC).",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "Is Ethanol-Free Gas Really Worth It? 🤔 (@ProjectFarm/YT)",
+ "description": "Project Farm tested ethanol-free gas against E10 with a water test, a see-through engine and a generator run until empty. Original video: @ProjectFarm https://youtu.be/bEf9Fdvx_Sc | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #gasoline #ethanol #engine #science",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}
