@@ -26,7 +26,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install -q faster-whisper && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - run: pip install -q faster-whisper soundfile && sudo apt-get install -y -qq ffmpeg >/dev/null
       - name: Audio
         run: |
           gh release download src-$S -p source.mp4.enc -D /tmp
@@ -36,9 +36,11 @@ jobs:
       - name: Whisper
         run: |
           python - <<'EOF'
+          import soundfile as sf
           from faster_whisper import WhisperModel
+          audio, _ = sf.read("/tmp/a.wav", dtype="float32")
           m = WhisperModel("small.en", device="cpu", compute_type="int8")
-          segs, _ = m.transcribe("/tmp/a.wav", vad_filter=True)
+          segs, _ = m.transcribe(audio, vad_filter=True)
           with open("/tmp/transcript.txt", "w") as f:
               for s in segs:
                   f.write(f"[{int(s.start // 60)}:{int(s.start % 60):02d}] {s.text.strip()}\n")
