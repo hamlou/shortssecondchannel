@@ -17,7 +17,7 @@ def img_name(prompt):
 def gen(prompt, out):
     url = f"https://api.cloudflare.com/client/v4/accounts/{os.environ['CF_ACCOUNT_ID']}/ai/run/{MODEL}"
     body = json.dumps({"prompt": prompt + STYLE, "steps": 4}).encode()
-    for a in range(5):
+    for a in range(8):
         req = urllib.request.Request(url, body, {"Authorization": f"Bearer {os.environ['CF_API_TOKEN']}", "Content-Type": "application/json"})
         try:
             r = json.load(urllib.request.urlopen(req, timeout=120))
@@ -25,7 +25,7 @@ def gen(prompt, out):
             return
         except urllib.error.HTTPError as e:
             msg = e.read().decode()[:300]
-            if e.code in (400, 401, 403):
+            if e.code in (401, 403) or (e.code == 400 and "NSFW" not in msg):  # the NSFW filter gives random false alarms: retry
                 sys.exit(f"{e.code} {msg}")
             print("retry", e.code, msg, flush=True)
         except Exception as e:
