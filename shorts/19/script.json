@@ -1,0 +1,185 @@
+{
+ "short": "19",
+ "source": "https://youtu.be/PXLWLXz0iY4",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "What happens if you pour straight diesel into a gas lawn mower?",
+   "beats": [
+    [
+     "what",
+     "1:45-1:51"
+    ],
+    [
+     "diesel",
+     "1:09-1:14"
+    ],
+    [
+     "mower",
+     "1:24-1:30"
+    ]
+   ]
+  },
+  {
+   "id": 2,
+   "type": "story",
+   "text": "It only runs while he sprays starting fluid and then it chokes on a cloud of white smoke.",
+   "beats": [
+    [
+     "it",
+     "1:30-1:36"
+    ],
+    [
+     "chokes",
+     "1:45-1:51"
+    ]
+   ],
+   "mark": [
+    "x",
+    "smoke"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "analysis",
+   "text": "Because a spark plug can't light diesel fast enough so the fuel just floods the cylinder unburned.",
+   "beats": [
+    [
+     "because",
+     "5:44-5:50",
+     0.75
+    ],
+    [
+     "floods",
+     "ai:unburned liquid fuel pooling inside an engine cylinder around a spark plug macro"
+    ]
+   ]
+  },
+  {
+   "id": 4,
+   "type": "analysis",
+   "text": "Diesel engines skip the spark and squeeze the air so hard that it gets hot enough to ignite the fuel by itself.",
+   "beats": [
+    [
+     "diesel",
+     "ai:a diesel engine piston compressing glowing hot air inside a cylinder cutaway"
+    ],
+    [
+     "ignite",
+     "ai:fuel spray igniting by itself inside a red hot compressed cylinder"
+    ]
+   ]
+  },
+  {
+   "id": 5,
+   "type": "story",
+   "text": "But with half gas and half diesel the smoke clears and it mows the whole lawn.",
+   "beats": [
+    [
+     "but",
+     "2:24-2:30"
+    ],
+    [
+     "clears",
+     "3:00-3:06"
+    ],
+    [
+     "mows",
+     "3:27-3:33"
+    ]
+   ]
+  },
+  {
+   "id": 6,
+   "type": "analysis",
+   "text": "And the compression even went up from 113 to 115 so the diesel didn't hurt anything.",
+   "beats": [
+    [
+     "and",
+     "5:27-5:33"
+    ],
+    [
+     "115",
+     "5:33-5:36"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "115"
+   ]
+  },
+  {
+   "id": 7,
+   "type": "story",
+   "text": "Then he soaks cardboard in both fuels and lights them at the same time.",
+   "beats": [
+    [
+     "then",
+     "6:09-6:15"
+    ],
+    [
+     "lights",
+     "6:18-6:21"
+    ]
+   ],
+   "red": [
+    "lights"
+   ]
+  },
+  {
+   "id": 8,
+   "type": "analysis",
+   "text": "The gas bursts into flame and burns off fast while the diesel barely lights but then burns way longer.",
+   "beats": [
+    [
+     "the",
+     "6:21-6:27"
+    ],
+    [
+     "diesel",
+     "6:39-6:45"
+    ]
+   ]
+  },
+  {
+   "id": 9,
+   "type": "analysis",
+   "text": "That's why diesel trucks get better mileage because the fuel packs more energy and burns slow and steady.",
+   "beats": [
+    [
+     "that's",
+     "ai:a big diesel pickup truck driving down an open highway at sunset"
+    ],
+    [
+     "burns",
+     "6:45-6:48"
+    ]
+   ]
+  },
+  {
+   "id": 10,
+   "type": "story",
+   "text": "So would you ever try this in your mower?",
+   "beats": [
+    [
+     "so",
+     "6:51-6:57",
+     0.4
+    ]
+   ],
+   "mark": [
+    "q",
+    "mower"
+   ]
+  }
+ ],
+ "facts_checked": "Whisper transcript PXLWLXz0iY4 + frames: 200+ requests 0:42, pure diesel only ran with starting fluid then flooded with lots of white smoke 1:24-2:16 + captions, 50/50 mix ran smoothly + mowed 2:36-3:48 captions 'No visible smoke' 'Engine running smoothly', mothball/B12 mix failed 4:50-5:15, compression 113 -> 115 psi 0:18/5:30 captions, cardboard burn 5:45-6:51 captions 'Gas is quick to ignite and burns off quickly' / 'Diesel is slow to ignite but provides a longer lasting burn' / 'even using 2 lighters diesel was difficult to ignite', 'Please do not attempt this'. Diesel = compression ignition, gas = spark (transcript 5:44).",
+ "safety": "fuel burn: keep the source's 'Please do not attempt this' warning on screen; no how-to",
+ "title": "What Happens If You Put DIESEL in a Gas Engine? 😱 (@ProjectFarm/YT)",
+ "description": "Project Farm ran a gas mower engine on pure diesel, a 50/50 gas-diesel mix and a mothball mix, then compared how gas and diesel burn. Original video: @ProjectFarm https://youtu.be/PXLWLXz0iY4 | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #diesel #engine #mower #science",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}
