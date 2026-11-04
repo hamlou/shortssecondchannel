@@ -1,0 +1,194 @@
+{
+ "short": "21",
+ "source": "https://youtu.be/Hz-wRO5rPrA",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "He builds a see through cylinder head and then feeds the engine a can of Monster Energy.",
+   "beats": [
+    [
+     "he",
+     "1:15-1:21"
+    ],
+    [
+     "see",
+     "3:51-3:57"
+    ],
+    [
+     "monster",
+     "3:36-3:39"
+    ]
+   ],
+   "blue": [
+    "monster"
+   ]
+  },
+  {
+   "id": 2,
+   "type": "story",
+   "text": "He drills and sands a block of clear plastic and even cuts a head gasket out of plywood.",
+   "beats": [
+    [
+     "he",
+     "1:33-1:39"
+    ],
+    [
+     "sands",
+     "1:45-1:51"
+    ],
+    [
+     "plywood",
+     "2:12-2:18"
+    ]
+   ]
+  },
+  {
+   "id": 3,
+   "type": "analysis",
+   "text": "Monster is mostly water and sugar so the real question is what all that sugar does once it burns inside an engine.",
+   "beats": [
+    [
+     "monster",
+     "3:30-3:36"
+    ],
+    [
+     "sugar",
+     "ai:white sugar crystals glowing and melting inside a small engine combustion chamber macro"
+    ],
+    [
+     "burns",
+     "4:03-4:09"
+    ]
+   ]
+  },
+  {
+   "id": 4,
+   "type": "story",
+   "text": "And look at that flame through the clear head.",
+   "beats": [
+    [
+     "and",
+     "4:36-4:42"
+    ],
+    [
+     "flame",
+     "4:45-4:49"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "flame"
+   ]
+  },
+  {
+   "id": 5,
+   "type": "analysis",
+   "text": "Then the exhaust smells sweet because the sugar is caramelizing on the hot metal like burnt candy.",
+   "beats": [
+    [
+     "then",
+     "4:24-4:30"
+    ],
+    [
+     "caramelizing",
+     "ai:sugar melting and caramelizing into brown syrup on red hot metal macro"
+    ]
+   ],
+   "red": [
+    "sweet"
+   ]
+  },
+  {
+   "id": 6,
+   "type": "analysis",
+   "text": "And after just a few minutes the clear head is gummed up and the clean valves already have carbon which shows how fast sugar builds up.",
+   "beats": [
+    [
+     "and",
+     "5:03-5:09"
+    ],
+    [
+     "valves",
+     "5:21-5:27"
+    ]
+   ]
+  },
+  {
+   "id": 7,
+   "type": "story",
+   "text": "So he puts the real head back on and drips in most of the can.",
+   "beats": [
+    [
+     "so",
+     "6:06-6:12"
+    ],
+    [
+     "drips",
+     "6:21-6:27"
+    ]
+   ]
+  },
+  {
+   "id": 8,
+   "type": "analysis",
+   "text": "And the engine barely runs and even spits fire back out of the carburetor.",
+   "beats": [
+    [
+     "and",
+     "7:03-7:09"
+    ],
+    [
+     "fire",
+     "7:21-7:26"
+    ]
+   ],
+   "red": [
+    "fire"
+   ]
+  },
+  {
+   "id": 9,
+   "type": "analysis",
+   "text": "The compression reads just 50 psi and the head comes out black because sugar burns into hard carbon that sticks to everything.",
+   "beats": [
+    [
+     "the",
+     "7:33-7:39"
+    ],
+    [
+     "black",
+     "7:51-7:57"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "50"
+   ]
+  },
+  {
+   "id": 10,
+   "type": "story",
+   "text": "So would you give your engine an energy drink?",
+   "beats": [
+    [
+     "so",
+     "8:00-8:06",
+     0.75
+    ]
+   ],
+   "mark": [
+    "q",
+    "drink"
+   ]
+  }
+ ],
+ "facts_checked": "Whisper transcript Hz-wRO5rPrA + frames: clear head drilled/tapped/sanded/polished 0:00-2:09 captions, plywood head gasket 2:12, sugar 2nd ingredient 3:32, 'Do not try this... it will damage or ruin an engine' 3:39, 'This Monster is Awake!' flame 4:03, 'Exhaust Smells Sweet!' 4:27, head gummed up + carbon on valves 5:02-5:22, steel head drip test 6:21-7:27 'engine RPMs low, barely running', fireball 7:21, compression 50 psi 7:36 caption, before/after carbon 7:51-7:57.",
+ "safety": "keep the source's 'Do not try this... it will damage or ruin an engine' on screen; no how-to",
+ "title": "He Fed a See-Through Engine MONSTER ENERGY 😳 (@ProjectFarm/YT)",
+ "description": "Project Farm built a clear plastic cylinder head and fed a small engine a can of Monster Energy to see what sugar does inside the combustion chamber. Original video: @ProjectFarm https://youtu.be/Hz-wRO5rPrA | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #monsterenergy #engine #science #experiment",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}
