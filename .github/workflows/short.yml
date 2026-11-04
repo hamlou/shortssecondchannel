@@ -30,8 +30,11 @@ jobs:
           python-version: '3.12'
       - name: ffmpeg (current static build, same behaviour as the PC's 9.x)
         run: |
-          curl -sSL -o /tmp/ff.tar.xz https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz
-          mkdir -p /opt/ff && tar -xJf /tmp/ff.tar.xz -C /opt/ff --strip-components=1
+          mkdir -p /opt/ff
+          for i in 1 2 3 4 5; do
+            curl -sSL --retry 5 -o /tmp/ff.tar.xz https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz               && tar -xJf /tmp/ff.tar.xz -C /opt/ff --strip-components=1 && break
+            sleep $((i * 20))
+          done
           echo /opt/ff/bin >> $GITHUB_PATH
           /opt/ff/bin/ffmpeg -version | head -1
       - run: pip install -q kokoro-onnx soundfile numpy pillow
