@@ -1,0 +1,170 @@
+{
+ "short": "18",
+ "source": "https://youtu.be/PNDnV4qxK_U",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "He saws a bucket clean in half and tries to make it hold water with a can of spray.",
+   "beats": [
+    [
+     "he",
+     "0:30-0:36"
+    ],
+    [
+     "hold",
+     "5:00-5:06"
+    ],
+    [
+     "spray",
+     "1:39-1:45"
+    ]
+   ]
+  },
+  {
+   "id": 2,
+   "type": "story",
+   "text": "Flex Seal is the only one of three that actually holds the water.",
+   "beats": [
+    [
+     "flex",
+     "5:24-5:30"
+    ],
+    [
+     "three",
+     "5:33-5:36",
+     0.5
+    ]
+   ],
+   "blue": [
+    "water"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "analysis",
+   "text": "Because it sprays on so thick that it bridges the gap like a rubber skin instead of just coating the edges.",
+   "beats": [
+    [
+     "because",
+     "1:42-1:48"
+    ],
+    [
+     "bridges",
+     "ai:thick black rubber coating stretching across a crack in white plastic macro"
+    ],
+    [
+     "edges",
+     "4:39-4:45"
+    ]
+   ]
+  },
+  {
+   "id": 4,
+   "type": "analysis",
+   "text": "But on a cracked pipe underwater Rust-Oleum holds all the way to 43 psi which is about the water pressure in a house.",
+   "beats": [
+    [
+     "but",
+     "7:21-7:27"
+    ],
+    [
+     "43",
+     "8:03-8:09"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "43"
+   ]
+  },
+  {
+   "id": 5,
+   "type": "analysis",
+   "text": "And Flex Seal scrapes right off the smooth PVC because it barely bonds to slick plastic.",
+   "beats": [
+    [
+     "and",
+     "8:30-8:36"
+    ],
+    [
+     "bonds",
+     "ai:a rubber coating peeling off smooth white plastic pipe macro"
+    ]
+   ]
+  },
+  {
+   "id": 6,
+   "type": "story",
+   "text": "On a metal tank Flex Seal starts leaking at just 2 psi.",
+   "beats": [
+    [
+     "on",
+     "8:42-8:48"
+    ],
+    [
+     "2",
+     "7:42-7:46"
+    ]
+   ],
+   "red": [
+    "leaking"
+   ]
+  },
+  {
+   "id": 7,
+   "type": "analysis",
+   "text": "That's less pressure than you blow into a balloon so it fills gaps well but it doesn't stick to everything.",
+   "beats": [
+    [
+     "that's",
+     "ai:a person blowing up a red balloon"
+    ],
+    [
+     "fills",
+     "5:51-5:57"
+    ]
+   ]
+  },
+  {
+   "id": 8,
+   "type": "analysis",
+   "text": "In the end Flex Seal and Rust-Oleum tie with two wins each so the TV hype is only half true.",
+   "beats": [
+    [
+     "in",
+     "9:33-9:36",
+     0.5
+    ],
+    [
+     "half",
+     "9:39-9:45"
+    ]
+   ]
+  },
+  {
+   "id": 9,
+   "type": "story",
+   "text": "Would you trust it on your roof?",
+   "beats": [
+    [
+     "would",
+     "9:48-9:54",
+     0.75
+    ]
+   ],
+   "mark": [
+    "q",
+    "roof"
+   ]
+  }
+ ],
+ "facts_checked": "Whisper transcript PNDnV4qxK_U + frames: buckets sawn top to bottom 0:26-0:36, 70 h cure 4:16, water test: only Flex Seal held 5:11-5:32 (caption 1st Flex 5:33), PVC underwater: Perma-Seal leaked at 8 psi 7:38, Rust-Oleum held to 43 psi (test stopped) 7:53/8:09 caption, Flex scrapes off PVC 8:32-8:37, metal tank: Flex leaking at 2 psi 7:42 caption/8:47-8:59, final tally Flex 2 wins / Rust-Oleum 2 / Perma-Seal 1 9:33, price/oz Flex $0.93 9:36.",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "Is Flex Seal Really As Good As the TV Says? 🤔 (@ProjectFarm/YT)",
+ "description": "Project Farm sawed buckets in half and sprayed them with Flex Seal, Perma-Seal and Rust-Oleum LeakSeal, then pressure tested pipes and a tank underwater. Original video: @ProjectFarm https://youtu.be/PNDnV4qxK_U | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #flexseal #diy #repair #leak",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}
