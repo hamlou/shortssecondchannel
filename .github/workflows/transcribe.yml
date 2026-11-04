@@ -44,8 +44,7 @@ jobs:
               segs, _ = m.transcribe(audio, vad_filter=True)
               with open(f"/tmp/t_{S}.txt", "w") as f:
                   for s in segs:
-                      f.write(f"[{int(s.start // 60)}:{int(s.start % 60):02d}] {s.text.strip()}
-")
+                      f.write(f"[{int(s.start // 60)}:{int(s.start % 60):02d}] {s.text.strip()}" + chr(10))
               print(S, "done", flush=True)
           EOF
           for S in ${{ inputs.shorts }}; do
