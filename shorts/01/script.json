@@ -13,10 +13,7 @@
     "2:38-2:40"
    ],
    "type": "story",
-   "ai": [
-    "a dead car battery on a dark garage floor with thick welding cables clamped to its terminals and bright orange sparks flying"
-   ],
-   "first": "ai",
+   "first": "src",
    "red": [
     "dead",
     "welder"
@@ -31,10 +28,9 @@
    ],
    "type": "analysis",
    "ai": [
-    "a car battery with a weak dim red glowing charge light in a dark workshop",
     "a small red push lawn mower on green grass at golden hour"
    ],
-   "first": "ai",
+   "first": "src",
    "mark": [
     "circle",
     -1.6
@@ -64,11 +60,7 @@
     "2:32-2:34.5"
    ],
    "type": "analysis",
-   "ai": [
-    "blue electric lightning arcs shattering white crystals into dust macro",
-    "a tiny household battery charger next to a huge industrial welding machine"
-   ],
-   "first": "ai"
+   "first": "src"
   },
   {
    "id": 5,
@@ -87,7 +79,6 @@
     ]
    ],
    "ai": [
-    "thousands of tiny bubbles rising through battery acid backlit macro",
     "a black car battery shaped like a cartoon bomb with a lit sparkling fuse"
    ],
    "red": [
@@ -95,7 +86,8 @@
    ],
    "blue": [
     "bubbles"
-   ]
+   ],
+   "first": "src"
   },
   {
    "id": 6,
@@ -110,9 +102,6 @@
     "x",
     -1.4
    ],
-   "ai": [
-    "an old red farm tractor in a dusty barn at dusk"
-   ],
    "first": "src"
   },
   {
@@ -124,9 +113,6 @@
     "5:47-5:50"
    ],
    "type": "story",
-   "ai": [
-    "white epsom salt crystals pouring onto a silver spoon macro"
-   ],
    "first": "src"
   },
   {
@@ -138,12 +124,12 @@
    ],
    "type": "analysis",
    "ai": [
-    "an open car gas tank full of foamy bath water with a yellow rubber duck floating",
-    "bath foam bubbles overflowing from a metal fuel tank"
+    "an open car gas tank full of foamy bath water with a yellow rubber duck floating"
    ],
    "blue": [
     "water"
-   ]
+   ],
+   "first": "src"
   },
   {
    "id": 10,
@@ -159,11 +145,6 @@
      "ding",
      5.3
     ]
-   ],
-   "ai": [
-    "a car battery glowing with powerful blue energy floating above white clouds",
-    "a lightning bolt striking a car battery at night",
-    "a car battery surrounded by a bright blue electric aura in a workshop"
    ],
    "first": "src"
   },
@@ -185,11 +166,7 @@
     "11:20-11:26"
    ],
    "type": "analysis",
-   "ai": [
-    "macro of a cracked broken lead plate inside a car battery",
-    "a dead car battery covered in frost on a cold dark night"
-   ],
-   "first": "ai",
+   "first": "src",
    "red": [
     "damage"
    ]
@@ -203,9 +180,6 @@
     "9:56-9:57"
    ],
    "type": "story",
-   "ai": [
-    "a dead car battery on a dark garage floor with thick welding cables clamped to its terminals and bright orange sparks flying"
-   ],
    "first": "src",
    "mark": [
     "q",
@@ -217,7 +191,7 @@
    ]
   }
  ],
- "notes": "TNP style (research/tnp_breakdown.md): full-screen source + photoreal AI beauty clips (FLUX.1-schnell, Apache 2.0) as the original footage. Analysis lines (2,3,4,5,8,10,12) keep our own WHY/joke/limit. Never use Todd's narration or music.",
+ "notes": "TNP style exact (owner 4 Nov 2026): 3:4 frame, plain source footage ~1 s shots, only 6 AI clips (~16 %) where the footage can't show the idea. Analysis lines (2,3,4,5,8,10,12) keep our own WHY/joke/limit. Never use Todd's narration or music.",
  "source_audio": false,
  "facts_checked": "all numbers from source transcript a2XRR9aFWPo (204/825 A 1:03, 85 A 2:27, 446 A 4:31, Epsom 600->51 A 6:28, battery 5 62 A/6% 9:01, 961 A/81% 10:23, 454 13 s 11:07, Ranger 10 V next day 11:20); 961/62 = 15.5x; 204/825 = 25 %; 85 A vs ~10 A charger = 8.5x ('almost ten times')",
  "safety": "on-screen: DON'T TRY THIS - explosive hydrogen + acid; no step-by-step settings",

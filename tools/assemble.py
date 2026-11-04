@@ -1,14 +1,14 @@
 """Assemble one Short in the TestedNProved style (research/tnp_breakdown.md). Runs on GitHub Actions (ffmpeg only).
 py tools/assemble.py shorts/<nn>
 Needs: script.json, durations.json, vo/full.wav (tools/tts.py), source/source.mp4, build/ai/*.jpg (tools/ai_gen.py).
-Out:   shorts/<nn>/build/final.mp4 (1080x1920, 30 fps) + final_sheet.jpg + plan.json
+Out:   shorts/<nn>/build/final.mp4 (1080x1440 = 3:4 like TNP, 30 fps) + final_sheet.jpg + plan.json
 
-Per script line:  "src": source ranges -> full-screen 9:16 shots of 0.5-1.0 s at 1.5x with a push-in
-                  "ai":  prompts -> photoreal stills animated 1.0-1.6 s (push / pull / pan) = our ORIGINAL footage
+Per script line:  "src": source ranges -> plain 3:4 shots of 0.7-1.4 s at 1.25x (no zooms)
+                  "ai":  prompts -> photoreal stills with a slow drift, 1.3 s each; few per Short like TNP (3-8)
                   "first": "ai"|"src" (default ai for analysis lines), "cx": 0-1 horizontal crop centre of the source,
                   "payoff": true -> one real-speed source shot (the result moment), "red"/"blue": key words to colour,
                   "mark": [q|x|circle, seconds into line], "sfx": [[kind, seconds], ...] (negative = from line end).
-Frame 0 gets red arrows. Kind switches (ai<->src) get a 0.1 s whip blur or white flash + whoosh.
+Frame 0 gets one red arrow. Kind switches (ai<->src, max one per 5 s) get a 0.1 s whip blur or white flash + whoosh.
 Rules (research/monetization_system.md): source shots <= 2 s, no source audio, crop above the source's burned-in captions."""
 import json, math, os, random, re, shutil, subprocess, sys
 from PIL import Image, ImageDraw, ImageFont
@@ -19,10 +19,10 @@ from ai_gen import img_name
 FF = os.environ.get("FFMPEG") or (r"C:\Users\hp\Desktop\100\tools\ffmpeg\ffmpeg.exe" if os.name == "nt" else "ffmpeg")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONT = os.path.join(ROOT, "tools", "fonts", "FredokaBold.ttf")
-FPS, W, H, GAP = 30, 1080, 1920, 0.04
-SPEED = 1.5      # source plays 1.5x (research/tnp_pacing.md)
+FPS, W, H, GAP = 30, 1080, 1440, 0.04  # 3:4 like TestedNProved (720x960)
+SPEED = 1.25     # source plays slightly fast, otherwise natural (no zooms) like TNP
 SAFE = 0.861     # share of source height kept from the top: drops the band where Project Farm burns its captions
-AI_LEN = 1.4     # target seconds per AI clip
+AI_LEN = 1.3     # seconds per AI clip (TNP: 3-8 AI clips per Short, 2-35 % runtime)
 X264 = ["-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-threads", "2", "-pix_fmt", "yuv420p"]
 RED, BLUE = (235, 30, 30, 255), (40, 150, 255, 255)
 
@@ -57,7 +57,7 @@ def plan_line(l, dur, rnd):
     while ranges and used < dur - ai_t - 1e-3:
         i = k % len(ranges)
         a, b = ranges[i]
-        ln = min(rnd.uniform(0.5, 1.0), dur - ai_t - used)
+        ln = min(rnd.uniform(0.7, 1.4), dur - ai_t - used)
         st = cursor[i] if cursor[i] + ln * SPEED <= b else a
         cursor[i] = st + ln * SPEED
         S.append(("src", st, ln, SPEED))
@@ -80,54 +80,51 @@ def enc(args, vf, nf, out, trans):
 
 
 def cut_src(src, st, nf, speed, cx, z, trans, out):
-    zz = f"1+0.12*on/{nf}" if z else f"1.12-0.12*on/{nf}"
-    vf = (f"setpts=PTS/{speed},fps={FPS},crop=w='trunc(ih*{SAFE}*9/16/2)*2':h='trunc(ih*{SAFE}/2)*2':x='(iw-ow)*{cx}':y=0,"
-          f"scale={W}:{H}:flags=lanczos,zoompan=z='{zz}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={FPS},"
-          f"eq=contrast=1.07:saturation=1.18,setsar=1")
+    """Plain 3:4 crop of the source at near-natural speed: no push-ins (TNP shows the footage as it is)."""
+    vf = (f"setpts=PTS/{speed},fps={FPS},crop=w='trunc(ih*{SAFE}*3/4/2)*2':h='trunc(ih*{SAFE}/2)*2':x='(iw-ow)*{cx}':y=0,"
+          f"scale={W}:{H}:flags=lanczos,eq=contrast=1.04:saturation=1.08,setsar=1")
     enc(["-ss", f"{st:.3f}", "-t", f"{nf / FPS * speed + 0.3:.3f}", "-i", src], vf, nf, out, trans)
 
 
 def cut_ai(img, nf, move, trans, out):
-    t = nf / FPS
-    x = {"panr": f"(iw-ow)*(0.1+0.8*t/{t:.3f})", "panl": f"(iw-ow)*(0.9-0.8*t/{t:.3f})"}.get(move, "(iw-ow)/2")
-    z = {"push": f"1+0.25*on/{nf}", "pull": f"1.25-0.25*on/{nf}"}.get(move, f"1.06+0.08*on/{nf}")
-    vf = (f"scale=2160:2160:flags=lanczos,crop=1215:2160:x='{x}':y=0,scale={W}:{H},"
-          f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={FPS},eq=saturation=1.1,setsar=1")
-    enc(["-loop", "1", "-framerate", str(FPS), "-t", f"{t + 0.2:.3f}", "-i", img], vf, nf, out, trans)
+    """AI still -> slow drift so it reads as a filmed shot (TNP's AI clips are short live-looking shots)."""
+    z = {"pull": f"1.10-0.08*on/{nf}"}.get(move, f"1.02+0.08*on/{nf}")
+    vf = (f"scale=1620:2160:flags=lanczos:force_original_aspect_ratio=increase,crop=1620:2160,"
+          f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={FPS},setsar=1")
+    enc(["-loop", "1", "-framerate", str(FPS), "-t", f"{nf / FPS + 0.2:.3f}", "-i", img], vf, nf, out, trans)
+
+
+def arrow(d, tip, ang, size=1.0):
+    """One short thick red arrow pointing along ang (degrees) at tip, like TNP's."""
+    a = math.radians(ang)
+    ux, uy = math.cos(a), math.sin(a)
+    px, py = -uy, ux
+    L, hw, hl, sw = 190 * size, 62 * size, 95 * size, 34 * size
+    base = (tip[0] - ux * hl, tip[1] - uy * hl)
+    tail = (tip[0] - ux * L, tip[1] - uy * L)
+    d.line([tail, base], fill=RED, width=int(sw))
+    d.polygon([tip, (base[0] + px * hw, base[1] + py * hw), (base[0] - px * hw, base[1] - py * hw)], fill=RED)
 
 
 def overlays(b):
-    """Transparent 1080x1920 PNGs: hook arrows, red ?, red X, red hand-drawn circle (target = frame centre-ish)."""
-    cx, cy = 540, 860
+    """Transparent W x H PNGs: hook arrow, red ?, red X, red/white circle (target = frame centre)."""
+    cx, cy = W // 2, int(H * 0.45)
     im = Image.new("RGBA", (W, H))
-    d = ImageDraw.Draw(im)
-    for ang, dist in ((200, 330), (-20, 330), (95, 380)):
-        a = math.radians(ang)
-        tip = (cx + math.cos(a) * dist * 0.45, cy + math.sin(a) * dist * 0.45)
-        tail = (cx + math.cos(a) * dist * 1.25, cy + math.sin(a) * dist * 1.25)
-        ux, uy = math.cos(a), math.sin(a)
-        px, py = -uy, ux
-        head = [tip, (tip[0] + ux * 150 + px * 100, tip[1] + uy * 150 + py * 100), (tip[0] + ux * 150 - px * 100, tip[1] + uy * 150 - py * 100)]
-        for col, wd, grow in (((255, 255, 255, 255), 78, 14), (RED, 52, 0)):
-            d.line([tail, (tip[0] + ux * 120, tip[1] + uy * 120)], fill=col, width=wd)
-            hh = [(x + (x - tip[0]) * grow / 100, y + (y - tip[1]) * grow / 100) for x, y in head]
-            d.polygon(hh, fill=col)
+    arrow(ImageDraw.Draw(im), (cx - 70, cy + 60), -40)
     im.save(os.path.join(b, "ov_arrows.png"))
     im = Image.new("RGBA", (W, H))
-    d = ImageDraw.Draw(im)
-    d.text((850, 520), "?", font=ImageFont.truetype(FONT, 420), fill=RED, anchor="mm", stroke_width=16, stroke_fill="white")
+    ImageDraw.Draw(im).text((int(W * 0.78), int(H * 0.22)), "?", font=ImageFont.truetype(FONT, 190), fill=RED, anchor="mm")
     im.save(os.path.join(b, "ov_q.png"))
     im = Image.new("RGBA", (W, H))
     d = ImageDraw.Draw(im)
-    for col, wd in (("white", 92), (RED, 62)):
-        d.line((cx - 230, cy - 230, cx + 230, cy + 230), fill=col, width=wd)
-        d.line((cx + 230, cy - 230, cx - 230, cy + 230), fill=col, width=wd)
+    d.line((cx - 170, cy - 170, cx + 170, cy + 170), fill=RED, width=46)
+    d.line((cx + 170, cy - 170, cx - 170, cy + 170), fill=RED, width=46)
     im.save(os.path.join(b, "ov_x.png"))
     im = Image.new("RGBA", (W, H))
     d = ImageDraw.Draw(im)
-    pts = [(cx + math.cos(a) * 330 * (1 + 0.04 * math.sin(3 * a)), cy + math.sin(a) * 300) for a in [i / 60 * 2.15 * math.pi for i in range(61)]]
-    d.line(pts, fill="white", width=30, joint="curve")
-    d.line(pts, fill=RED, width=18, joint="curve")
+    pts = [(cx + math.cos(a) * 250 * (1 + 0.04 * math.sin(3 * a)), cy + math.sin(a) * 230) for a in [i / 60 * 2.1 * math.pi for i in range(61)]]
+    d.line(pts, fill=RED, width=14, joint="curve")
+    arrow(d, (cx + 200, cy + 210), -130, 0.8)
     im.save(os.path.join(b, "ov_circle.png"))
 
 
@@ -137,10 +134,10 @@ def ass_time(t):
 
 def captions(lines, starts, durs, path):
     """One lowercase word at a time, rounded heavy font, white + dark outline, ~78 % height, key words red/blue."""
-    head = ("[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\n\n[V4+ Styles]\n"
+    head = ("[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1440\n\n[V4+ Styles]\n"
             "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, "
             "ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\n"
-            "Style: W,Fredoka Bold,128,&H00FFFFFF,&H00FFFFFF,&H00141414,&H96000000,0,0,0,0,100,100,1,0,1,9,4,2,40,40,380,1\n\n"
+            "Style: W,Fredoka Bold,104,&H00FFFFFF,&H00FFFFFF,&H00141414,&H96000000,0,0,0,0,100,100,1,0,1,7,3,2,40,40,290,1\n\n"
             "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n")
     ev = []
     for l, st, du in zip(lines, starts, durs):
@@ -192,7 +189,7 @@ def main():
     segs, plan, ev, t, last_tr, prev, ai_frames, n_tr = [], [], [], 0.0, -9.0, None, 0, 0
     for j, (l, s, nf) in enumerate(shots):
         tr = None
-        if prev and prev != s[0] and t - last_tr >= 1.8:
+        if prev and prev != s[0] and t - last_tr >= 5.0:
             tr = "whip" if n_tr % 2 == 0 else "flash"
             n_tr += 1
             last_tr = t
@@ -219,7 +216,7 @@ def main():
     captions(lines, starts, durs, os.path.join(b, "captions.ass"))
 
     at = lambda st, du_, s: st + (s if s >= 0 else du_ + s)
-    wins = {"arrows": [(0, 1.1)], "q": [], "x": [], "circle": []}
+    wins = {"arrows": [(0, 1.6)], "q": [], "x": [], "circle": []}
     for l, st, du_ in zip(lines, starts, durs):
         ev += [(k, at(st, du_, s)) for k, s in l.get("sfx", [])]
         if l.get("mark"):
@@ -231,7 +228,7 @@ def main():
     win = lambda ws: "+".join(f"between(t,{a:.2f},{c:.2f})" for a, c in ws) or "0"
     cwd = os.getcwd()
     os.chdir(b)
-    fc = ("[0:v][1:v]overlay=x='10*sin(t*22)':y='10*cos(t*22)':enable='{a}'[v1];[v1][2:v]overlay=0:0:enable='{q}'[v2];"
+    fc = ("[0:v][1:v]overlay=x='8*sin(t*18)':y='8*sin(t*18)':enable='{a}'[v1];[v1][2:v]overlay=0:0:enable='{q}'[v2];"
           "[v2][3:v]overlay=0:0:enable='{x}'[v3];[v3][4:v]overlay=0:0:enable='{c}'[v4];[v4]subtitles=captions.ass:fontsdir=fonts[v]").format(
         a=win(wins["arrows"]), q=win(wins["q"]), x=win(wins["x"]), c=win(wins["circle"]))
     ff("-filter_threads", "1", "-i", "video.mp4", *[x for k in ("arrows", "q", "x", "circle") for x in ("-i", f"ov_{k}.png")],

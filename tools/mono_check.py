@@ -23,11 +23,13 @@ def main():
     an = sum(1 for l in lines if l.get("type") == "analysis")
     res.append(("2a every line typed analysis/story", len(typed) == len(lines), f"{len(typed)}/{len(lines)}"))
     res.append(("2b analysis >= 50 % of lines", an / len(lines) >= 0.5, f"{an}/{len(lines)} = {an / len(lines):.0%}"))
-    # AI clips (tools/assemble.py plan_line): whole line if it has no source, else min(75 %, 1.4 s per prompt); payoff = 0
-    ai_t = lambda l: 0 if l.get("payoff") else t[l["id"]] if not l.get("src") else min(0.75 * t[l["id"]], 1.4 * len(l["ai"]))
-    orig = sum(ai_t(l) if "ai" in l or l.get("payoff") else t[l["id"]] * bool(l.get("original")) for l in lines)
-    res.append(("3 original (AI) visuals >= 50 % runtime", orig / total >= 0.5, f"{orig:.1f}s = {orig / total:.0%}"))
-    res.append(("3b frame 0 = AI hero shot", bool(lines[0].get("ai")) and lines[0].get("first") == "ai", "ok" if lines[0].get("ai") else "line 1 needs ai + first=ai"))
+    # AI clips (tools/assemble.py plan_line): whole line if it has no source, else 1.3 s per prompt; payoff = 0.
+    # TNP exact style (owner 4 Nov 2026): source footage carries the Short, AI only where the footage can't show the idea
+    # (TNP: 16M-view Red Bull Short ~2 % AI, cotton ~12 %, cookie ~35 %). Our protection is the analysis voice-over (rule 2b).
+    ai_t = lambda l: 0 if l.get("payoff") else t[l["id"]] if not l.get("src") else min(0.75 * t[l["id"]], 1.3 * len(l.get("ai", [])))
+    orig = sum(ai_t(l) for l in lines)
+    res.append(("3 AI clips 8-35 % runtime (TNP range)", 0.08 <= orig / total <= 0.35, f"{orig:.1f}s = {orig / total:.0%}"))
+    res.append(("3b frame 0 = source footage (TNP hook)", bool(lines[0].get("src")) and lines[0].get("first", "src") == "src", "ok"))
     clips = [(c, secs(c.split("-")[1]) - secs(c.split("-")[0])) for l in lines for c in l.get("src", [])]
     long_ = [f"{c} ({s:.0f}s src span; cut to <=2 s pieces)" for c, s in clips if s > 6]
     res.append(("4a source spans short (<= 6 s span, cut into <= 2 s shots)", not long_, "; ".join(long_) or "ok"))
