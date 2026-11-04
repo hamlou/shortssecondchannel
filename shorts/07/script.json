@@ -1,0 +1,225 @@
+{
+ "short": "07",
+ "source": "https://youtu.be/dOiXpCpVofQ",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "Can a 200 dollar hydrogen kit really cut your fuel use by 35 percent?",
+   "beats": [
+    [
+     "can",
+     "9:51-9:55"
+    ],
+    [
+     "hydrogen",
+     "0:57-1:00"
+    ],
+    [
+     "35",
+     "0:30-0:34"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "35"
+   ]
+  },
+  {
+   "id": 2,
+   "type": "story",
+   "text": "He bolts it to a Suburban so it splits water into gas and feeds it into the engine.",
+   "beats": [
+    [
+     "he",
+     "2:33-2:39"
+    ],
+    [
+     "splits",
+     "4:06-4:12"
+    ],
+    [
+     "feeds",
+     "3:03-3:09"
+    ]
+   ],
+   "blue": [
+    "water"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "analysis",
+   "text": "But splitting water takes more energy than burning that gas gives back so the math was never going to work.",
+   "beats": [
+    [
+     "but",
+     "ai:a water molecule splitting into glowing hydrogen and oxygen atoms in the dark"
+    ],
+    [
+     "energy",
+     "8:48-8:54"
+    ],
+    [
+     "math",
+     "1:18-1:24"
+    ]
+   ],
+   "red": [
+    "never"
+   ]
+  },
+  {
+   "id": 4,
+   "type": "analysis",
+   "text": "On the 0 to 60 runs the truck is slower with hydrogen three out of four times so the power claim falls flat right away.",
+   "beats": [
+    [
+     "on",
+     "4:36-4:42"
+    ],
+    [
+     "slower",
+     "5:57-6:00"
+    ],
+    [
+     "power",
+     "6:15-6:18"
+    ]
+   ],
+   "mark": [
+    "x",
+    "flat"
+   ]
+  },
+  {
+   "id": 5,
+   "type": "story",
+   "text": "So he tests it on a fuel injected generator with half a liter of gas.",
+   "beats": [
+    [
+     "so",
+     "6:33-6:39"
+    ],
+    [
+     "half",
+     "6:36-6:40"
+    ]
+   ]
+  },
+  {
+   "id": 6,
+   "type": "story",
+   "text": "Without hydrogen it runs 19 minutes and 46 seconds.",
+   "beats": [
+    [
+     "without",
+     "7:12-7:18"
+    ],
+    [
+     "19",
+     "7:52-7:56"
+    ]
+   ]
+  },
+  {
+   "id": 7,
+   "type": "analysis",
+   "text": "And with hydrogen it dies nine seconds sooner so the kit made it slightly worse.",
+   "beats": [
+    [
+     "and",
+     "9:51-9:55"
+    ],
+    [
+     "nine",
+     "9:57-10:01"
+    ]
+   ],
+   "red": [
+    "worse"
+   ]
+  },
+  {
+   "id": 8,
+   "type": "analysis",
+   "text": "Then he doubles the electrolyte to make twice the gas and it runs 21 seconds shorter.",
+   "beats": [
+    [
+     "then",
+     "10:06-10:12"
+    ],
+    [
+     "twice",
+     "10:21-10:27"
+    ],
+    [
+     "21",
+     "11:16-11:20"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "21"
+   ]
+  },
+  {
+   "id": 9,
+   "type": "analysis",
+   "text": "Because the generator has to make the power for the kit so the engine just burns extra fuel to feed it.",
+   "beats": [
+    [
+     "because",
+     "8:21-8:27"
+    ],
+    [
+     "power",
+     "ai:a glowing electric current flowing from a small engine into a box of wires in the dark"
+    ],
+    [
+     "burns",
+     "ai:a small engine burning extra fuel with a bright orange flame inside the cylinder"
+    ]
+   ]
+  },
+  {
+   "id": 10,
+   "type": "analysis",
+   "text": "And after 250 miles the piston looks exactly the same so it didn't even clean the engine.",
+   "beats": [
+    [
+     "and",
+     "6:24-6:27"
+    ],
+    [
+     "same",
+     "6:27-6:33"
+    ]
+   ]
+  },
+  {
+   "id": 11,
+   "type": "story",
+   "text": "So would you put 200 dollars of hydrogen on your car?",
+   "beats": [
+    [
+     "so",
+     "11:36-11:42",
+     0.75
+    ]
+   ],
+   "mark": [
+    "q",
+    "car"
+   ]
+  }
+ ],
+ "facts_checked": "Whisper transcript dOiXpCpVofQ (shorts/07/source/transcript.txt) + frames: $200 kit claims up to 35 % less fuel 0:00-0:32, 2003 Suburban 5.3 V8 2:28, KOH electrolyte 3:59, 0-60 slower with HHO 3 of 4 runs 6:12, ~250 miles no carbon difference 6:20-6:30, generator 500 ml: 19:46 baseline 7:53, HHO 19:37 (-9 s) 9:57, double electrolyte 19:25 (-21 s) 11:17, kit ~30 W 8:55. Electrolysis energy > recovered combustion energy = thermodynamics.",
+ "safety": "hydrogen + electrolyte (KOH is caustic): no install steps or dosages in the Short",
+ "title": "Can a $200 HYDROGEN Kit Really Save 35% Fuel? 😳 (@ProjectFarm/YT)",
+ "description": "Project Farm put a $200 HHO hydrogen kit on a Suburban and a generator to check its 35 percent fuel savings claim. Original video: @ProjectFarm https://youtu.be/dOiXpCpVofQ | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #hydrogen #hho #cars #science",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons",
+ "notes": "Footage-first (owner 4 Nov 2026). Transcript made with faster-whisper on GitHub (captions were rate-limited)."
+}
