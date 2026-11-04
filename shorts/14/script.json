@@ -1,0 +1,207 @@
+{
+ "short": "14",
+ "source": "https://youtu.be/uEDyYJJ6f9M",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "Can a 9 dollar knife sharpener really beat a 900 dollar one?",
+   "beats": [
+    [
+     "can",
+     "13:12-13:18"
+    ],
+    [
+     "9",
+     "2:09-2:13"
+    ],
+    [
+     "900",
+     "0:00-0:06",
+     0.55
+    ]
+   ]
+  },
+  {
+   "id": 2,
+   "type": "story",
+   "text": "First he grinds every knife dull on a steel rod until it needs 1800 grams of force to cut.",
+   "beats": [
+    [
+     "first",
+     "1:24-1:30"
+    ],
+    [
+     "1800",
+     "2:00-2:06"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "1800"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "analysis",
+   "text": "The tester measures how hard you push to slice a thin strip so the lower the number the sharper the blade.",
+   "beats": [
+    [
+     "the",
+     "0:33-0:39"
+    ],
+    [
+     "lower",
+     "0:45-0:51"
+    ]
+   ]
+  },
+  {
+   "id": 4,
+   "type": "analysis",
+   "text": "The 9 dollar Rada brings it back to 230 which already counts as kitchen sharp.",
+   "beats": [
+    [
+     "the",
+     "2:15-2:21"
+    ],
+    [
+     "230",
+     "11:59-12:02"
+    ]
+   ]
+  },
+  {
+   "id": 5,
+   "type": "analysis",
+   "text": "But the 67 dollar Lansky hits 110 which is sharper than the knife was brand new.",
+   "beats": [
+    [
+     "but",
+     "3:48-3:53"
+    ],
+    [
+     "110",
+     "12:27-12:33"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "110"
+   ]
+  },
+  {
+   "id": 6,
+   "type": "story",
+   "text": "And the 900 dollar Wicked Edge hits 100 and shaves the hair right off his arm.",
+   "beats": [
+    [
+     "and",
+     "13:03-13:09"
+    ],
+    [
+     "shaves",
+     "13:12-13:18"
+    ]
+   ],
+   "red": [
+    "shaves"
+   ]
+  },
+  {
+   "id": 7,
+   "type": "analysis",
+   "text": "That's only ten grams better than the Lansky so you pay 13 times more for a tiny gain.",
+   "beats": [
+    [
+     "that's",
+     "13:21-13:27"
+    ],
+    [
+     "13",
+     "ai:a tall stack of dollar bills next to a tiny stack of dollar bills on a workbench"
+    ],
+    [
+     "tiny",
+     "12:27-12:30"
+    ]
+   ]
+  },
+  {
+   "id": 8,
+   "type": "story",
+   "text": "Then he takes a butter knife that needs 2000 grams to cut and grinds it on an electric sharpener for 30 minutes.",
+   "beats": [
+    [
+     "then",
+     "16:03-16:06"
+    ],
+    [
+     "electric",
+     "16:06-16:09"
+    ]
+   ]
+  },
+  {
+   "id": 9,
+   "type": "analysis",
+   "text": "And it slices paper and hits 160 which is sharper than most new chef's knives.",
+   "beats": [
+    [
+     "and",
+     "16:18-16:24"
+    ],
+    [
+     "160",
+     "16:30-16:33"
+    ]
+   ],
+   "red": [
+    "160"
+   ]
+  },
+  {
+   "id": 10,
+   "type": "analysis",
+   "text": "Because sharpness is just a thin straight edge so even cheap soft steel can get scary sharp for a while.",
+   "beats": [
+    [
+     "because",
+     "1:48-1:54"
+    ],
+    [
+     "thin",
+     "ai:extreme macro of a razor sharp steel knife edge glowing in light"
+    ],
+    [
+     "cheap",
+     "16:09-16:15"
+    ]
+   ]
+  },
+  {
+   "id": 11,
+   "type": "story",
+   "text": "So which sharpener would you buy?",
+   "beats": [
+    [
+     "so",
+     "16:36-16:42",
+     0.75
+    ]
+   ],
+   "mark": [
+    "q",
+    "buy"
+   ]
+  }
+ ],
+ "facts_checked": "Whisper transcript uEDyYJJ6f9M + frames: BESS-style tester = grams to cut test media, lower = sharper (razor ~50, new cutlery 250-350, butter knife ~2000) 0:29-0:55, new knife 145 1:08, dulled to 1825 2:00 (transcript 'over 1,800'), Rada $8.65 2:10 -> 230 11:43, Lansky $67.44 -> 110 12:29, Wicked Edge $900 -> 100 13:07 + shaves arm hair 13:12, chart 13:21, butter knife 30 min on Chef's Choice -> 160 16:10-16:31, paper slicing 16:18. 900/67 = 13.4x.",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "$9 vs $900 Knife Sharpener… and a BUTTER KNIFE 😳 (@ProjectFarm/YT)",
+ "description": "Project Farm dulled chef's knives on a steel rod and measured how sharp each sharpener could get them, from a $9 Rada to a $900 Wicked Edge. Original video: @ProjectFarm https://youtu.be/uEDyYJJ6f9M | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #knife #sharpening #kitchen #tools",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}
