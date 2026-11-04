@@ -1,0 +1,193 @@
+{
+ "short": "13",
+ "source": "https://youtu.be/l_N_AwBnjq4",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "He turns a cheap purple bike into a motorbike with a 120 dollar engine kit.",
+   "beats": [
+    [
+     "he",
+     "9:24-9:27"
+    ],
+    [
+     "cheap",
+     "1:06-1:12"
+    ],
+    [
+     "kit",
+     "0:45-0:51"
+    ]
+   ]
+  },
+  {
+   "id": 2,
+   "type": "story",
+   "text": "The box has an 80cc two stroke engine and a gas tank that came already dented.",
+   "beats": [
+    [
+     "the",
+     "0:36-0:42"
+    ],
+    [
+     "80cc",
+     "1:00-1:05"
+    ],
+    [
+     "dented",
+     "7:15-7:21"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "dented"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "analysis",
+   "text": "A two stroke fires on every turn of the crank instead of every other one so a tiny engine still makes real power.",
+   "beats": [
+    [
+     "a",
+     "ai:cutaway of a small two stroke engine with the piston firing and a bright spark"
+    ],
+    [
+     "tiny",
+     "3:09-3:15"
+    ]
+   ]
+  },
+  {
+   "id": 4,
+   "type": "analysis",
+   "text": "He bolts a big sprocket to the back wheel and has to shim it with zip ties which is how you know it's a 120 dollar kit.",
+   "beats": [
+    [
+     "he",
+     "1:33-1:39"
+    ],
+    [
+     "zip",
+     "1:45-1:51"
+    ]
+   ]
+  },
+  {
+   "id": 5,
+   "type": "story",
+   "text": "Then the engine goes in the frame and the clutch and throttle go on the handlebar.",
+   "beats": [
+    [
+     "then",
+     "4:15-4:21"
+    ],
+    [
+     "clutch",
+     "4:09-4:14"
+    ]
+   ]
+  },
+  {
+   "id": 6,
+   "type": "analysis",
+   "text": "The fuel is mixed 18 to 1 with oil because a two stroke has no oil pan so the gas has to carry the oil.",
+   "beats": [
+    [
+     "the",
+     "8:21-8:27"
+    ],
+    [
+     "two",
+     "ai:cutaway of a two stroke piston with a fine golden oil mist in the fuel"
+    ]
+   ]
+  },
+  {
+   "id": 7,
+   "type": "analysis",
+   "text": "There's no starter so you pedal and drop the clutch which turns your legs into the starter motor.",
+   "beats": [
+    [
+     "there's",
+     "8:33-8:39"
+    ],
+    [
+     "drop",
+     "8:48-8:54"
+    ]
+   ]
+  },
+  {
+   "id": 8,
+   "type": "story",
+   "text": "And it fires up and cruises at 22 to 25 miles per hour.",
+   "beats": [
+    [
+     "and",
+     "9:03-9:09"
+    ],
+    [
+     "22",
+     "9:24-9:28"
+    ]
+   ]
+  },
+  {
+   "id": 9,
+   "type": "analysis",
+   "text": "It topped out at 31 but it shakes a lot because a cheap one cylinder engine isn't balanced very well.",
+   "beats": [
+    [
+     "it",
+     "10:00-10:03",
+     0.75
+    ],
+    [
+     "shakes",
+     "8:42-8:48"
+    ]
+   ]
+  },
+  {
+   "id": 10,
+   "type": "analysis",
+   "text": "Still that's way faster than anyone can pedal for long so 120 dollars buys a lot of fun.",
+   "beats": [
+    [
+     "still",
+     "9:12-9:18"
+    ],
+    [
+     "fun",
+     "9:42-9:48",
+     0.75
+    ]
+   ]
+  },
+  {
+   "id": 11,
+   "type": "story",
+   "text": "Would you build one?",
+   "beats": [
+    [
+     "would",
+     "9:24-9:27"
+    ]
+   ],
+   "mark": [
+    "q",
+    "one"
+   ]
+  }
+ ],
+ "facts_checked": "Whisper transcript l_N_AwBnjq4 + frames: kit ~$120 0:20, 80cc 2-stroke caption 1:03, sprocket shimmed with zip ties 1:39, dented tank 7:16, 18:1 mix 8:20, pedal + drop clutch to start 7:58, cruises 22-25 mph 9:45, vibrates a lot 9:51, max 31 mph caption 10:00. Two-stroke fires every revolution + oil in fuel = standard engine theory.",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "He Turned a Cheap Bike Into a Motorbike for $120 😳 (@ProjectFarm/YT)",
+ "description": "Project Farm built a $120 80cc two-stroke bicycle engine kit and rode it. Original video: @ProjectFarm https://youtu.be/l_N_AwBnjq4 | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #bike #2stroke #engine #diy",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}

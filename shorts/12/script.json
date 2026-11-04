@@ -1,0 +1,186 @@
+{
+ "short": "12",
+ "source": "https://youtu.be/agAWXnT4-EQ",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "He sprays a whole can of Seafoam into a tired old Ford Ranger and look at that smoke.",
+   "beats": [
+    [
+     "he",
+     "5:08-5:12"
+    ],
+    [
+     "ford",
+     "0:39-0:44"
+    ],
+    [
+     "look",
+     "5:12-5:16"
+    ]
+   ],
+   "blue": [
+    "seafoam"
+   ]
+  },
+  {
+   "id": 2,
+   "type": "story",
+   "text": "The engine has 167000 miles and its lifters tick so loud it sounds like a diesel.",
+   "beats": [
+    [
+     "the",
+     "1:03-1:09"
+    ],
+    [
+     "diesel",
+     "9:06-9:09"
+    ]
+   ]
+  },
+  {
+   "id": 3,
+   "type": "story",
+   "text": "So he puts Seafoam in the tank and the oil and sprays the rest straight into the intake.",
+   "beats": [
+    [
+     "so",
+     "0:57-1:00"
+    ],
+    [
+     "oil",
+     "2:36-2:41"
+    ],
+    [
+     "sprays",
+     "2:51-2:57"
+    ]
+   ],
+   "blue": [
+    "seafoam"
+   ]
+  },
+  {
+   "id": 4,
+   "type": "analysis",
+   "text": "And the throttle plate is caked in black carbon that starts melting off as he sprays.",
+   "beats": [
+    [
+     "and",
+     "4:39-4:45"
+    ],
+    [
+     "melting",
+     "3:30-3:36"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "carbon"
+   ]
+  },
+  {
+   "id": 5,
+   "type": "analysis",
+   "text": "That smoke is the solvent burning off with some of the carbon it broke loose inside the cylinders.",
+   "beats": [
+    [
+     "that",
+     "5:03-5:09"
+    ],
+    [
+     "carbon",
+     "ai:black carbon flakes breaking off the top of an engine piston in slow motion macro"
+    ]
+   ]
+  },
+  {
+   "id": 6,
+   "type": "analysis",
+   "text": "Then the new oil comes out almost black after just three hours because the old sludge got dissolved and washed out.",
+   "beats": [
+    [
+     "then",
+     "5:51-5:56"
+    ],
+    [
+     "black",
+     "7:00-7:06"
+    ],
+    [
+     "sludge",
+     "ai:thick black engine sludge dissolving into dark oil macro"
+    ]
+   ]
+  },
+  {
+   "id": 7,
+   "type": "story",
+   "text": "Then he adds Lucas oil stabilizer which is so thick it barely pours.",
+   "beats": [
+    [
+     "then",
+     "7:39-7:44"
+    ],
+    [
+     "thick",
+     "8:09-8:15"
+    ]
+   ]
+  },
+  {
+   "id": 8,
+   "type": "analysis",
+   "text": "And thicker oil holds more pressure in worn lifters so the ticking almost disappears.",
+   "beats": [
+    [
+     "and",
+     "ai:cutaway of an engine lifter filling with golden oil under pressure"
+    ],
+    [
+     "ticking",
+     "8:51-8:57"
+    ]
+   ]
+  },
+  {
+   "id": 9,
+   "type": "analysis",
+   "text": "But it's one old truck and no lab test so it's a hopeful fix and not a miracle.",
+   "beats": [
+    [
+     "but",
+     "8:39-8:45"
+    ],
+    [
+     "miracle",
+     "9:30-9:36"
+    ]
+   ]
+  },
+  {
+   "id": 10,
+   "type": "story",
+   "text": "So would you trust Seafoam on your engine?",
+   "beats": [
+    [
+     "so",
+     "5:21-5:26"
+    ]
+   ],
+   "mark": [
+    "q",
+    "engine"
+   ]
+  }
+ ],
+ "facts_checked": "Whisper transcript agAWXnT4-EQ + frames: 167k miles 1:10, lifters noisy 0:56, Seafoam tank 16 oz/16 gal 0:46, 5 oz in crankcase 2:40, intake spray 2:45-4:22, heavy smoke 4:22 (petroleum product burning) + 5:09 frames, throttle plate carbon cleaned 4:37-4:55, oil very dark after 3 h 7:13, Lucas thick 7:54, lifter almost silent 6:09-6:36, 'not scientific' 7:03, 'Before: sounds like a diesel' caption 9:06, 'Much less vibration' 8:57.",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "He Sprayed SEAFOAM Into a Dying Engine 😳 (@ProjectFarm/YT)",
+ "description": "Project Farm treated a tired 167k-mile Ford Ranger with Seafoam in the tank, oil and intake, then added Lucas. Original video: @ProjectFarm https://youtu.be/agAWXnT4-EQ | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #seafoam #engine #cars #mechanic",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}
