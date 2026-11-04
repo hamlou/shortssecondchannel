@@ -11,7 +11,7 @@ OUT="shorts/$N/build"
 mkdir -p "$OUT"
 rm -rf "$OUT/ci"
 "$GH" run download "$RUN" -R hamlou/shortssecondchannel -n "short-$N" -D "$OUT/ci"
-for f in final.mp4 final_sheet.jpg src_sheet.jpg; do
+for f in final.mp4 final_fast.mp4 final_sheet.jpg src_sheet.jpg; do
   if [ -f "$OUT/ci/$f.enc" ]; then openssl enc -d -aes-256-cbc -pbkdf2 -pass file:tools/.srckey -in "$OUT/ci/$f.enc" -out "$OUT/$f"; fi
 done
 cp "$OUT/ci/durations.json" "shorts/$N/durations.json"

@@ -19,7 +19,8 @@ FF = os.environ.get("FFMPEG") or (r"C:\Users\hp\Desktop\100\tools\ffmpeg\ffmpeg.
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONT = os.path.join(ROOT, "tools", "fonts", "FredokaBold.ttf")
 FPS, W, H, GAP = 30, 1080, 1440, 0.04  # 3:4 like TestedNProved (720x960)
-SPEED = 1.25     # source plays slightly fast, otherwise natural (no zooms) like TNP
+SPEED = 1.4      # source plays fast like TNP (owner 4 Nov 2026: "a little bit slow")
+CUT = 0.8        # target seconds between cuts (TNP median shot 1.0 s)
 SAFE = 0.861     # share of source height kept from the top: drops the band where Project Farm burns its captions
 MIN_BEAT = 0.8   # shortest shot a beat may get
 AI_LEN = 1.3     # seconds per AI clip (TNP: 3-8 AI clips per Short, 2-35 % runtime)
@@ -68,24 +69,22 @@ def beat_spans(l, dur):
 
 
 def plan_line(l, dur, rnd):
-    """-> list of shots: ("ai", prompt, seconds, move) / ("src", start, seconds, speed)."""
+    """-> list of shots: ("ai", prompt, seconds, move) / ("src", start, seconds, speed, crop_x, tight).
+    TNP pace: a visible cut every ~0.8 s. A long beat jumps between different moments of its source range
+    (alternating wide / tight framing) so the picture keeps changing but always shows what the word names."""
     out = []
-    for b, (v, _, ln) in zip(l["beats"], beat_spans(l, dur)):
-        cx = b[2] if len(b) > 2 else l.get("cx", 0.5)
+    for bt, (v, _, ln) in zip(l["beats"], beat_spans(l, dur)):
+        cx = bt[2] if len(bt) > 2 else l.get("cx", 0.5)
+        k = max(1, round(ln / CUT))
         if v.startswith("ai:"):
-            out.append(("ai", v[3:], ln, rnd.choice(["push", "pull"])))
+            k = min(k, 2)
+            out += [("ai", v[3:], ln / k, "push" if i % 2 == 0 else "tight") for i in range(k)]
             continue
         a, b = map(sec, v.split("-"))
-        cur, used = a, 0.0
-        while used < ln - 1e-3:
-            n = min(rnd.uniform(0.7, 1.4), ln - used)
-            if ln - used - n < 0.4:
-                n = ln - used
-            if cur + n * SPEED > b + 0.05:
-                cur = a
-            out.append(("src", cur, n, SPEED, cx))
-            cur += n * SPEED
-            used += n
+        piece = ln / k * SPEED
+        for i in range(k):
+            st = a + (i * (b - a - piece) / (k - 1) if k > 1 else 0)
+            out.append(("src", max(a, st), ln / k, SPEED, cx, i % 2 == 1))
     return out
 
 
@@ -97,16 +96,17 @@ def enc(args, vf, nf, out, trans):
     ff(*args, "-an", "-vf", vf, "-frames:v", str(nf), *X264, out)
 
 
-def cut_src(src, st, nf, speed, cx, z, trans, out):
-    """Plain 3:4 crop of the source at near-natural speed: no push-ins (TNP shows the footage as it is)."""
-    vf = (f"setpts=PTS/{speed},fps={FPS},crop=w='trunc(ih*{SAFE}*3/4/2)*2':h='trunc(ih*{SAFE}/2)*2':x='(iw-ow)*{cx}':y=0,"
-          f"scale={W}:{H}:flags=lanczos,eq=contrast=1.04:saturation=1.08,setsar=1")
+def cut_src(src, st, nf, speed, cx, tight, trans, out):
+    """Plain 3:4 crop of the source, no zooming inside the shot; tight = 1.2x punch-in framing for jump cuts."""
+    f = 1.2 if tight else 1.0
+    vf = (f"setpts=PTS/{speed},fps={FPS},crop=w='trunc(ih*{SAFE}*3/4/{f}/2)*2':h='trunc(ih*{SAFE}/{f}/2)*2':"
+          f"x='(iw-ow)*{cx}':y='(ih*{SAFE}-oh)/2',scale={W}:{H}:flags=lanczos,eq=contrast=1.04:saturation=1.08,setsar=1")
     enc(["-ss", f"{st:.3f}", "-t", f"{nf / FPS * speed + 0.3:.3f}", "-i", src], vf, nf, out, trans)
 
 
 def cut_ai(img, nf, move, trans, out):
     """AI still -> slow drift so it reads as a filmed shot (TNP's AI clips are short live-looking shots)."""
-    z = {"pull": f"1.10-0.08*on/{nf}"}.get(move, f"1.02+0.08*on/{nf}")
+    z = {"pull": f"1.10-0.08*on/{nf}", "tight": f"1.30+0.06*on/{nf}"}.get(move, f"1.02+0.08*on/{nf}")
     vf = (f"scale=1620:2160:flags=lanczos:force_original_aspect_ratio=increase,crop=1620:2160,"
           f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={FPS},setsar=1")
     enc(["-loop", "1", "-framerate", str(FPS), "-t", f"{nf / FPS + 0.2:.3f}", "-i", img], vf, nf, out, trans)
@@ -217,7 +217,7 @@ def main():
             cut_ai(os.path.join(b, "ai", img_name(s[1])), nf, s[3], tr, o)
             ai_frames += nf
         else:
-            cut_src(src, s[1], nf, s[3], s[4], j % 2 == 0, tr, o)
+            cut_src(src, s[1], nf, s[3], s[4], s[5], tr, o)
         segs.append(o)
         plan.append({"line": l["id"], "t": round(t, 2), "kind": s[0], "s": round(nf / FPS, 2), "what": s[1] if s[0] == "ai" else round(s[1], 2), "trans": tr})
         prev = s[0]

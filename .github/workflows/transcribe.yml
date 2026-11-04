@@ -1,24 +1,23 @@
 name: transcribe
-run-name: transcribe ${{ inputs.short }}
+run-name: transcribe ${{ inputs.shorts }}
 
 # Speech-to-text of a source when YouTube captions are rate-limited (faster-whisper, MIT). Source decrypted only on the
 # runner; the transcript leaves encrypted (key = secret SRC_KEY).
 on:
   workflow_dispatch:
     inputs:
-      short:
-        description: Short number (e.g. 07)
+      shorts:
+        description: Short numbers, space separated (e.g. 12 13 14)
         required: true
 
 jobs:
   transcribe:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 180
     defaults:
       run:
         shell: bash
     env:
-      S: ${{ inputs.short }}
       SRC_KEY: ${{ secrets.SRC_KEY }}
       GH_TOKEN: ${{ github.token }}
     steps:
@@ -27,28 +26,33 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -q faster-whisper soundfile && sudo apt-get install -y -qq ffmpeg >/dev/null
-      - name: Audio
+      - name: Whisper (one model load, every Short)
         run: |
-          gh release download src-$S -p source.mp4.enc -D /tmp
-          openssl enc -d -aes-256-cbc -pbkdf2 -pass env:SRC_KEY -in /tmp/source.mp4.enc -out /tmp/src.mp4
-          ffmpeg -v error -i /tmp/src.mp4 -vn -ac 1 -ar 16000 /tmp/a.wav
-          rm /tmp/source.mp4.enc /tmp/src.mp4
-      - name: Whisper
-        run: |
-          python - <<'EOF'
-          import soundfile as sf
-          from faster_whisper import WhisperModel
-          audio, _ = sf.read("/tmp/a.wav", dtype="float32")
-          m = WhisperModel("small.en", device="cpu", compute_type="int8")
-          segs, _ = m.transcribe(audio, vad_filter=True)
-          with open("/tmp/transcript.txt", "w") as f:
-              for s in segs:
-                  f.write(f"[{int(s.start // 60)}:{int(s.start % 60):02d}] {s.text.strip()}\n")
-          EOF
           mkdir -p out
-          openssl enc -aes-256-cbc -pbkdf2 -pass env:SRC_KEY -in /tmp/transcript.txt -out out/transcript.txt.enc
+          for S in ${{ inputs.shorts }}; do
+            gh release download src-$S -p source.mp4.enc -D /tmp --clobber
+            openssl enc -d -aes-256-cbc -pbkdf2 -pass env:SRC_KEY -in /tmp/source.mp4.enc -out /tmp/src.mp4
+            ffmpeg -v error -y -i /tmp/src.mp4 -vn -ac 1 -ar 16000 /tmp/a_$S.wav
+            rm /tmp/source.mp4.enc /tmp/src.mp4
+          done
+          python - ${{ inputs.shorts }} <<'EOF'
+          import sys, soundfile as sf
+          from faster_whisper import WhisperModel
+          m = WhisperModel("small.en", device="cpu", compute_type="int8")
+          for S in sys.argv[1:]:
+              audio, _ = sf.read(f"/tmp/a_{S}.wav", dtype="float32")
+              segs, _ = m.transcribe(audio, vad_filter=True)
+              with open(f"/tmp/t_{S}.txt", "w") as f:
+                  for s in segs:
+                      f.write(f"[{int(s.start // 60)}:{int(s.start % 60):02d}] {s.text.strip()}
+")
+              print(S, "done", flush=True)
+          EOF
+          for S in ${{ inputs.shorts }}; do
+            openssl enc -aes-256-cbc -pbkdf2 -pass env:SRC_KEY -in /tmp/t_$S.txt -out out/transcript_$S.txt.enc
+          done
       - uses: actions/upload-artifact@v4
         with:
-          name: transcript-${{ inputs.short }}
+          name: transcripts
           path: out
           retention-days: 3
