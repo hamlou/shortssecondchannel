@@ -1,0 +1,170 @@
+{
+ "short": "16",
+ "source": "https://youtu.be/8uIsbRaArvk",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "Is Shell V Power gas worth 50 cents more per gallon than the cheap stuff?",
+   "beats": [
+    [
+     "is",
+     "1:12-1:16"
+    ],
+    [
+     "shell",
+     "0:03-0:09",
+     0.55
+    ],
+    [
+     "cheap",
+     "1:03-1:07"
+    ]
+   ]
+  },
+  {
+   "id": 2,
+   "type": "story",
+   "text": "In a see through engine the flame looks exactly the same with both fuels.",
+   "beats": [
+    [
+     "in",
+     "0:45-0:51"
+    ],
+    [
+     "same",
+     "1:12-1:16"
+    ]
+   ]
+  },
+  {
+   "id": 3,
+   "type": "analysis",
+   "text": "And a generator runs 71 minutes on each so there's zero gain in fuel efficiency.",
+   "beats": [
+    [
+     "and",
+     "2:48-2:54"
+    ],
+    [
+     "71",
+     "5:24-5:28"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "71"
+   ]
+  },
+  {
+   "id": 4,
+   "type": "analysis",
+   "text": "Because that engine is built for 87 octane so the fancy fuel just burns the same way.",
+   "beats": [
+    [
+     "because",
+     "2:09-2:15"
+    ],
+    [
+     "burns",
+     "ai:a blue and orange gasoline flame burning inside a small engine cylinder"
+    ]
+   ]
+  },
+  {
+   "id": 5,
+   "type": "story",
+   "text": "But then he soaks two greasy bolts in each gas overnight.",
+   "beats": [
+    [
+     "but",
+     "5:30-5:33"
+    ],
+    [
+     "greasy",
+     "5:33-5:36"
+    ]
+   ]
+  },
+  {
+   "id": 6,
+   "type": "analysis",
+   "text": "The Shell turns much darker because its extra detergents pull the grime off and hold it in the fuel.",
+   "beats": [
+    [
+     "the",
+     "9:39-9:45"
+    ],
+    [
+     "detergents",
+     "ai:tiny glowing detergent molecules pulling black grime off a metal bolt in golden fuel macro"
+    ]
+   ]
+  },
+  {
+   "id": 7,
+   "type": "story",
+   "text": "And on paper the cheap gas bolt leaves way more dirt behind.",
+   "beats": [
+    [
+     "and",
+     "10:09-10:15"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "dirt"
+   ]
+  },
+  {
+   "id": 8,
+   "type": "analysis",
+   "text": "So Shell really does clean better which helps keep injectors and valves clean over time.",
+   "beats": [
+    [
+     "so",
+     "8:39-8:45"
+    ],
+    [
+     "injectors",
+     "ai:a clean fuel injector spraying a fine mist of gasoline"
+    ]
+   ]
+  },
+  {
+   "id": 9,
+   "type": "analysis",
+   "text": "But a cheap bottle of fuel cleaner does the same job so the extra 50 cents a gallon isn't worth it.",
+   "beats": [
+    [
+     "but",
+     "11:00-11:06",
+     0.75
+    ]
+   ]
+  },
+  {
+   "id": 10,
+   "type": "story",
+   "text": "Would you still pay for premium?",
+   "beats": [
+    [
+     "would",
+     "10:36-10:41"
+    ]
+   ],
+   "mark": [
+    "q",
+    "premium"
+   ]
+  }
+ ],
+ "facts_checked": "Whisper transcript 8uIsbRaArvk + frames: 40-50 c/gal more 0:12, 7x detergents claim 0:22, see-through flame 'No visible difference in flame color' caption 1:12, generator 71:28 cheap vs 71:24 Shell caption 5:24, engine designed for 87 so no benefit 11:33-11:39, greasy bolts soak 5:31, Shell darker = detergents suspending grime 10:32-10:42, cheap bolt left more residue on paper 10:08-10:17, Todd: additives (Seafoam, Techron) do the same, not worth 50 c 11:15-11:49.",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "Is Shell V-Power Worth 50¢ More Than Cheap Gas? 🤔 (@ProjectFarm/YT)",
+ "description": "Project Farm compared Shell V-Power NiTRO+ to cheap 87 octane in a see-through engine, a generator and a dirty-bolt soak. Original video: @ProjectFarm https://youtu.be/8uIsbRaArvk | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #gasoline #shell #engine #cars #science",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}
