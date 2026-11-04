@@ -1,0 +1,196 @@
+{
+ "short": "17",
+ "source": "https://youtu.be/H4xX7VecgzA",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "JB Weld held so much weight that he ran out of weights and added a chunk of railroad iron.",
+   "beats": [
+    [
+     "jb",
+     "4:57-5:03"
+    ],
+    [
+     "ran",
+     "4:51-4:57"
+    ],
+    [
+     "railroad",
+     "5:06-5:10"
+    ]
+   ]
+  },
+  {
+   "id": 2,
+   "type": "story",
+   "text": "It finally let go at 115 pounds and it snapped the brick before the glue.",
+   "beats": [
+    [
+     "it",
+     "5:24-5:28"
+    ],
+    [
+     "snapped",
+     "5:39-5:45"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "115"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "analysis",
+   "text": "Meanwhile Flex Glue held just 12 and a half pounds and Gorilla only 7 and a half which is less than a gallon of milk.",
+   "beats": [
+    [
+     "meanwhile",
+     "6:00-6:04"
+    ],
+    [
+     "gorilla",
+     "4:12-4:16"
+    ],
+    [
+     "less",
+     "6:12-6:15"
+    ]
+   ]
+  },
+  {
+   "id": 4,
+   "type": "analysis",
+   "text": "Because JB Weld is a two part epoxy that cures into hard plastic while the others stay rubbery so they can flex.",
+   "beats": [
+    [
+     "because",
+     "ai:two part grey epoxy being mixed together on a metal plate macro"
+    ],
+    [
+     "rubbery",
+     "4:18-4:21"
+    ]
+   ]
+  },
+  {
+   "id": 5,
+   "type": "story",
+   "text": "On wood Loctite wins at 72 and a half pounds and Flex Glue ties JB Weld at 57 and a half.",
+   "beats": [
+    [
+     "on",
+     "6:15-6:21"
+    ],
+    [
+     "loctite",
+     "6:51-6:54"
+    ],
+    [
+     "flex",
+     "7:42-7:46"
+    ]
+   ]
+  },
+  {
+   "id": 6,
+   "type": "analysis",
+   "text": "Then he glues bolts into steel and JB Weld takes 204 inch pounds to break while every other glue lets go at zero.",
+   "beats": [
+    [
+     "then",
+     "12:00-12:06"
+    ],
+    [
+     "204",
+     "14:00-14:03"
+    ],
+    [
+     "zero",
+     "12:45-12:48"
+    ]
+   ],
+   "mark": [
+    "x",
+    "zero"
+   ]
+  },
+  {
+   "id": 7,
+   "type": "story",
+   "text": "So he pulls the head bolts out of an engine and lets JB Weld alone hold the head on.",
+   "beats": [
+    [
+     "so",
+     "14:03-14:09"
+    ],
+    [
+     "alone",
+     "14:15-14:21"
+    ]
+   ],
+   "mark": [
+    "q",
+    "on"
+   ]
+  },
+  {
+   "id": 8,
+   "type": "analysis",
+   "text": "And the engine blows the head loose which is the one job you should never give to any glue.",
+   "beats": [
+    [
+     "and",
+     "14:30-14:36"
+    ],
+    [
+     "never",
+     "14:39-14:42"
+    ]
+   ],
+   "red": [
+    "never"
+   ]
+  },
+  {
+   "id": 9,
+   "type": "analysis",
+   "text": "Because every firing stroke shoves the head up with thousands of pounds of force over and over.",
+   "beats": [
+    [
+     "because",
+     "ai:a fiery combustion explosion inside an engine cylinder pushing up on the cylinder head"
+    ],
+    [
+     "over",
+     "14:42-14:45"
+    ]
+   ]
+  },
+  {
+   "id": 10,
+   "type": "story",
+   "text": "So which glue would you trust?",
+   "beats": [
+    [
+     "so",
+     "15:00-15:06",
+     0.75
+    ]
+   ],
+   "mark": [
+    "q",
+    "trust"
+   ]
+  }
+ ],
+ "facts_checked": "Whisper transcript H4xX7VecgzA + frames: brick test Gorilla 7.5 lb 4:13, Loctite 17.5, Flex 12.5 6:00 caption, JB Weld ran out of weights + railroad iron 75 lb 4:50-5:06, 115 lb and broke the brick 5:24-5:48, chart 6:12; wood Loctite 72.5 6:51, Flex ties JB 57.5 7:33; bolt torque JB 207/201 in-lb (avg 204 chart 14:00), others 0 12:38-13:34; JB-held head without bolts failed with damage 14:18-14:37. JB Weld = two-part epoxy (label).",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "Flex Glue vs JB Weld… Then He Glued an Engine Head On 😳 (@ProjectFarm/YT)",
+ "description": "Project Farm tested Flex Glue, JB Weld, Loctite and Gorilla on brick, wood and steel, then held an engine head on with glue alone. Original video: @ProjectFarm https://youtu.be/H4xX7VecgzA | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #jbweld #flexglue #glue #diy #engine",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}
