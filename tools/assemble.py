@@ -21,6 +21,7 @@ FONT = os.path.join(ROOT, "tools", "fonts", "FredokaBold.ttf")
 FPS, W, H, GAP = 30, 1080, 1440, 0.04  # 3:4 like TestedNProved (720x960)
 SPEED = 1.25     # source plays slightly fast, otherwise natural (no zooms) like TNP
 SAFE = 0.861     # share of source height kept from the top: drops the band where Project Farm burns its captions
+MIN_BEAT = 0.8   # shortest shot a beat may get
 AI_LEN = 1.3     # seconds per AI clip (TNP: 3-8 AI clips per Short, 2-35 % runtime)
 X264 = ["-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-threads", "2", "-pix_fmt", "yuv420p"]
 RED, BLUE = (235, 30, 30, 255), (40, 150, 255, 255)
@@ -58,6 +59,10 @@ def beat_spans(l, dur):
             sys.exit(f"line {l['id']}: beat word '{anchor}' not found in order")
         starts.append(0.0 if not starts else wt[k])
         k += 1
+    for i in range(len(starts) - 1, 0, -1):  # cut a little before the word if its shot would be too short (min 0.8 s)
+        end = starts[i + 1] if i + 1 < len(starts) else dur
+        if end - starts[i] < MIN_BEAT:
+            starts[i] = max(starts[i - 1] + MIN_BEAT, end - MIN_BEAT)
     ends = starts[1:] + [dur]
     return [(v, st, en - st) for (_, v), st, en in zip(l["beats"], starts, ends)]
 
