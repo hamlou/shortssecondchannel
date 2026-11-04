@@ -6,139 +6,183 @@
  "lines": [
   {
    "id": 1,
-   "phase": "hook",
    "type": "story",
    "text": "Why would a car ramp that holds 25000 pounds still be a death trap?",
-   "src": [
-    "14:23-14:27",
-    "7:28-7:32"
+   "beats": [
+    [
+     "why",
+     "11:09-11:14"
+    ],
+    [
+     "25000",
+     "14:39-14:45"
+    ],
+    [
+     "death",
+     "11:42-11:46"
+    ]
    ],
-   "ai": [
-    "a car up on black plastic ramps in a dark garage with dramatic light"
-   ],
-   "first": "ai",
    "red": [
-    "death"
+    "death",
+    "trap"
    ]
   },
   {
    "id": 2,
-   "phase": "rising",
    "type": "story",
-   "text": "He crushes eleven brands in a press and the 60 dollar plastic ramps take almost 25000 pounds.",
-   "src": [
-    "14:07-14:12",
-    "14:23-14:27"
-   ],
-   "ai": [
-    "a hydraulic press crushing a black plastic car ramp"
-   ],
-   "first": "src"
+   "text": "He crushes eleven brands in a press and the plastic Pittsburgh ramps take almost 25000 pounds.",
+   "beats": [
+    [
+     "he",
+     "14:09-14:15"
+    ],
+    [
+     "plastic",
+     "1:24-1:28"
+    ],
+    [
+     "25000",
+     "14:24-14:30"
+    ]
+   ]
   },
   {
    "id": 3,
-   "phase": "why",
    "type": "analysis",
    "text": "That's almost eight times their rating because the plastic ribs spread the load like a honeycomb.",
-   "src": [],
-   "ai": [
-    "macro of a golden honeycomb structure under pressure",
-    "black plastic ribs inside a car ramp cutaway",
-    "a honeycomb holding a heavy steel weight"
+   "beats": [
+    [
+     "that's",
+     "14:30-14:34"
+    ],
+    [
+     "ribs",
+     "1:39-1:44"
+    ],
+    [
+     "honeycomb",
+     "ai:a golden honeycomb holding up a heavy steel weight macro"
+    ]
    ]
   },
   {
    "id": 4,
-   "phase": "conflict",
    "type": "story",
-   "text": "Meanwhile a pair of steel ramps folds under a tractor.",
-   "src": [
-    "13:35-13:41"
+   "text": "Meanwhile a pair of steel ramps folds flat under a tractor.",
+   "beats": [
+    [
+     "meanwhile",
+     "12:30-12:36"
+    ],
+    [
+     "folds",
+     "13:39-13:45"
+    ]
    ],
-   "ai": [
-    "a steel car ramp bending under a heavy tractor tire"
-   ],
-   "first": "src",
-   "red": [
-    "folds"
+   "mark": [
+    "x",
+    "tractor"
    ]
   },
   {
    "id": 5,
-   "phase": "why",
    "type": "analysis",
    "text": "Because thin steel buckles once it starts to bend while the ribs keep sharing the load.",
-   "src": [],
-   "ai": [
-    "a thin steel sheet buckling in slow motion",
-    "plastic ribs flexing and holding a heavy load"
+   "beats": [
+    [
+     "because",
+     "ai:a thin steel sheet buckling and folding under a heavy load in slow motion"
+    ],
+    [
+     "ribs",
+     "14:48-14:51"
+    ]
    ]
   },
   {
    "id": 6,
-   "phase": "twist",
    "type": "analysis",
    "text": "So crushing is the one thing you don't need to worry about.",
-   "src": [],
-   "ai": [
-    "a giant hydraulic press resting idle in a dim factory",
-    "a person relaxing next to a car ramp"
+   "beats": [
+    [
+     "so",
+     "15:57-16:03"
+    ],
+    [
+     "worry",
+     "16:33-16:39",
+     0.75
+    ]
    ]
   },
   {
    "id": 7,
-   "phase": "conflict-peak",
    "type": "story",
-   "text": "On smooth concrete almost every ramp slides and two shoot out from under a car.",
-   "src": [
-    "7:28-7:34",
-    "8:16-8:20"
+   "text": "On smooth concrete almost every ramp slides and one even shoots out from under a truck.",
+   "beats": [
+    [
+     "on",
+     "3:39-3:45"
+    ],
+    [
+     "shoots",
+     "11:09-11:14"
+    ]
    ],
-   "ai": [
-    "a car ramp sliding across smooth concrete with motion blur"
-   ],
-   "first": "src",
-   "mark": [
-    "x",
-    -1.0
+   "red": [
+    "shoots"
    ]
   },
   {
    "id": 8,
-   "phase": "why",
    "type": "analysis",
-   "text": "That's friction because a climbing or braking tire shoves the ramp forward and one rubber stop can't hold it.",
-   "src": [],
-   "ai": [
-    "a car tire pushing a plastic ramp forward on concrete",
-    "a small rubber stopper slipping on a floor macro"
+   "text": "That's friction because a climbing tire shoves the ramp forward and one rubber stop can't hold it.",
+   "beats": [
+    [
+     "that's",
+     "ai:a car tire pushing a black plastic ramp forward across smooth concrete"
+    ],
+    [
+     "rubber",
+     "7:42-7:48"
+    ]
    ]
   },
   {
    "id": 9,
-   "phase": "comeback",
    "type": "analysis",
-   "text": "A damp towel underneath adds grip and helped most of them which is a free fix anyone can do.",
-   "src": [
-    "1:15-1:20"
+   "text": "A damp cloth underneath helped some of the plastic ones grip which is a free fix anyone can try.",
+   "beats": [
+    [
+     "a",
+     "1:03-1:06"
+    ],
+    [
+     "helped",
+     "1:15-1:21"
+    ]
    ],
-   "ai": [
-    "a damp towel under a car ramp on concrete"
-   ],
-   "first": "ai",
    "blue": [
     "damp"
    ]
   },
   {
    "id": 10,
-   "phase": "lesson",
    "type": "analysis",
    "text": "So check for grip and set the parking brake before you crawl under.",
-   "src": [],
-   "ai": [
-    "a hand pulling up a car parking brake lever",
-    "a mechanic on a creeper next to a car on ramps"
+   "beats": [
+    [
+     "so",
+     "1:57-2:03"
+    ],
+    [
+     "parking",
+     "ai:a hand pulling up a car parking brake lever"
+    ],
+    [
+     "crawl",
+     "ai:a mechanic lying on a creeper next to a car up on ramps"
+    ]
    ],
    "red": [
     "parking"
@@ -146,25 +190,29 @@
   },
   {
    "id": 11,
-   "phase": "loop",
    "type": "story",
    "text": "So is your car ramp a death trap?",
-   "src": [
-    "7:30-7:33"
+   "beats": [
+    [
+     "so",
+     "16:42-16:48",
+     0.75
+    ]
    ],
-   "ai": [
-    "a car up on black plastic ramps in a dark garage with dramatic light"
+   "red": [
+    "death",
+    "trap"
    ],
-   "first": "src",
    "mark": [
     "q",
-    0.2
+    "trap"
    ]
   }
  ],
- "facts_checked": "numbers from source transcript shorts/10/source/transcript.txt; src timestamps verified on frames before render",
+ "facts_checked": "transcript cM6rVfUnYP8 + frames: 11 brands; press 14:09-15:57, Pittsburgh plastic rated 3,250 lb -> almost 25,000 lb (=7.7x) 14:23, Bi-Supply 25,500 lb top; Peterson steel collapsed under 7,750 lb tractor 13:39; ramps slid on smooth concrete 2:40-5:20; one Rhino kicked out from under the truck at 766 lb 11:25; damp cloth helped some (Eastwood) not steel ones 4:17-5:20",
  "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
  "title": "These Car Ramps Held 25000 lb… So Why Are They Dangerous? 😳 (@ProjectFarm/YT)",
  "description": "Project Farm crushed 11 car ramps in a hydraulic press and the cheap plastic ones were shockingly strong. The real danger showed up on smooth concrete. Original video: @ProjectFarm https://youtu.be/cM6rVfUnYP8 | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #cars #mechanic #safety #engineering",
- "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons",
+ "notes": "Footage-first (owner 4 Nov 2026). Fixed: only ONE ramp kicked out; damp cloth helped SOME."
 }
