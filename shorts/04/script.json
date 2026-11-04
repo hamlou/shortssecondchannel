@@ -6,168 +6,212 @@
  "lines": [
   {
    "id": 1,
-   "phase": "hook",
    "type": "story",
-   "text": "Which 150 dollar engine can actually keep up with a 600 dollar Honda?",
-   "src": [
-    "0:15-0:19",
-    "1:16-1:20"
+   "text": "Can a 160 dollar Honda clone keep up with the real 600 dollar Honda?",
+   "beats": [
+    [
+     "can",
+     "0:21-0:27"
+    ],
+    [
+     "real",
+     "1:09-1:12"
+    ]
    ],
-   "ai": [
-    "two red small gas engines facing off on a garage floor under dramatic light"
-   ],
-   "first": "ai"
+   "red": [
+    "clone"
+   ]
   },
   {
    "id": 2,
-   "phase": "rising",
    "type": "story",
-   "text": "The clone copies Honda's red paint and its sticker says 7.5 horsepower against the real one's 5.5.",
-   "src": [
-    "0:30-0:34",
-    "0:55-0:59"
+   "text": "The clone even copies Honda's red paint and its label claims way more horsepower.",
+   "beats": [
+    [
+     "the",
+     "0:51-0:54"
+    ],
+    [
+     "label",
+     "0:57-1:00"
+    ]
    ],
-   "ai": [
-    "a shiny red small gas engine with a big horsepower sticker"
-   ],
-   "first": "src"
+   "mark": [
+    "circle",
+    "horsepower"
+   ]
   },
   {
    "id": 3,
-   "phase": "rising",
    "type": "analysis",
-   "text": "But a sticker is just a sticker so the only way to know is to test it.",
-   "src": [],
-   "ai": [
-    "a peeling sticker on a red engine macro",
-    "a stopwatch and a test bench in a workshop"
+   "text": "But a sticker is just a sticker so he runs both on generators for 48 hours to find the truth.",
+   "beats": [
+    [
+     "but",
+     "0:57-1:00"
+    ],
+    [
+     "runs",
+     "3:15-3:21"
+    ],
+    [
+     "48",
+     "3:45-3:51"
+    ]
    ]
   },
   {
    "id": 4,
-   "phase": "conflict",
    "type": "story",
    "text": "On the vibration tester the clone shakes so hard the meter can't even read it.",
-   "src": [
-    "4:24-4:29"
+   "beats": [
+    [
+     "on",
+     "4:21-4:27"
+    ],
+    [
+     "can't",
+     "4:27-4:30"
+    ]
    ],
-   "ai": [
-    "a small engine shaking violently with motion blur"
-   ],
-   "first": "src",
-   "red": [
-    "shakes"
+   "mark": [
+    "q",
+    "read"
    ]
   },
   {
    "id": 5,
-   "phase": "why",
    "type": "analysis",
-   "text": "Because a one cylinder engine needs a weighted crankshaft to cancel its own shake and the clone skipped that.",
-   "src": [],
-   "ai": [
-    "a steel crankshaft with heavy counterweights spinning macro",
-    "a washing machine shaking violently on a tiled floor",
-    "cutaway of a single cylinder engine piston and crankshaft"
+   "text": "Because a one cylinder engine fires on just one side so it needs a well balanced crankshaft to stay smooth.",
+   "beats": [
+    [
+     "because",
+     "ai:cutaway of a single cylinder small gas engine with the piston firing"
+    ],
+    [
+     "balanced",
+     "ai:a steel crankshaft with heavy counterweights spinning fast in a dark workshop"
+    ]
    ]
   },
   {
    "id": 6,
-   "phase": "conflict",
    "type": "analysis",
-   "text": "Then it burns six ounces of oil a day so he tops it up twice like a leaky boat.",
-   "src": [
-    "5:11-5:16",
-    "5:43-5:48"
+   "text": "Then it burns so much oil he tops it up twice in a day like a leaky boat.",
+   "beats": [
+    [
+     "then",
+     "5:00-5:03"
+    ],
+    [
+     "tops",
+     "5:15-5:18"
+    ],
+    [
+     "leaky",
+     "ai:an old leaky wooden rowboat slowly filling with water on a lake"
+    ]
    ],
-   "ai": [
-    "a leaky wooden boat taking on water",
-    "golden motor oil pouring from a bottle into an engine"
-   ],
-   "first": "ai",
    "blue": [
     "oil"
    ]
   },
   {
    "id": 7,
-   "phase": "why",
    "type": "analysis",
-   "text": "That oil sneaks past the piston rings and burns which is why its spark plug is caked in carbon.",
-   "src": [
-    "6:24-6:29"
-   ],
-   "ai": [
-    "macro of a spark plug caked in black carbon",
-    "oil sneaking past a piston ring inside an engine cylinder macro"
-   ],
-   "first": "ai",
-   "blue": [
-    "oil"
+   "text": "That oil slips past the piston rings and burns which is why its spark plug is caked in carbon.",
+   "beats": [
+    [
+     "that",
+     "ai:macro of motor oil slipping past a piston ring inside an engine cylinder"
+    ],
+    [
+     "spark",
+     "6:27-6:32"
+    ],
+    [
+     "caked",
+     "6:33-6:38"
+    ]
    ]
   },
   {
    "id": 8,
-   "phase": "conflict-peak",
    "type": "analysis",
-   "text": "And on the pull test the clone makes 200 pounds while the weaker sounding Honda makes 239.",
-   "src": [
-    "9:05-9:10"
-   ],
-   "ai": [
-    "a thick rope pulled tight with tension and dust"
-   ],
-   "first": "src"
+   "text": "And on the pull test the clone makes 200 pounds while the real Honda makes 239.",
+   "beats": [
+    [
+     "and",
+     "9:06-9:09"
+    ],
+    [
+     "clone",
+     "9:09-9:14"
+    ],
+    [
+     "real",
+     "9:18-9:23"
+    ]
+   ]
   },
   {
    "id": 9,
-   "phase": "twist",
    "type": "story",
-   "text": "But here's the twist because Harbor Freight's 150 dollar Predator pulls 233.",
-   "src": [
-    "9:21-9:26",
-    "1:44-1:48"
+   "text": "But the twist is the cheap Harbor Freight Predator which pulls 233.",
+   "beats": [
+    [
+     "but",
+     "1:45-1:48"
+    ],
+    [
+     "pulls",
+     "9:24-9:30"
+    ]
    ],
-   "ai": [
-    "a red small engine under a spotlight with a plot twist mood"
-   ],
-   "first": "src"
+   "mark": [
+    "circle",
+    "233"
+   ]
   },
   {
    "id": 10,
-   "phase": "payoff",
    "type": "analysis",
-   "text": "That's within three percent of the Honda for way less money and it used the least fuel.",
-   "src": [],
-   "ai": [
-    "a stack of cash next to a small red engine",
-    "a fuel can with a few drops left glowing"
-   ],
-   "red": [
-    "least"
+   "text": "That's within three percent of the Honda and it even wins the kart race with the fastest average time.",
+   "beats": [
+    [
+     "that's",
+     "9:39-9:45"
+    ],
+    [
+     "wins",
+     "10:24-10:30"
+    ],
+    [
+     "fastest",
+     "11:12-11:18"
+    ]
    ]
   },
   {
    "id": 11,
-   "phase": "loop",
    "type": "story",
    "text": "So which one would you buy?",
-   "src": [
-    "1:44-1:47"
+   "beats": [
+    [
+     "so",
+     "13:48-13:54"
+    ]
    ],
-   "ai": [
-    "two red small gas engines facing off on a garage floor under dramatic light"
-   ],
-   "first": "src",
    "mark": [
     "q",
-    0.2
+    "buy"
    ]
   }
  ],
- "facts_checked": "numbers from shorts/04/source/transcript.txt (7.5 vs 5.5 hp sticker 0:55/1:16; vibration 4:24; 178 g oil/24h 5:27, topped twice 5:43; carbon plug 6:29; pull 200/239/233 lb 9:05-9:21; fuel 56/57/59/60 lb 8:49); src timestamps verified on frames before render",
+ "facts_checked": "transcript vtUtORbNLsA + frames: clone $160 (chart 3:00) vs Honda $400-600 (1:09 caption), label 170F-7.5HP 0:57, generators 4 h load + 48 h total 3:04-5:43, clone vibration unreadable 4:24, clone burned oil + topped up twice 5:11/5:43, clone plug carbon 6:29, pull clone 200 lb (old transcript check) / Honda 239 / Predator 233 9:21 (=97.5 %), Predator fastest avg 3.47 s 11:08",
  "safety": "none needed",
  "title": "Which $150 Engine Can Keep Up With a $600 Honda? 🤔 (@ProjectFarm/YT)",
  "description": "Project Farm ran a Honda, a Honda clone, a Predator and a Briggs for 48 hours and pulled a trailer with each. The fake's sticker lies, and the cheap surprise is the Predator. Original video: @ProjectFarm https://youtu.be/vtUtORbNLsA | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #engine #honda #mechanic #smallengine",
- "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons",
+ "notes": "Footage-first (owner 4 Nov 2026). Removed the unverified 'clone skipped the counterweight' claim."
 }
