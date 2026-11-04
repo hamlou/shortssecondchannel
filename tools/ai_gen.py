@@ -1,6 +1,6 @@
 """AI beauty stills for one Short (TestedNProved style, research/tnp_breakdown.md). Runs on GitHub Actions.
 py tools/ai_gen.py shorts/<nn>
-Every prompt in a line's "ai" list -> shorts/<nn>/build/ai/<sha1(prompt)[:10]>.jpg (1024x1024), skipped if it already exists (cache).
+Every "ai:<prompt>" beat of a line -> shorts/<nn>/build/ai/<sha1(prompt)[:10]>.jpg (1024x1024), skipped if it already exists (cache).
 Model: Cloudflare Workers AI @cf/black-forest-labs/flux-1-schnell (FLUX.1-schnell = Apache 2.0, commercial use OK),
 free tier 10k neurons/day (~170 images). Env: CF_ACCOUNT_ID, CF_API_TOKEN."""
 import base64, hashlib, json, os, sys, time, urllib.request, urllib.error
@@ -41,7 +41,7 @@ def main():
     os.makedirs(o, exist_ok=True)
     n = 0
     for l in d["lines"]:
-        for p in l.get("ai", []):
+        for p in [v[3:] for _, v in l.get("beats", []) if v.startswith("ai:")]:
             f = os.path.join(o, img_name(p))
             if not os.path.exists(f):
                 gen(p, f)

@@ -8,69 +8,109 @@
    "id": 1,
    "phase": "hook",
    "text": "What happens if you hook a dead car battery up to a welder?",
-   "src": [
-    "2:26-2:28.5",
-    "2:40-2:42"
-   ],
    "type": "story",
-   "first": "src",
    "red": [
     "dead",
     "welder"
+   ],
+   "beats": [
+    [
+     "what",
+     "2:13-2:16"
+    ],
+    [
+     "dead",
+     "2:27-2:29.5"
+    ],
+    [
+     "up",
+     "2:30-2:33"
+    ]
    ]
   },
   {
    "id": 2,
    "phase": "rising",
    "text": "This battery should make 825 amps but it only makes 204 which isn't even lawnmower power.",
-   "src": [
-    "1:03-1:08"
-   ],
    "type": "analysis",
-   "ai": [
-    "a small red push lawn mower on green grass at golden hour"
-   ],
-   "first": "src",
    "mark": [
     "circle",
-    -1.6
+    "204"
+   ],
+   "beats": [
+    [
+     "this",
+     "1:03-1:06"
+    ],
+    [
+     "825",
+     "1:10.5-1:14"
+    ],
+    [
+     "204",
+     "1:10.5-1:14"
+    ],
+    [
+     "lawnmower",
+     "ai:a small red push lawn mower on green grass at golden hour"
+    ]
    ]
   },
   {
    "id": 3,
    "phase": "why",
    "text": "Because when a battery sits dead crystals grow on its lead plates and the acid can't reach the metal.",
-   "src": [],
    "type": "analysis",
-   "ai": [
-    "extreme macro of grey lead plates inside a car battery covered in white fuzzy crystals",
-    "macro of white sulfate crystals slowly growing over dark metal",
-    "macro of clear acid droplets stopped by a wall of white crystals on a lead plate"
-   ],
    "blue": [
     "acid"
+   ],
+   "beats": [
+    [
+     "because",
+     "9:01-9:04"
+    ],
+    [
+     "crystals",
+     "ai:extreme macro of grey lead plates inside a car battery covered in white fuzzy crystals"
+    ],
+    [
+     "lead",
+     "ai:macro of white sulfate crystals slowly growing over dark metal"
+    ],
+    [
+     "acid",
+     "ai:macro of clear acid droplets stopped by a wall of white crystals on a lead plate"
+    ]
    ]
   },
   {
    "id": 4,
    "phase": "why",
    "text": "So he hits it with 85 amps which is almost ten times a normal charger to shake them loose.",
-   "src": [
-    "2:24.8-2:25.8",
-    "2:32-2:34.5"
-   ],
    "type": "analysis",
-   "first": "src"
+   "beats": [
+    [
+     "so",
+     "2:31-2:33"
+    ],
+    [
+     "85",
+     "2:33-2:35"
+    ],
+    [
+     "normal",
+     "ai:a small household car battery charger on a garage shelf"
+    ],
+    [
+     "shake",
+     "2:35-2:38"
+    ]
+   ]
   },
   {
    "id": 5,
    "phase": "danger",
    "text": "And those bubbles are hydrogen and oxygen so it's basically a bomb in a box.",
-   "src": [
-    "2:34-2:37",
-    "2:40-2:42",
-    "2:52-2:54"
-   ],
    "type": "analysis",
    "sfx": [
     [
@@ -78,67 +118,98 @@
      2.4
     ]
    ],
-   "ai": [
-    "a black car battery shaped like a cartoon bomb with a lit sparkling fuse"
-   ],
    "red": [
     "bomb"
    ],
    "blue": [
     "bubbles"
    ],
-   "first": "src"
+   "beats": [
+    [
+     "those",
+     "2:35-2:38.5"
+    ],
+    [
+     "hydrogen",
+     "0:10-0:12.8"
+    ],
+    [
+     "basically",
+     "ai:a black car battery shaped like a cartoon bomb with a lit sparkling fuse"
+    ]
+   ]
   },
   {
    "id": 6,
    "phase": "conflict",
    "type": "story",
    "text": "But six rounds later it's only up to 446 and it still can't start the tractor.",
-   "src": [
-    "4:44-4:47",
-    "5:08-5:12"
-   ],
    "mark": [
     "x",
-    -1.4
+    "tractor"
    ],
-   "first": "src"
+   "beats": [
+    [
+     "six",
+     "4:09-4:13"
+    ],
+    [
+     "446",
+     "4:44-4:47"
+    ],
+    [
+     "still",
+     "5:05-5:11"
+    ]
+   ]
   },
   {
    "id": 7,
    "phase": "conflict",
    "text": "So he tries the internet's favorite fix with Epsom salt but to add it he drains the acid.",
-   "src": [
-    "6:10-6:13",
-    "5:47-5:50"
-   ],
    "type": "story",
-   "first": "src"
+   "beats": [
+    [
+     "so",
+     "6:10.5-6:13.5"
+    ],
+    [
+     "epsom",
+     "6:04.5-6:07.5"
+    ],
+    [
+     "drains",
+     "6:08-6:11"
+    ]
+   ]
   },
   {
    "id": 8,
    "phase": "conflict-peak",
    "text": "Which is like filling your gas tank with bath water so it drops from 600 amps to 51.",
-   "src": [
-    "6:28-6:33"
-   ],
    "type": "analysis",
-   "ai": [
-    "an open car gas tank full of foamy bath water with a yellow rubber duck floating"
-   ],
    "blue": [
     "water"
    ],
-   "first": "src"
+   "beats": [
+    [
+     "which",
+     "ai:an open car gas tank filled to the top with soapy bath water and foam"
+    ],
+    [
+     "bath",
+     "ai:a bathtub full of foamy bath water"
+    ],
+    [
+     "drops",
+     "6:26-6:30"
+    ]
+   ]
   },
   {
    "id": 10,
    "phase": "comeback",
    "text": "But battery five starts at just 62 amps and after six rounds on the welder it hits 961 which is fifteen times stronger.",
-   "src": [
-    "9:01-9:04",
-    "10:23-10:27"
-   ],
    "type": "analysis",
    "sfx": [
     [
@@ -146,52 +217,106 @@
      5.3
     ]
    ],
-   "first": "src"
+   "beats": [
+    [
+     "but",
+     "9:01-9:04"
+    ],
+    [
+     "62",
+     "9:05-9:08"
+    ],
+    [
+     "six",
+     "9:33-9:36"
+    ],
+    [
+     "961",
+     "10:34-10:38"
+    ],
+    [
+     "fifteen",
+     "10:55-11:01"
+    ]
+   ]
   },
   {
    "id": 11,
    "phase": "payoff",
    "text": "And it cranks a big block V8 for thirteen straight seconds.",
-   "src": [
-    "10:55-11:01"
-   ],
    "type": "story",
-   "payoff": true
+   "beats": [
+    [
+     "and",
+     "11:02-11:06"
+    ],
+    [
+     "big",
+     "ai:a huge chrome big block V8 engine in a dark garage"
+    ],
+    [
+     "thirteen",
+     "11:07-11:13"
+    ]
+   ]
   },
   {
    "id": 12,
    "phase": "caveat",
    "text": "The catch is it fixes crystals and not damage because another battery died again overnight.",
-   "src": [
-    "11:20-11:26"
-   ],
    "type": "analysis",
-   "first": "src",
    "red": [
     "damage"
+   ],
+   "beats": [
+    [
+     "the",
+     "10:34-10:38"
+    ],
+    [
+     "crystals",
+     "ai:blue electric sparks shattering white crystals on a lead plate macro"
+    ],
+    [
+     "damage",
+     "ai:macro of a cracked broken lead plate inside a car battery"
+    ],
+    [
+     "another",
+     "11:21-11:27"
+    ]
    ]
   },
   {
    "id": 13,
    "phase": "loop",
    "text": "So would you hook your dead battery up to a welder?",
-   "src": [
-    "9:30-9:32",
-    "9:56-9:57"
-   ],
    "type": "story",
-   "first": "src",
    "mark": [
     "q",
-    0.2
+    "would"
    ],
    "red": [
     "dead",
     "welder"
+   ],
+   "beats": [
+    [
+     "so",
+     "2:13-2:16"
+    ],
+    [
+     "dead",
+     "2:27-2:29.5"
+    ],
+    [
+     "up",
+     "2:30-2:33"
+    ]
    ]
   }
  ],
- "notes": "TNP style exact (owner 4 Nov 2026): 3:4 frame, plain source footage ~1 s shots, only 6 AI clips (~16 %) where the footage can't show the idea. Analysis lines (2,3,4,5,8,10,12) keep our own WHY/joke/limit. Never use Todd's narration or music.",
+ "notes": "TNP exact style; every visual starts on the spoken word that names it (owner 4 Nov 2026: 'every word said must match what is showing'). AI only for words the footage can't show: lawnmower, crystals/acid, normal charger, bomb, gas tank of bath water, big block V8, damage.",
  "source_audio": false,
  "facts_checked": "all numbers from source transcript a2XRR9aFWPo (204/825 A 1:03, 85 A 2:27, 446 A 4:31, Epsom 600->51 A 6:28, battery 5 62 A/6% 9:01, 961 A/81% 10:23, 454 13 s 11:07, Ranger 10 V next day 11:20); 961/62 = 15.5x; 204/825 = 25 %; 85 A vs ~10 A charger = 8.5x ('almost ten times')",
  "safety": "on-screen: DON'T TRY THIS - explosive hydrogen + acid; no step-by-step settings",

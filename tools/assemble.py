@@ -3,11 +3,10 @@ py tools/assemble.py shorts/<nn>
 Needs: script.json, durations.json, vo/full.wav (tools/tts.py), source/source.mp4, build/ai/*.jpg (tools/ai_gen.py).
 Out:   shorts/<nn>/build/final.mp4 (1080x1440 = 3:4 like TNP, 30 fps) + final_sheet.jpg + plan.json
 
-Per script line:  "src": source ranges -> plain 3:4 shots of 0.7-1.4 s at 1.25x (no zooms)
-                  "ai":  prompts -> photoreal stills with a slow drift, 1.3 s each; few per Short like TNP (3-8)
-                  "first": "ai"|"src" (default ai for analysis lines), "cx": 0-1 horizontal crop centre of the source,
-                  "payoff": true -> one real-speed source shot (the result moment), "red"/"blue": key words to colour,
-                  "mark": [q|x|circle, seconds into line], "sfx": [[kind, seconds], ...] (negative = from line end).
+Per script line:  "beats": [[word, "m:ss-m:ss" | "ai:<prompt>"], ...] -> each visual starts ON the spoken word that names it
+                  (source = plain 3:4 shots of 0.7-1.4 s at 1.25x, no zooms; AI = still with slow drift, only for words the
+                  footage can't show), "red"/"blue": key words to colour, "cx": 0-1 horizontal crop centre of the source,
+                  "mark": [q|x|circle, word or seconds into line], "sfx": [[kind, seconds], ...] (negative = from line end).
 Frame 0 gets one red arrow. Kind switches (ai<->src, max one per 5 s) get a 0.1 s whip blur or white flash + whoosh.
 Rules (research/monetization_system.md): source shots <= 2 s, no source audio, crop above the source's burned-in captions."""
 import json, math, os, random, re, shutil, subprocess, sys
@@ -38,36 +37,49 @@ def sec(t):
     return int(m) * 60 + float(s)
 
 
+def word_times(text, dur):
+    """Estimated start of every word inside a line (same weights as the captions)."""
+    words = text.split()
+    wts = [len(re.sub(r"\W", "", w)) + 2 for w in words]
+    speak = dur - GAP
+    return [w.lower().strip(".,?!'\"") for w in words], [speak * sum(wts[:i]) / sum(wts) for i in range(len(words))]
+
+
+def beat_spans(l, dur):
+    """'beats': [[anchor_word, "m:ss-m:ss" | "ai:<prompt>"], ...] -> [(visual, start_s, seconds)].
+    Each visual starts on the spoken word that names it, so the screen always shows what the voice says."""
+    words, wt = word_times(l["text"], dur)
+    starts, k = [], 0
+    for anchor, _ in l["beats"]:
+        a = anchor.lower()
+        while k < len(words) and words[k] != a:
+            k += 1
+        if k == len(words):
+            sys.exit(f"line {l['id']}: beat word '{anchor}' not found in order")
+        starts.append(0.0 if not starts else wt[k])
+        k += 1
+    ends = starts[1:] + [dur]
+    return [(v, st, en - st) for (_, v), st, en in zip(l["beats"], starts, ends)]
+
+
 def plan_line(l, dur, rnd):
     """-> list of shots: ("ai", prompt, seconds, move) / ("src", start, seconds, speed)."""
-    ranges = [tuple(map(sec, c.split("-"))) for c in l.get("src", [])]
-    ai = l.get("ai", [])
-    if l.get("payoff") and ranges:
-        a, b = ranges[0]
-        n = 1 if dur <= 3.5 else 2
-        return [("src", a + i * (b - a) / n, dur / n, 1.0) for i in range(n)]
-    ai_t = dur if not ranges else (min(dur * 0.75, len(ai) * AI_LEN) if ai else 0)
-    A = []
-    if ai:
-        n = max(len(ai), round(ai_t / AI_LEN)) if not ranges else len(ai)
-        moves = ["push", "panr", "pull", "panl"]
-        A = [("ai", ai[i % len(ai)], ai_t / n, moves[(i + rnd.randrange(4)) % 4]) for i in range(n)]
-    S, used, k = [], 0.0, 0
-    cursor = [a for a, b in ranges]
-    while ranges and used < dur - ai_t - 1e-3:
-        i = k % len(ranges)
-        a, b = ranges[i]
-        ln = min(rnd.uniform(0.7, 1.4), dur - ai_t - used)
-        st = cursor[i] if cursor[i] + ln * SPEED <= b else a
-        cursor[i] = st + ln * SPEED
-        S.append(("src", st, ln, SPEED))
-        used += ln
-        k += 1
-    first = l.get("first", "ai" if l.get("type") == "analysis" else "src")
-    p, q = (A, S) if first == "ai" else (S, A)
     out = []
-    for i in range(max(len(p), len(q))):
-        out += p[i:i + 1] + q[i:i + 1]
+    for v, _, ln in beat_spans(l, dur):
+        if v.startswith("ai:"):
+            out.append(("ai", v[3:], ln, rnd.choice(["push", "pull"])))
+            continue
+        a, b = map(sec, v.split("-"))
+        cur, used = a, 0.0
+        while used < ln - 1e-3:
+            n = min(rnd.uniform(0.7, 1.4), ln - used)
+            if ln - used - n < 0.4:
+                n = ln - used
+            if cur + n * SPEED > b + 0.05:
+                cur = a
+            out.append(("src", cur, n, SPEED))
+            cur += n * SPEED
+            used += n
     return out
 
 
@@ -221,6 +233,9 @@ def main():
         ev += [(k, at(st, du_, s)) for k, s in l.get("sfx", [])]
         if l.get("mark"):
             k, s = l["mark"]
+            if isinstance(s, str):
+                ws, wt = word_times(l["text"], du_)
+                s = wt[ws.index(s.lower())]
             a = at(st, du_, s)
             wins[k].append((a, min(a + 1.5, st + du_)))
             ev.append(("buzz" if k == "x" else "pop", a))
