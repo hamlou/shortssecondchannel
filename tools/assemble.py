@@ -3,7 +3,7 @@ py tools/assemble.py shorts/<nn>
 Needs: script.json, durations.json, vo/full.wav (tools/tts.py), source/source.mp4, build/ai/*.jpg (tools/ai_gen.py).
 Out:   shorts/<nn>/build/final.mp4 (1080x1440 = 3:4 like TNP, 30 fps) + final_sheet.jpg + plan.json
 
-Per script line:  "beats": [[word, "m:ss-m:ss" | "ai:<prompt>"], ...] -> each visual starts ON the spoken word that names it
+Per script line:  "beats": [[word, "m:ss-m:ss" | "ai:<prompt>", optional crop centre 0-1], ...] -> each visual starts ON the spoken word that names it
                   (source = plain 3:4 shots of 0.7-1.4 s at 1.25x, no zooms; AI = still with slow drift, only for words the
                   footage can't show), "red"/"blue": key words to colour, "cx": 0-1 horizontal crop centre of the source,
                   "mark": [q|x|circle, word or seconds into line], "sfx": [[kind, seconds], ...] (negative = from line end).
@@ -51,7 +51,7 @@ def beat_spans(l, dur):
     Each visual starts on the spoken word that names it, so the screen always shows what the voice says."""
     words, wt = word_times(l["text"], dur)
     starts, k = [], 0
-    for anchor, _ in l["beats"]:
+    for anchor, *_ in l["beats"]:
         a = anchor.lower()
         while k < len(words) and words[k] != a:
             k += 1
@@ -64,13 +64,14 @@ def beat_spans(l, dur):
         if end - starts[i] < MIN_BEAT:
             starts[i] = max(starts[i - 1] + MIN_BEAT, end - MIN_BEAT)
     ends = starts[1:] + [dur]
-    return [(v, st, en - st) for (_, v), st, en in zip(l["beats"], starts, ends)]
+    return [(b[1], st, en - st) for b, st, en in zip(l["beats"], starts, ends)]
 
 
 def plan_line(l, dur, rnd):
     """-> list of shots: ("ai", prompt, seconds, move) / ("src", start, seconds, speed)."""
     out = []
-    for v, _, ln in beat_spans(l, dur):
+    for b, (v, _, ln) in zip(l["beats"], beat_spans(l, dur)):
+        cx = b[2] if len(b) > 2 else l.get("cx", 0.5)
         if v.startswith("ai:"):
             out.append(("ai", v[3:], ln, rnd.choice(["push", "pull"])))
             continue
@@ -82,7 +83,7 @@ def plan_line(l, dur, rnd):
                 n = ln - used
             if cur + n * SPEED > b + 0.05:
                 cur = a
-            out.append(("src", cur, n, SPEED))
+            out.append(("src", cur, n, SPEED, cx))
             cur += n * SPEED
             used += n
     return out
@@ -216,7 +217,7 @@ def main():
             cut_ai(os.path.join(b, "ai", img_name(s[1])), nf, s[3], tr, o)
             ai_frames += nf
         else:
-            cut_src(src, s[1], nf, s[3], l.get("cx", 0.5), j % 2 == 0, tr, o)
+            cut_src(src, s[1], nf, s[3], s[4], j % 2 == 0, tr, o)
         segs.append(o)
         plan.append({"line": l["id"], "t": round(t, 2), "kind": s[0], "s": round(nf / FPS, 2), "what": s[1] if s[0] == "ai" else round(s[1], 2), "trans": tr})
         prev = s[0]

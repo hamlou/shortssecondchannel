@@ -41,7 +41,7 @@ def main():
     os.makedirs(o, exist_ok=True)
     n = 0
     for l in d["lines"]:
-        for p in [v[3:] for _, v in l.get("beats", []) if v.startswith("ai:")]:
+        for p in [b[1][3:] for b in l.get("beats", []) if b[1].startswith("ai:")]:
             f = os.path.join(o, img_name(p))
             if not os.path.exists(f):
                 gen(p, f)

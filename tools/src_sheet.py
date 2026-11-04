@@ -17,7 +17,7 @@ def main():
     tiles = []
     font = ImageFont.truetype(os.path.join(ROOT, "tools", "fonts", "BebasNeue-Regular.ttf"), 34)
     for l in d["lines"]:
-        for w, c in l.get("beats", [[None, c] for c in l.get("src", [])]):
+        for w, c, *_ in l.get("beats", [[None, c] for c in l.get("src", [])]):
             if c.startswith("ai:"):
                 continue
             a, b = map(sec, c.split("-"))
