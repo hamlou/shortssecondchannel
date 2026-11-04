@@ -1,0 +1,165 @@
+{
+ "short": "20",
+ "source": "https://youtu.be/-DgzhVkAIuc",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "Everyone says sugar in a gas tank will destroy an engine so he dumps a quarter cup into a mower.",
+   "beats": [
+    [
+     "everyone",
+     "0:15-0:21"
+    ],
+    [
+     "sugar",
+     "2:12-2:18"
+    ],
+    [
+     "dumps",
+     "3:12-3:18"
+    ]
+   ],
+   "red": [
+    "destroy"
+   ]
+  },
+  {
+   "id": 2,
+   "type": "analysis",
+   "text": "But watch the jar because the sugar just sinks to the bottom and won't dissolve in gasoline.",
+   "beats": [
+    [
+     "but",
+     "2:39-2:45"
+    ],
+    [
+     "sinks",
+     "2:48-2:54"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "sinks"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "analysis",
+   "text": "Because sugar dissolves in water but gas is an oil so the crystals just sit there like sand in a bucket.",
+   "beats": [
+    [
+     "because",
+     "ai:white sugar crystals sitting at the bottom of a glass jar of golden gasoline macro"
+    ],
+    [
+     "sand",
+     "ai:sand settled at the bottom of a clear bucket of water"
+    ]
+   ]
+  },
+  {
+   "id": 4,
+   "type": "story",
+   "text": "So the engine fires up and runs for about 105 minutes without dying.",
+   "beats": [
+    [
+     "so",
+     "3:27-3:33"
+    ],
+    [
+     "105",
+     "4:21-4:27"
+    ]
+   ]
+  },
+  {
+   "id": 5,
+   "type": "story",
+   "text": "And when he looks inside the tank the sugar is still sitting there.",
+   "beats": [
+    [
+     "and",
+     "4:39-4:43"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "sitting"
+   ]
+  },
+  {
+   "id": 6,
+   "type": "analysis",
+   "text": "And the fuel filter catches most of what moves so very little sugar ever reaches the engine.",
+   "beats": [
+    [
+     "and",
+     "3:00-3:03"
+    ],
+    [
+     "filter",
+     "ai:a small inline fuel filter catching white grains in a clear fuel line macro"
+    ]
+   ]
+  },
+  {
+   "id": 7,
+   "type": "analysis",
+   "text": "The compression stays almost the same at 73 psi hot so the engine definitely didn't seize.",
+   "beats": [
+    [
+     "the",
+     "5:09-5:15"
+    ],
+    [
+     "seize",
+     "6:24-6:27",
+     0.5
+    ]
+   ]
+  },
+  {
+   "id": 8,
+   "type": "analysis",
+   "text": "But the cylinder head comes out crusty with sugar residue so over time it could still cause trouble.",
+   "beats": [
+    [
+     "but",
+     "5:39-5:45"
+    ],
+    [
+     "crusty",
+     "6:09-6:15"
+    ]
+   ],
+   "red": [
+    "crusty"
+   ]
+  },
+  {
+   "id": 9,
+   "type": "story",
+   "text": "So is the sugar myth true or not?",
+   "beats": [
+    [
+     "so",
+     "6:27-6:33",
+     0.75
+    ]
+   ],
+   "mark": [
+    "q",
+    "not"
+   ]
+  }
+ ],
+ "facts_checked": "Whisper transcript -DgzhVkAIuc + frames: myth 'engine will seize' 0:15-0:26, 16 oz fuel + 1/4 cup sugar 2:01, sugar settles undissolved 2:16-2:39, mower has fuel filter 2:51, engine ran ~105 minutes 4:00-4:34, sugar crystals left in tank 4:34-4:46, compression 72 hot before (1:54 caption) vs 73 hot / 65 cold after (5:12/5:24 captions; chart 6:24), residue/buildup on head and piston 5:39-6:02. Sucrose barely dissolves in gasoline (nonpolar solvent) = standard chemistry (also UC Berkeley test 1994).",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "Does SUGAR in the Gas Tank Really Destroy an Engine? 😳 (@ProjectFarm/YT)",
+ "description": "Project Farm poured a quarter cup of sugar into a mower's gas tank and ran it to find out if the old myth is true. Original video: @ProjectFarm https://youtu.be/-DgzhVkAIuc | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #sugar #engine #myth #mower #science",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}
