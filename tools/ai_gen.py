@@ -23,6 +23,15 @@ class QuotaOver(Exception):
 PIPE = None
 
 
+def is_blank(path):
+    """SDXL sometimes returns an all-black (NaN) image: treat it as missing."""
+    from PIL import Image, ImageStat
+    try:
+        return max(ImageStat.Stat(Image.open(path).convert("L").resize((64, 64))).extrema[0][1], 0) < 25
+    except Exception:
+        return True
+
+
 def gen_local(prompt, out):
     """Self-hosted SDXL + LCM-LoRA on CPU (~2-3 min/image on a 4-core runner)."""
     global PIPE
@@ -41,9 +50,13 @@ def gen_local(prompt, out):
         print("local SDXL+LCM loaded", flush=True)
     import torch
     t = time.time()
-    img = PIPE(prompt + STYLE, num_inference_steps=6, guidance_scale=1.0, width=768, height=1024,
-               generator=torch.Generator().manual_seed(int(img_name(prompt)[:8], 16))).images[0]
-    img.save(out, quality=92)
+    for k in range(4):
+        img = PIPE(prompt + STYLE, num_inference_steps=6, guidance_scale=1.0, width=768, height=1024,
+                   generator=torch.Generator().manual_seed(int(img_name(prompt)[:8], 16) + k)).images[0]
+        img.save(out, quality=92)
+        if not is_blank(out):
+            break
+        print("blank image, retrying with another seed", flush=True)
     print(f"local image {time.time() - t:.0f}s", flush=True)
 
 
@@ -82,6 +95,9 @@ def main():
     for l in d["lines"]:
         for p in [b[1][3:] for b in l.get("beats", []) if b[1].startswith("ai:")]:
             f = os.path.join(o, img_name(p))
+            if os.path.exists(f) and is_blank(f):
+                os.remove(f)
+                print("removed blank cached image", p[:50], flush=True)
             if not os.path.exists(f):
                 if not LOCAL[0]:
                     try:
