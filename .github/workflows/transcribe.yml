@@ -1,0 +1,52 @@
+name: transcribe
+run-name: transcribe ${{ inputs.short }}
+
+# Speech-to-text of a source when YouTube captions are rate-limited (faster-whisper, MIT). Source decrypted only on the
+# runner; the transcript leaves encrypted (key = secret SRC_KEY).
+on:
+  workflow_dispatch:
+    inputs:
+      short:
+        description: Short number (e.g. 07)
+        required: true
+
+jobs:
+  transcribe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    defaults:
+      run:
+        shell: bash
+    env:
+      S: ${{ inputs.short }}
+      SRC_KEY: ${{ secrets.SRC_KEY }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q faster-whisper && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - name: Audio
+        run: |
+          gh release download src-$S -p source.mp4.enc -D /tmp
+          openssl enc -d -aes-256-cbc -pbkdf2 -pass env:SRC_KEY -in /tmp/source.mp4.enc -out /tmp/src.mp4
+          ffmpeg -v error -i /tmp/src.mp4 -vn -ac 1 -ar 16000 /tmp/a.wav
+          rm /tmp/source.mp4.enc /tmp/src.mp4
+      - name: Whisper
+        run: |
+          python - <<'EOF'
+          from faster_whisper import WhisperModel
+          m = WhisperModel("small.en", device="cpu", compute_type="int8")
+          segs, _ = m.transcribe("/tmp/a.wav", vad_filter=True)
+          with open("/tmp/transcript.txt", "w") as f:
+              for s in segs:
+                  f.write(f"[{int(s.start // 60)}:{int(s.start % 60):02d}] {s.text.strip()}\n")
+          EOF
+          mkdir -p out
+          openssl enc -aes-256-cbc -pbkdf2 -pass env:SRC_KEY -in /tmp/transcript.txt -out out/transcript.txt.enc
+      - uses: actions/upload-artifact@v4
+        with:
+          name: transcript-${{ inputs.short }}
+          path: out
+          retention-days: 3
