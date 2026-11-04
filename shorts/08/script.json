@@ -6,113 +6,156 @@
  "lines": [
   {
    "id": 1,
-   "phase": "hook",
    "type": "story",
    "text": "Someone mailed him a steel box bolted shut with a coffee can welded inside.",
-   "src": [
-    "0:15-0:20",
-    "0:52-0:56"
-   ],
-   "ai": [
-    "a rusty steel box bolted shut on a workbench with dramatic light"
-   ],
-   "first": "ai"
+   "beats": [
+    [
+     "someone",
+     "0:03-0:09"
+    ],
+    [
+     "bolted",
+     "0:30-0:36"
+    ],
+    [
+     "coffee",
+     "0:51-0:57"
+    ]
+   ]
   },
   {
    "id": 2,
-   "phase": "question",
    "type": "story",
    "text": "And inside is a can of 1950s motor oil so would it still protect an engine?",
-   "src": [
-    "1:00-1:05"
+   "beats": [
+    [
+     "and",
+     "1:03-1:09"
+    ],
+    [
+     "1950s",
+     "1:09-1:13"
+    ],
+    [
+     "engine",
+     "6:03-6:06"
+    ]
    ],
-   "ai": [
-    "an old rusty vintage motor oil can from the 1950s on a shelf"
-   ],
-   "first": "src",
    "mark": [
     "q",
-    -1.2
+    "engine"
    ]
   },
   {
    "id": 3,
-   "phase": "rising",
    "type": "story",
    "text": "He cooks it at 410 degrees right next to modern oil.",
-   "src": [
-    "3:00-3:05",
-    "3:48-3:52"
+   "beats": [
+    [
+     "he",
+     "3:21-3:27"
+    ],
+    [
+     "modern",
+     "3:15-3:20"
+    ]
    ],
-   "ai": [
-    "two glass beakers of motor oil heating on a glowing hot plate"
-   ],
-   "first": "src"
+   "red": [
+    "410"
+   ]
   },
   {
    "id": 4,
-   "phase": "conflict",
    "type": "analysis",
    "text": "And the old oil loses 42 percent more weight so it's literally cooking off into the air.",
-   "src": [],
-   "ai": [
-    "golden motor oil steaming and evaporating into the air",
-    "wisps of smoke rising from hot oil in slow motion"
-   ],
-   "red": [
-    "42"
+   "beats": [
+    [
+     "and",
+     "4:00-4:06"
+    ],
+    [
+     "42",
+     "4:21-4:24"
+    ],
+    [
+     "cooking",
+     "3:48-3:54"
+    ]
    ]
   },
   {
    "id": 5,
-   "phase": "conflict",
    "type": "story",
-   "text": "In a minus forty freezer it barely moves.",
-   "src": [
-    "9:18-9:24"
+   "text": "In a freezer race it barely moves while the modern oil pours right out.",
+   "beats": [
+    [
+     "in",
+     "9:00-9:06"
+    ],
+    [
+     "barely",
+     "9:51-9:57"
+    ],
+    [
+     "modern",
+     "9:12-9:18"
+    ]
    ],
-   "ai": [
-    "thick frozen motor oil covered in frost"
-   ],
-   "first": "src",
    "blue": [
     "freezer"
    ]
   },
   {
    "id": 6,
-   "phase": "conflict-peak",
    "type": "analysis",
    "text": "And after an engine run the cylinder head is crusty because oil that can't take heat bakes onto hot metal.",
-   "src": [
-    "8:20-8:25"
-   ],
-   "ai": [
-    "a crusty black engine cylinder head macro",
-    "oil baking onto hot metal with smoke"
-   ],
-   "first": "src"
+   "beats": [
+    [
+     "and",
+     "7:03-7:09"
+    ],
+    [
+     "crusty",
+     "8:21-8:27"
+    ],
+    [
+     "bakes",
+     "ai:dark motor oil baking onto glowing hot metal with smoke macro"
+    ]
+   ]
   },
   {
    "id": 7,
-   "phase": "why",
    "type": "analysis",
    "text": "The lab report shows why because there's just 6 parts per million of calcium.",
-   "src": [],
-   "ai": [
-    "a lab report sheet on a clipboard next to test tubes of oil",
-    "a single tiny white grain under a magnifying glass"
+   "beats": [
+    [
+     "the",
+     "10:00-10:06"
+    ],
+    [
+     "6",
+     "10:30-10:36"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "calcium"
    ]
   },
   {
    "id": 8,
-   "phase": "why",
    "type": "analysis",
    "text": "Calcium is the detergent that grabs soot and acid so without it everything turns to sludge.",
-   "src": [],
-   "ai": [
-    "tiny particles grabbing black soot inside oil macro",
-    "thick black sludge dripping inside an engine"
+   "beats": [
+    [
+     "calcium",
+     "ai:tiny glowing particles grabbing black soot inside golden motor oil macro"
+    ],
+    [
+     "sludge",
+     "ai:thick black sludge dripping inside an engine valve cover"
+    ]
    ],
    "red": [
     "sludge"
@@ -120,24 +163,36 @@
   },
   {
    "id": 9,
-   "phase": "payoff",
    "type": "analysis",
-   "text": "And its acid fighting reserve is zero point four versus six point two for modern oil which is fifteen times less.",
-   "src": [],
-   "ai": [
-    "a nearly empty battery shaped glass of oil",
-    "acid droplets eating a metal surface macro"
+   "text": "And its acid fighting reserve is zero point four versus about six for modern oil which is fifteen times less.",
+   "beats": [
+    [
+     "and",
+     "10:42-10:48"
+    ],
+    [
+     "modern",
+     "2:27-2:33"
+    ]
    ]
   },
   {
    "id": 10,
-   "phase": "verdict",
    "type": "analysis",
    "text": "So it still lubricates but it's like a shield that's already used up and your engine would sludge fast.",
-   "src": [],
-   "ai": [
-    "a cracked used up metal shield on a dark floor",
-    "black sludge filling an engine macro"
+   "beats": [
+    [
+     "so",
+     "5:42-5:48"
+    ],
+    [
+     "shield",
+     "ai:a cracked worn out metal shield lying on a dark workshop floor"
+    ],
+    [
+     "engine",
+     "8:36-8:42"
+    ]
    ],
    "red": [
     "sludge"
@@ -145,25 +200,24 @@
   },
   {
    "id": 11,
-   "phase": "loop",
    "type": "story",
    "text": "So would you put it in your car?",
-   "src": [
-    "0:52-0:55"
+   "beats": [
+    [
+     "so",
+     "11:21-11:27"
+    ]
    ],
-   "ai": [
-    "an old rusty vintage motor oil can from the 1950s on a shelf"
-   ],
-   "first": "src",
    "mark": [
     "q",
-    0.2
+    "car"
    ]
   }
  ],
- "facts_checked": "numbers from source transcript shorts/08/source/transcript.txt; src timestamps verified on frames before render",
+ "facts_checked": "transcript -zHlxeu_yuM + frames: steel box screws/bolts 0:15-0:33, welded coffee can 0:52, 1950s Quaker State 1:09, 410 F for 2 h 3:00, loss 9.43 g vs 6.63 g 4:04 (=42 % more), vapour 3:48, freezer -40 F race 9:02-9:57 (vintage 7 min), crusty head 8:25, calcium 6 ppm 10:30, TBN 0.4 vs ~6 10:14/10:45 (=15x), likely to sludge 11:18",
  "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
  "title": "He Tested 70 Year Old Motor Oil 😱 (@ProjectFarm/YT)",
  "description": "A viewer mailed Project Farm a welded steel box with a 1950s can of oil inside. The lab report explains why it fails, and it's not what you'd guess. Original video: @ProjectFarm https://youtu.be/-zHlxeu_yuM | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #cars #oil #mechanic #science",
- "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons",
+ "notes": "Footage-first (owner 4 Nov 2026). AI only on the chemistry (baking oil, detergent, sludge, shield)."
 }
