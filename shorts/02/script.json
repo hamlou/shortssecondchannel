@@ -6,45 +6,62 @@
  "lines": [
   {
    "id": 1,
-   "phase": "hook",
    "type": "story",
-   "text": "Can brake fluid free a rusted bolt better than the stuff that's made for it?",
-   "src": [
-    "2:06-2:10",
-    "3:15-3:18"
+   "text": "Can brake fluid really free a rusted bolt better than the stuff that's made for it?",
+   "beats": [
+    [
+     "can",
+     "10:51-10:55"
+    ],
+    [
+     "brake",
+     "2:09-2:12"
+    ],
+    [
+     "made",
+     "2:18-2:24"
+    ]
    ],
-   "ai": [
-    "a heavily rusted bolt and nut glistening with a drop of golden oil"
-   ],
-   "first": "ai",
    "red": [
     "rusted"
    ]
   },
   {
    "id": 2,
-   "phase": "rising",
    "type": "story",
-   "text": "He rusts a pile of bolts on purpose and drips six fluids on them.",
-   "src": [
-    "1:21-1:25",
-    "2:23-2:27"
-   ],
-   "ai": [
-    "a pile of bright orange rusted bolts on a wooden workbench",
-    "six small bottles of different coloured oils in a row"
+   "text": "So he rusts 28 bolts on purpose and drips ten drops of each fluid on them.",
+   "beats": [
+    [
+     "so",
+     "0:03-0:07"
+    ],
+    [
+     "rusts",
+     "0:33-0:39"
+    ],
+    [
+     "drips",
+     "2:12-2:16"
+    ]
    ]
   },
   {
    "id": 3,
-   "phase": "why",
    "type": "analysis",
    "text": "The trick is capillary action which pulls a thin liquid into tiny gaps like a paper towel drinking a spill.",
-   "src": [],
-   "ai": [
-    "macro of thin golden oil creeping up into tiny cracks of rusty metal",
-    "a white paper towel soaking up a spilled blue drink",
-    "macro of a liquid droplet disappearing into a hairline crack"
+   "beats": [
+    [
+     "the",
+     "3:33-3:38"
+    ],
+    [
+     "capillary",
+     "ai:macro of thin golden oil creeping up into the tiny gaps of rusty bolt threads"
+    ],
+    [
+     "paper",
+     "ai:a white paper towel soaking up a spilled blue drink on a table"
+    ]
    ],
    "blue": [
     "liquid"
@@ -52,128 +69,180 @@
   },
   {
    "id": 4,
-   "phase": "conflict",
    "type": "story",
    "text": "The brake fluid just sits on the washer like it gave up.",
-   "src": [
-    "3:15-3:20"
+   "beats": [
+    [
+     "the",
+     "3:15-3:21"
+    ],
+    [
+     "like",
+     "3:24-3:29"
+    ]
    ],
-   "ai": [
-    "a single drop of fluid sitting on a rusty washer like a bead"
-   ],
-   "first": "src",
    "mark": [
     "q",
-    -1.2
+    "gave"
    ]
   },
   {
    "id": 5,
-   "phase": "twist",
-   "type": "analysis",
-   "text": "But when he cuts the bolt open it crept all the way to the bottom.",
-   "src": [
-    "4:58-5:02"
-   ],
-   "ai": [
-    "a steel bolt sliced in half lengthwise showing oil inside the threads macro"
-   ],
-   "first": "ai"
+   "type": "story",
+   "text": "But a clear plastic block shows it still crawled all the way down the threads.",
+   "beats": [
+    [
+     "but",
+     "4:36-4:41"
+    ],
+    [
+     "crawled",
+     "5:15-5:21"
+    ]
+   ]
   },
   {
    "id": 6,
-   "phase": "why",
    "type": "analysis",
-   "text": "Fluid Film coats everything like slime but it's too thick to squeeze into the threads.",
-   "src": [
-    "5:15-5:20"
+   "text": "Fluid Film is so thick it just slimes the outside and never squeezes into the threads.",
+   "beats": [
+    [
+     "fluid",
+     "8:15-8:19"
+    ],
+    [
+     "thick",
+     "ai:thick honey sitting on top of a narrow crack in rusty metal and not going in"
+    ]
    ],
-   "ai": [
-    "thick green slime coating a rusty bolt macro",
-    "thick honey failing to enter a narrow crack macro"
-   ],
-   "first": "ai"
+   "mark": [
+    "x",
+    "never"
+   ]
   },
   {
    "id": 7,
-   "phase": "conflict",
+   "type": "analysis",
+   "text": "Seafoam breaks one loose at 104 foot pounds while a dry bolt needs 133.",
+   "beats": [
+    [
+     "seafoam",
+     "6:36-6:42"
+    ],
+    [
+     "dry",
+     "1:30-1:36"
+    ]
+   ],
+   "blue": [
+    "seafoam"
+   ]
+  },
+  {
+   "id": 8,
    "type": "analysis",
    "text": "Then viewers beg him to mix them all into one super oil which is risky because chemicals can react.",
-   "src": [
-    "8:34-8:40"
+   "beats": [
+    [
+     "then",
+     "8:33-8:39"
+    ],
+    [
+     "mix",
+     "9:00-9:06"
+    ],
+    [
+     "risky",
+     "ai:two chemicals reacting with white smoke in a glass beaker"
+    ]
    ],
-   "ai": [
-    "six different coloured oils swirling together in a glass beaker",
-    "two chemicals reacting with smoke in a glass flask"
-   ],
-   "first": "src",
    "red": [
     "risky"
    ]
   },
   {
-   "id": 8,
-   "phase": "conflict-peak",
+   "id": 9,
    "type": "analysis",
    "text": "And the mix never crept down so a nut that was only hand tight needed 56 foot pounds.",
-   "src": [
-    "9:09-9:14"
+   "beats": [
+    [
+     "and",
+     "9:09-9:15"
+    ],
+    [
+     "hand",
+     "9:15-9:21"
+    ],
+    [
+     "56",
+     "9:30-9:36"
+    ]
    ],
-   "ai": [
-    "a wrench straining on a stuck rusty nut with motion blur"
-   ],
-   "first": "ai",
-   "red": [
+   "mark": [
+    "circle",
     "56"
    ]
   },
   {
-   "id": 9,
-   "phase": "payoff",
-   "type": "story",
-   "text": "The winner is Seafoam Deep Creep with CRC Knocker Loose right behind it.",
-   "src": [
-    "10:03-10:08"
-   ],
-   "ai": [
-    "a golden trophy on a podium in a garage spotlight",
-    "a silver trophy next to a gold trophy under spotlights"
-   ],
-   "first": "src"
-  },
-  {
    "id": 10,
-   "phase": "lesson",
-   "type": "analysis",
-   "text": "Because in rusty threads the gaps are microscopic so only the thinnest fluid gets in.",
-   "src": [],
-   "ai": [
-    "extreme macro of microscopic gaps inside rusty bolt threads",
-    "a thin liquid racing a thick syrup down a crack macro",
-    "macro of oil flowing into a rusted thread"
+   "type": "story",
+   "text": "The winner is Seafoam Deep Creep with CRC Knock'er Loose right behind it.",
+   "beats": [
+    [
+     "the",
+     "2:30-2:33"
+    ],
+    [
+     "crc",
+     "2:18-2:24"
+    ]
+   ],
+   "blue": [
+    "seafoam"
    ]
   },
   {
    "id": 11,
-   "phase": "loop",
+   "type": "analysis",
+   "text": "Because in rusty threads the gaps are microscopic so only the thinnest fluid gets in.",
+   "beats": [
+    [
+     "because",
+     "ai:extreme macro of microscopic gaps inside rusty bolt threads"
+    ],
+    [
+     "only",
+     "8:03-8:06"
+    ]
+   ]
+  },
+  {
+   "id": 12,
    "type": "story",
    "text": "So would you trust brake fluid on your next rusted bolt?",
-   "src": [
-    "2:06-2:09"
+   "beats": [
+    [
+     "so",
+     "10:15-10:21"
+    ],
+    [
+     "brake",
+     "2:09-2:12"
+    ],
+    [
+     "next",
+     "10:24-10:30"
+    ]
    ],
-   "ai": [
-    "a heavily rusted bolt and nut glistening with a drop of golden oil"
-   ],
-   "first": "src",
-   "mark": [
-    "q",
-    0.2
+   "red": [
+    "rusted"
    ]
   }
  ],
- "facts_checked": "numbers from source transcript shorts/02/source/transcript.txt; src timestamps verified on frames before render",
+ "facts_checked": "from transcript st8dkGzJWtg + frames: 28 bolts 1:21, 10 drops each 2:12 (on-screen), brake fluid stayed on washer 3:15, crept to bottom 4:58, Fluid Film slimed/little penetration 3:47+8:15, Seafoam 103.7 ft-lb 6:39 vs control 132.7 ft-lb 1:30, mix by viewer request + reaction warning 8:34, hand-tight nut 56.4 ft-lb 9:40, winner Seafoam then CRC 10:03",
  "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
  "title": "Can BRAKE FLUID Free a Rusted Bolt? 🤔 (@ProjectFarm/YT)",
  "description": "Project Farm dripped six fluids on rusted bolts and even mixed them all into one super oil. The winner came down to one thing: how thin the fluid is. Original video: @ProjectFarm https://youtu.be/st8dkGzJWtg | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #rust #mechanic #diy #science",
- "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons"
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons",
+ "notes": "Footage-first (owner 4 Nov 2026): moments picked from the full scan, then one sentence per moment; AI only on the why-lines (capillary, thick, chemicals, microscopic gaps). Todd's face opens (0:03) and closes (10:15) like TNP."
 }

@@ -3,7 +3,7 @@ py tools/mono_check.py shorts/<nn>/script.json   -> PASS/FAIL per rule, exit 1 i
 Pre-render: estimates seconds from words (wpm). Post-render: pass --durations shorts/<nn>/durations.json ({"<id>": seconds}) for exact numbers."""
 import json, os, re, sys
 
-WPM = 175
+WPM = 210  # measured: Kokoro am_puck at 1.15 = 214 wpm (Short 01: 194 words = 54.4 s)
 
 
 def secs(t):
