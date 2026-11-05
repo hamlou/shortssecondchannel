@@ -68,7 +68,8 @@ def main():
     shs = []
     for p in plan:
         t0, ln = p["t"], p["s"]
-        for k, tt in enumerate((t0 + 0.05, t0 + ln / 2, t0 + ln - 0.05) if ln > 0.4 else (t0 + ln / 2,)):
+        a0 = t0 + (0.18 if p.get("trans") else 0.05)          # skip the deliberate 0.1 s whip/flash frames (TNP does them too)
+        for k, tt in enumerate((a0, t0 + ln / 2, t0 + ln - 0.05) if ln > 0.4 else (t0 + ln / 2,)):
             img = frame(video, tt)
             if img is None:
                 continue
