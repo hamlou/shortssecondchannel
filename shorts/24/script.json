@@ -1,0 +1,181 @@
+{
+ "short": "24",
+ "source": "https://youtu.be/UbXy3c2oAfA",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "MacGyver could fix anything with duct tape but which brand would he actually trust?",
+   "beats": [
+    [
+     "macgyver",
+     "0:03-0:09",
+     0.75
+    ],
+    [
+     "brand",
+     "2:30-2:36"
+    ]
+   ]
+  },
+  {
+   "id": 2,
+   "type": "story",
+   "text": "He rolls six tapes down with 25 pounds and hangs a jug that he fills with water until each one peels off.",
+   "beats": [
+    [
+     "he",
+     "1:51-1:57"
+    ],
+    [
+     "jug",
+     "2:15-2:21"
+    ],
+    [
+     "peels",
+     "2:36-2:42"
+    ]
+   ],
+   "blue": [
+    "water"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "analysis",
+   "text": "T-Rex holds over 10 pounds which is twice as much as Gorilla and four times more than Scotch.",
+   "beats": [
+    [
+     "t-rex",
+     "3:06-3:12"
+    ],
+    [
+     "twice",
+     "3:39-3:42"
+    ],
+    [
+     "scotch",
+     "10:12-10:15",
+     0.5
+    ]
+   ],
+   "mark": [
+    "circle",
+    "10"
+   ]
+  },
+  {
+   "id": 4,
+   "type": "analysis",
+   "text": "Because its glue is a thick soft rubber that flows into the tiny bumps of the surface and grips them.",
+   "beats": [
+    [
+     "because",
+     "ai:extreme macro of thick sticky rubber adhesive flowing into tiny bumps on a surface"
+    ],
+    [
+     "grips",
+     "2:42-2:45"
+    ]
+   ]
+  },
+  {
+   "id": 5,
+   "type": "story",
+   "text": "Then he pulls each tape lengthwise with a lever and a weight plate until it snaps.",
+   "beats": [
+    [
+     "then",
+     "3:45-3:51"
+    ],
+    [
+     "snaps",
+     "5:15-5:21"
+    ]
+   ]
+  },
+  {
+   "id": 6,
+   "type": "analysis",
+   "text": "Gorilla holds almost 142 pounds while the cheapest tapes rip at 75 because its fabric mesh is woven much tighter.",
+   "beats": [
+    [
+     "gorilla",
+     "6:39-6:42"
+    ],
+    [
+     "rip",
+     "5:39-5:45"
+    ],
+    [
+     "mesh",
+     "ai:macro of tightly woven grey fabric threads inside duct tape"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "142"
+   ]
+  },
+  {
+   "id": 7,
+   "type": "analysis",
+   "text": "But tearing it across is a different story and Duck tape rips at just 12 pounds which is why you can tear it by hand.",
+   "beats": [
+    [
+     "but",
+     "8:00-8:06"
+    ],
+    [
+     "duck",
+     "8:51-8:57"
+    ],
+    [
+     "hand",
+     "9:00-9:03"
+    ]
+   ]
+  },
+  {
+   "id": 8,
+   "type": "analysis",
+   "text": "So no tape wins everything and Gorilla is the best all rounder while T-Rex sticks the hardest.",
+   "beats": [
+    [
+     "so",
+     "10:15-10:18",
+     0.5
+    ],
+    [
+     "gorilla",
+     "10:21-10:24",
+     0.5
+    ]
+   ]
+  },
+  {
+   "id": 9,
+   "type": "story",
+   "text": "Which tape would MacGyver use?",
+   "beats": [
+    [
+     "which",
+     "10:24-10:30",
+     0.75
+    ]
+   ],
+   "mark": [
+    "q",
+    "use"
+   ]
+  }
+ ],
+ "facts_checked": "Whisper transcript UbXy3c2oAfA + frames + result tables 10:12-10:21: adhesion (water jug until it lets go) T-Rex 10.15 lb 3:39 caption, Gorilla 5, Duck 4.48, 3M 3.68, Fasten 3.3, Scotch 2.3; length strength Gorilla 141.8 lb 6:39, T-Rex 131.2, 3M/Duck/Fasten 75.2, Scotch 62.4; width tear 3M 35.8 8:24, Gorilla 30.2, T-Rex 29.1, Scotch 17.7, Fasten 14.5, Duck 12.1 8:51; 25 lb roller 1:51; 1000 fps slow-mo 5:18; MacGyver intro 0:00.",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "Which DUCT TAPE Is Actually the Strongest? 🤔 (@ProjectFarm/YT)",
+ "description": "Project Farm tested six duct tapes for how well they stick, how much they hold lengthwise and how easily they tear across. Original video: @ProjectFarm https://youtu.be/UbXy3c2oAfA | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #ducttape #diy #tools #gorilla",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}
