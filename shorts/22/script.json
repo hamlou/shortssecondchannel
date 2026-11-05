@@ -1,0 +1,219 @@
+{
+ "short": "22",
+ "source": "https://youtu.be/J3F3jDa2xhg",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "Seafoam costs up to 10 dollars a can but Marvel Mystery Oil gives you twice as much for half the price so which one works?",
+   "beats": [
+    [
+     "seafoam",
+     "0:18-0:23",
+     0.75
+    ],
+    [
+     "marvel",
+     "1:06.5-1:08.5"
+    ],
+    [
+     "half",
+     "0:27-0:31",
+     0.75
+    ]
+   ],
+   "mark": [
+    "circle",
+    "half"
+   ]
+  },
+  {
+   "id": 2,
+   "type": "analysis",
+   "text": "Seafoam already cleaned carbon off a piston in his last test and that black crust steals compression from an engine.",
+   "beats": [
+    [
+     "seafoam",
+     "8:31-8:35"
+    ],
+    [
+     "carbon",
+     "1:12-1:17"
+    ],
+    [
+     "crust",
+     "ai:thick black carbon deposits crusted on top of an engine piston macro"
+    ]
+   ],
+   "red": [
+    "steals"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "analysis",
+   "text": "So he tests this mower first and it already makes 105 psi cold which is very good compression for a small engine.",
+   "beats": [
+    [
+     "so",
+     "2:06-2:11"
+    ],
+    [
+     "105",
+     "2:22-2:27"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "105"
+   ]
+  },
+  {
+   "id": 4,
+   "type": "analysis",
+   "text": "Viewers claimed the oil drains into the crankcase but that tube runs uphill so he tapes it shut anyway.",
+   "beats": [
+    [
+     "viewers",
+     "3:15-3:20"
+    ],
+    [
+     "uphill",
+     "ai:a black rubber breather hose running uphill from a carburetor on a small mower engine close up"
+    ],
+    [
+     "tapes",
+     "3:43-3:48"
+    ]
+   ]
+  },
+  {
+   "id": 5,
+   "type": "story",
+   "text": "Then he hangs a bag like a hospital drip so 8 ounces of Marvel feeds slowly into the carburetor.",
+   "beats": [
+    [
+     "then",
+     "4:03-4:08"
+    ],
+    [
+     "hospital",
+     "ai:a clear hospital IV drip bag hanging from a metal stand with a thin tube"
+    ],
+    [
+     "8",
+     "4:24-4:29"
+    ],
+    [
+     "carburetor",
+     "4:33-4:38"
+    ]
+   ]
+  },
+  {
+   "id": 6,
+   "type": "analysis",
+   "text": "And the mower blows thick white smoke because the oil is burning off inside the hot cylinder.",
+   "beats": [
+    [
+     "and",
+     "5:01-5:07"
+    ],
+    [
+     "smoke",
+     "5:44-5:48"
+    ],
+    [
+     "burning",
+     "ai:oil mist burning inside a glowing hot engine cylinder close up"
+    ]
+   ],
+   "blue": [
+    "smoke"
+   ]
+  },
+  {
+   "id": 7,
+   "type": "story",
+   "text": "Then he fills the cylinder and lets it soak for 20 minutes and after that it runs great without smoke.",
+   "beats": [
+    [
+     "then",
+     "6:16-6:21"
+    ],
+    [
+     "soak",
+     "6:33-6:37"
+    ],
+    [
+     "runs",
+     "6:54-6:57"
+    ]
+   ]
+  },
+  {
+   "id": 8,
+   "type": "analysis",
+   "text": "But the compression doesn't budge because hot it reads 106 before and 106 after which is exactly zero percent.",
+   "beats": [
+    [
+     "but",
+     "7:13-7:18"
+    ],
+    [
+     "zero",
+     "8:52-8:57",
+     0.5
+    ]
+   ],
+   "mark": [
+    "x",
+    "zero"
+   ],
+   "red": [
+    "zero"
+   ]
+  },
+  {
+   "id": 9,
+   "type": "analysis",
+   "text": "Meanwhile Seafoam gained almost 10 percent cold but its engine started at just 93 which left way more room to improve.",
+   "beats": [
+    [
+     "meanwhile",
+     "8:53-8:57",
+     0.5
+    ],
+    [
+     "93",
+     "9:00-9:05",
+     0.5
+    ]
+   ]
+  },
+  {
+   "id": 10,
+   "type": "story",
+   "text": "So is Seafoam worth the extra money?",
+   "beats": [
+    [
+     "so",
+     "9:21-9:27",
+     0.75
+    ]
+   ],
+   "mark": [
+    "q",
+    "money"
+   ]
+  }
+ ],
+ "facts_checked": "Whisper transcript J3F3jDa2xhg + frames: Seafoam $7-10 per 16 oz can, MMO ~$3.50 per 32 oz 'twice as much product for half the price' 0:16-0:28; Seafoam removed carbon in previous video 0:05-0:11 + 'Before/After Seafoam (images from previous video)' 8:30-8:45; before compression caption '105 PSI Cold, very good compression' 2:24, '106 PSI Hot' 3:03; crankcase tube runs uphill, taped 3:13-3:46; controlled drip bag 8 oz 4:03-4:24; smoke 5:00-5:51; hot soak 20 min 6:02-6:34, caption 'After 20 minutes, no smoke, runs great!' 6:54; summary table 8:51-9:06: COLD Seafoam 93->102 +9.7%, MMO 105->101 -4.0%; HOT Seafoam 100->105 +5.0%, MMO 106->106 0.0%; caption 'Engine used for MMO had a great before compression / leaving very little opportunity for improvement' 8:57-9:03; 'Seafoam costs more but is it worth the extra money' 8:53. NOTE caption at 7:33 says '106 PSI cold' while table says cold after 101: script avoids the cold-after number. Smoke = oil burning off (general knowledge).",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "Marvel Mystery Oil vs Seafoam… Which One Actually Works? 🤔 (@ProjectFarm/YT)",
+ "description": "Project Farm drip-fed and hot-soaked a mower engine with Marvel Mystery Oil and compared the compression gains with Seafoam. Original video: @ProjectFarm https://youtu.be/J3F3jDa2xhg | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #marvelmysteryoil #seafoam #engine #mower #diy",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}

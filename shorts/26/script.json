@@ -1,0 +1,217 @@
+{
+ "short": "26",
+ "source": "https://youtu.be/LMyfq8ZxZc8",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "This 220000 mile Honda slips gears and the shop wants 1500 dollars so he tries a 10 dollar bottle of Lucas instead.",
+   "beats": [
+    [
+     "this",
+     "0:28-0:33"
+    ],
+    [
+     "slips",
+     "2:16-2:21"
+    ],
+    [
+     "1500",
+     "0:36-0:42"
+    ],
+    [
+     "tries",
+     "7:03-7:08"
+    ]
+   ],
+   "red": [
+    "slips"
+   ]
+  },
+  {
+   "id": 2,
+   "type": "analysis",
+   "text": "It slips from second to third which is exactly what the bottle promises to stop.",
+   "beats": [
+    [
+     "it",
+     "2:03-2:08"
+    ],
+    [
+     "bottle",
+     "6:16-6:21"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "third"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "story",
+   "text": "He cooks it at 300 degrees for 2 hours and Lucas loses just 0.62 grams while normal fluid loses 1.3.",
+   "beats": [
+    [
+     "he",
+     "2:57-3:02"
+    ],
+    [
+     "300",
+     "3:03-3:08"
+    ],
+    [
+     "lucas",
+     "3:35-3:40"
+    ],
+    [
+     "fluid",
+     "3:42-3:47"
+    ]
+   ],
+   "blue": [
+    "0.62"
+   ]
+  },
+  {
+   "id": 4,
+   "type": "analysis",
+   "text": "Because Lucas is basically thick oil and the lab measures it at almost 180 which is 3 times thicker than motor oil.",
+   "beats": [
+    [
+     "because",
+     "ai:thick golden oil slowly pouring off a metal spoon in a garage macro"
+    ],
+    [
+     "lab",
+     "9:45-9:51",
+     0.4
+    ],
+    [
+     "motor",
+     "ai:thin amber motor oil pouring fast from a bottle next to thick honey colored oil"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "180"
+   ]
+  },
+  {
+   "id": 5,
+   "type": "analysis",
+   "text": "So on the friction tester Lucas does far better because thick oil protects the metal from wear.",
+   "beats": [
+    [
+     "so",
+     "4:12-4:17"
+    ],
+    [
+     "lucas",
+     "5:28-5:34"
+    ]
+   ]
+  },
+  {
+   "id": 6,
+   "type": "story",
+   "text": "But at 20 below the plain fluid races down the slide while Lucas doesn't move until 2 minutes after it finished.",
+   "beats": [
+    [
+     "but",
+     "5:36-5:41"
+    ],
+    [
+     "races",
+     "5:45-5:50"
+    ],
+    [
+     "lucas",
+     "6:00-6:05"
+    ]
+   ],
+   "red": [
+    "2"
+   ]
+  },
+  {
+   "id": 7,
+   "type": "analysis",
+   "text": "And a cold transmission needs thin fluid that can reach every clutch on a frozen morning.",
+   "beats": [
+    [
+     "and",
+     "ai:a silver sedan parked outside covered in frost on a snowy winter morning"
+    ],
+    [
+     "clutch",
+     "ai:cutaway of an automatic transmission clutch pack wet with red fluid macro"
+    ]
+   ]
+  },
+  {
+   "id": 8,
+   "type": "story",
+   "text": "So he adds all 24 ounces and the second to third shift gets better but it still hesitates on a hill.",
+   "beats": [
+    [
+     "so",
+     "7:03-7:08"
+    ],
+    [
+     "better",
+     "7:25-7:30"
+    ],
+    [
+     "hill",
+     "7:48-7:53"
+    ]
+   ],
+   "mark": [
+    "x",
+    "hill"
+   ]
+  },
+  {
+   "id": 9,
+   "type": "analysis",
+   "text": "So it's no real fix and he thinks this transmission has maybe 15000 miles left but for 10 dollars it's worth a try.",
+   "beats": [
+    [
+     "so",
+     "10:00-10:05",
+     0.8
+    ],
+    [
+     "worth",
+     "10:27-10:32",
+     0.8
+    ]
+   ]
+  },
+  {
+   "id": 10,
+   "type": "story",
+   "text": "Would you pour this into your car?",
+   "beats": [
+    [
+     "would",
+     "0:06-0:11",
+     0.75
+    ]
+   ],
+   "mark": [
+    "q",
+    "car"
+   ]
+  }
+ ],
+ "facts_checked": "Whisper transcript LMyfq8ZxZc8 + frames: 2000 Honda Accord 220,000+ miles 0:13-0:18; shop wanted rebuild, owner won't spend $1500 0:37-1:04; 2nd-3rd slip 1:45-2:06 (captions 'Not good' 2:09, 'Some slip with quick acceleration' 2:18); bottle claims stops slip/hesitation 6:14 (label 6:15-6:21); evaporative test 200 g, ~300F, 2 h 2:47-2:51 (thermal 3:03 shows 325F); Lucas -0.62 g vs ATF -1.3 g 3:30-3:47 (captions 3:36/3:42); lubricity tester Lucas far better than ATF 5:26-5:30 (pins 5:27-5:33); -20F cold flow, Lucas out of gate 2 min after ATF finished 3:59, 5:35-5:59 (caption '2 minutes later' 6:00); lab SUS viscosity 179.5 vs 5W30 ~60, little additive package 9:32-9:53 (sheet 9:45); added 24 oz 6:58; after: better 2nd-3rd shift on light acceleration but still delay on hill climb (captions 7:27, 7:51, 8:21); not fixed, maybe 15-20k mile lifespan, $10-12 worth trying 9:58-10:32. Thin fluid needed when cold = general ATF knowledge (illustrated by the cold-flow test).",
+ "safety": "no repair advice beyond the source's opinion; product not claimed to fix broken parts (as the label says)",
+ "title": "Can a $10 Bottle Fix a $1500 Transmission? 😳 (@ProjectFarm/YT)",
+ "description": "Project Farm put Lucas Transmission Fix into a slipping 220,000 mile Honda Accord and lab tested it against normal ATF. Original video: @ProjectFarm https://youtu.be/LMyfq8ZxZc8 | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #lucas #transmission #car #mechanic #science",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}

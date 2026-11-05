@@ -1,0 +1,218 @@
+{
+ "short": "25",
+ "source": "https://youtu.be/h7rTcBanpMk",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "Is a 225 dollar Optima really better than a 120 dollar battery from Walmart?",
+   "beats": [
+    [
+     "is",
+     "4:13-4:17"
+    ],
+    [
+     "120",
+     "1:16-1:21"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "225"
+   ]
+  },
+  {
+   "id": 2,
+   "type": "story",
+   "text": "He tests 6 batteries and 4 are made by Johnson Controls which also builds the Optima.",
+   "beats": [
+    [
+     "he",
+     "0:42-0:47"
+    ],
+    [
+     "johnson",
+     "4:23-4:26"
+    ]
+   ]
+  },
+  {
+   "id": 3,
+   "type": "analysis",
+   "text": "And the Duralast costs 40 dollars more than the Walmart Everstart but it looks identical except for the stickers.",
+   "beats": [
+    [
+     "and",
+     "2:10-2:14"
+    ],
+    [
+     "identical",
+     "2:28-2:33"
+    ]
+   ],
+   "red": [
+    "identical"
+   ]
+  },
+  {
+   "id": 4,
+   "type": "analysis",
+   "text": "The Optima and DieHard are AGM batteries which soak their acid into glass mats so they push out current with less resistance.",
+   "beats": [
+    [
+     "the",
+     "4:45-4:48"
+    ],
+    [
+     "soak",
+     "ai:cutaway of a car battery showing white fiberglass mats pressed between grey lead plates macro"
+    ],
+    [
+     "less",
+     "5:15-5:18"
+    ]
+   ]
+  },
+  {
+   "id": 5,
+   "type": "story",
+   "text": "So after one hour on a 10 amp charger the DieHard gains about half a volt which is the most of all six.",
+   "beats": [
+    [
+     "so",
+     "7:03-7:08"
+    ],
+    [
+     "diehard",
+     "8:00-8:05",
+     0.2
+    ]
+   ],
+   "mark": [
+    "circle",
+    "half"
+   ]
+  },
+  {
+   "id": 6,
+   "type": "story",
+   "text": "Then all six spend 24 hours in a freezer at around zero degrees Fahrenheit.",
+   "beats": [
+    [
+     "then",
+     "8:37-8:41"
+    ],
+    [
+     "24",
+     "8:42-8:46"
+    ]
+   ]
+  },
+  {
+   "id": 7,
+   "type": "analysis",
+   "text": "And the cheap Everstart wins with 766 cold cranking amps while the 225 dollar Optima makes 751.",
+   "beats": [
+    [
+     "and",
+     "9:22-9:27",
+     0.2
+    ],
+    [
+     "optima",
+     "9:10-9:14"
+    ]
+   ],
+   "blue": [
+    "766"
+   ]
+  },
+  {
+   "id": 8,
+   "type": "analysis",
+   "text": "But at 20 below the two AGMs finish last and the DieHard drops to 580 because cold slows the chemical reaction inside.",
+   "beats": [
+    [
+     "but",
+     "9:52-9:57"
+    ],
+    [
+     "diehard",
+     "10:40-10:45",
+     0.9
+    ],
+    [
+     "chemical",
+     "ai:frost covered car battery cutaway with lead plates in cold acid"
+    ]
+   ],
+   "mark": [
+    "x",
+    "580"
+   ]
+  },
+  {
+   "id": 9,
+   "type": "analysis",
+   "text": "Meanwhile the Everstart ties the Duralast at 708 so the cheapest battery in the test wins the cold twice.",
+   "beats": [
+    [
+     "meanwhile",
+     "10:46-10:51",
+     0.15
+    ],
+    [
+     "cheapest",
+     "11:22-11:26"
+    ]
+   ]
+  },
+  {
+   "id": 10,
+   "type": "analysis",
+   "text": "And Johnson Controls makes over half the batteries built in America so you are often paying extra for a sticker.",
+   "beats": [
+    [
+     "and",
+     "12:09-12:15",
+     0.75
+    ],
+    [
+     "batteries",
+     "ai:rows of black car batteries moving along a factory conveyor line"
+    ],
+    [
+     "sticker",
+     "2:15-2:18"
+    ]
+   ],
+   "red": [
+    "sticker"
+   ]
+  },
+  {
+   "id": 11,
+   "type": "story",
+   "text": "So which battery is in your car?",
+   "beats": [
+    [
+     "so",
+     "12:18-12:24",
+     0.75
+    ]
+   ],
+   "mark": [
+    "q",
+    "car"
+   ]
+  }
+ ],
+ "facts_checked": "Whisper transcript h7rTcBanpMk + frames: 6 batteries 0:42; Everstart $119.76 1:14 (caption 1:15); Duralast Gold $159.99 = $40 more 2:06-2:12 (caption 2:09), identical except stickers 2:28-2:37; Johnson Controls makes Everstart/Duralast/Autocraft/Optima 1:26,2:12,3:30,4:21 (logo 4:24); Optima $224.99 4:12 (caption 4:13); AGM = absorbed glass mat 4:30, lower internal resistance Optima 2.76 4:46, DieHard 2.69 5:13; 1 h at 10 A: DieHard +0.52 V (most), Optima +0.46 7:39-7:53, chart 7:57; freezer 24 h, -14 C ~0 F 8:32-8:45; CCA at 0F Everstart 766 (best) Optima 751 (2nd) 8:56-9:15, chart 9:21; -27 C ~ -20 F 9:50; -20F Everstart 708 = Duralast 708 tie first, Optima 629, DieHard 580 10:05-10:46, chart 10:39; Johnson Controls makes well over half the batteries manufactured in the US 12:13. Cold slows battery chemistry = general electrochemistry.",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "$225 Optima vs $120 Walmart Battery… The Cheap One Won 😳 (@ProjectFarm/YT)",
+ "description": "Project Farm tested six car batteries for cranking amps, charging speed and freezer cold cranking amps, and the cheapest one kept winning. Original video: @ProjectFarm https://youtu.be/h7rTcBanpMk | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #carbattery #optima #walmart #diehard #cars #diy",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}

@@ -1,0 +1,214 @@
+{
+ "short": "27",
+ "source": "https://youtu.be/6-MC_ZEXQbw",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "He drops rusty nuts into 7 rust removers including Coke and vinegar to see which one eats rust fastest.",
+   "beats": [
+    [
+     "he",
+     "2:03-2:08"
+    ],
+    [
+     "coke",
+     "2:42-2:47"
+    ],
+    [
+     "vinegar",
+     "2:36-2:41"
+    ]
+   ]
+  },
+  {
+   "id": 2,
+   "type": "analysis",
+   "text": "Evapo-Rust is the odd one because it's pH neutral so it's sold as super safe.",
+   "beats": [
+    [
+     "evapo-rust",
+     "1:13-1:18"
+    ],
+    [
+     "neutral",
+     "1:18-1:23"
+    ]
+   ],
+   "blue": [
+    "safe"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "analysis",
+   "text": "It uses chelation where big molecules grab the iron like tiny claws and hold it in the liquid.",
+   "beats": [
+    [
+     "it",
+     "ai:orange rust flakes lifting off a steel nut into clear amber liquid macro photo"
+    ],
+    [
+     "claws",
+     "ai:a tiny mechanical claw gripping an orange rust particle underwater macro"
+    ]
+   ]
+  },
+  {
+   "id": 4,
+   "type": "analysis",
+   "text": "But Krud Kutter turns its nuts grey in 5 hours while Evapo-Rust barely changes after the first hour.",
+   "beats": [
+    [
+     "but",
+     "3:51-3:56"
+    ],
+    [
+     "evapo-rust",
+     "4:00-4:05"
+    ]
+   ],
+   "mark": [
+    "x",
+    "barely"
+   ]
+  },
+  {
+   "id": 5,
+   "type": "story",
+   "text": "Muriatic acid cleans best by far and takes its nuts down to bare shiny steel.",
+   "beats": [
+    [
+     "muriatic",
+     "4:33-4:38"
+    ],
+    [
+     "bare",
+     "5:22-5:28"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "shiny"
+   ]
+  },
+  {
+   "id": 6,
+   "type": "analysis",
+   "text": "But it's 31 percent hydrochloric acid so it eats good metal too and you lose steel along with the rust.",
+   "beats": [
+    [
+     "but",
+     "1:57-2:02"
+    ],
+    [
+     "eats",
+     "ai:steel bolt fizzing with tiny bubbles in clear acid macro"
+    ],
+    [
+     "lose",
+     "6:30-6:35"
+    ]
+   ],
+   "red": [
+    "eats"
+   ]
+  },
+  {
+   "id": 7,
+   "type": "story",
+   "text": "After 24 hours the Krud Kutter bolt looks amazing but Evapo-Rust still leaves rust in the threads.",
+   "beats": [
+    [
+     "after",
+     "5:36-5:41"
+    ],
+    [
+     "evapo-rust",
+     "5:46-5:52"
+    ]
+   ]
+  },
+  {
+   "id": 8,
+   "type": "analysis",
+   "text": "And on sheet metal Evapo-Rust barely works because it needs a full soak and a wet paper towel isn't enough.",
+   "beats": [
+    [
+     "and",
+     "6:37-6:42"
+    ],
+    [
+     "evapo-rust",
+     "7:33-7:38"
+    ],
+    [
+     "soak",
+     "ai:a rusty wrench fully submerged in a plastic tub of amber liquid"
+    ]
+   ]
+  },
+  {
+   "id": 9,
+   "type": "story",
+   "text": "So Krud Kutter wins and 23 hours in it makes this rusty wrench look almost new.",
+   "beats": [
+    [
+     "so",
+     "9:24-9:29"
+    ],
+    [
+     "rusty",
+     "9:01-9:06"
+    ],
+    [
+     "new",
+     "10:15-10:20"
+    ]
+   ]
+  },
+  {
+   "id": 10,
+   "type": "analysis",
+   "text": "But it's the priciest at 62 cents an ounce and he says Evapo-Rust comes very close and you can reuse it.",
+   "beats": [
+    [
+     "but",
+     "10:21-10:26",
+     0.85
+    ],
+    [
+     "evapo-rust",
+     "11:58-12:03",
+     0.8
+    ]
+   ],
+   "red": [
+    "62"
+   ]
+  },
+  {
+   "id": 11,
+   "type": "story",
+   "text": "So which one would you trust on your tools?",
+   "beats": [
+    [
+     "so",
+     "4:42-4:47"
+    ]
+   ],
+   "mark": [
+    "q",
+    "tools"
+   ]
+  }
+ ],
+ "facts_checked": "Whisper transcript 6-MC_ZEXQbw + frames: 7 products Krud Kutter, Evapo-Rust, CLR, white vinegar (5% acetic), Loctite Naval Jelly, Coke, muriatic acid 1:04-1:57 (bottles 1:06-1:57, setup 2:03-2:48); Evapo-Rust 'super safe', pH neutral, chelation (large synthetic molecules bond with metal, hold in solution) 1:11-1:27 (label 1:15); nuts checked 5 min/1 h/5 h/10 h 2:02-2:08; Evapo-Rust 5 h not much more rust removed since 1 h 4:00-4:06 (tiles 4:00-4:03); Krud Kutter 5 h caption 3:51; muriatic 31.45% HCl 1:55, cleanest down to bare steel and started to eat metal 5:20-5:33 (tiles 5:21-5:30), caption 'Acids erode good metal, not just rust' 6:30; 24 h bolts: Krud Kutter amazing, Evapo-Rust rust left in threads 5:33-5:51; sheet metal 1 h paper towel: 'Evapo-rust didn't remove much rust' caption 7:33, needs immersion 8:21-8:28; wrench in Krud Kutter 23 h total, looks really good 8:56-10:12 (tiles 9:00-10:18); price chart Krud Kutter $0.62/oz highest 10:21, transcript 10:53; Evapo-Rust 'probably very close' to Krud Kutter and reusable 11:59-12:07. Not used: Evapo-Rust exact price (chart value unreadable on sheet).",
+ "safety": "no acid how-to; muriatic acid shown only as the source used it, with its damage noted; gloves visible",
+ "title": "Coke vs Acid vs Evapo-Rust… Which REALLY Kills Rust? 😳 (@ProjectFarm/YT)",
+ "description": "Project Farm soaked rusty nuts and bolts in 7 rust removers from Coke to muriatic acid to see which one works best. Original video: @ProjectFarm https://youtu.be/6-MC_ZEXQbw | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #rust #evaporust #restoration #tools #science",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}

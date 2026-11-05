@@ -1,0 +1,212 @@
+{
+ "short": "29",
+ "source": "https://youtu.be/IuGWHfWqWtg",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "Commenters swear a jar of gas vapor can get a car hundreds of miles per gallon so he tests it on a mower.",
+   "beats": [
+    [
+     "commenters",
+     "0:03-0:09",
+     0.8
+    ],
+    [
+     "hundreds",
+     "ai:silver sedan cruising on an empty desert highway at sunset"
+    ],
+    [
+     "tests",
+     "4:00-4:05"
+    ]
+   ],
+   "red": [
+    "hundreds"
+   ]
+  },
+  {
+   "id": 2,
+   "type": "analysis",
+   "text": "But if that worked every car maker would have switched to vapor years ago.",
+   "beats": [
+    [
+     "but",
+     "0:15-0:21",
+     0.8
+    ],
+    [
+     "car",
+     "ai:modern car factory assembly line with robotic arms welding car bodies"
+    ]
+   ]
+  },
+  {
+   "id": 3,
+   "type": "story",
+   "text": "So he blocks the fuel line and seals the gas container with JB Weld so only vapor reaches the engine.",
+   "beats": [
+    [
+     "so",
+     "3:12-3:18"
+    ],
+    [
+     "seals",
+     "2:24-2:29"
+    ],
+    [
+     "engine",
+     "3:45-3:50"
+    ]
+   ],
+   "blue": [
+    "vapor"
+   ]
+  },
+  {
+   "id": 4,
+   "type": "analysis",
+   "text": "The engine sucks air down 2 pipes into the gas which bubbles into vapor and a valve feeds it in.",
+   "beats": [
+    [
+     "the",
+     "4:24-4:29",
+     0.3
+    ],
+    [
+     "bubbles",
+     "6:04-6:09"
+    ],
+    [
+     "valve",
+     "5:54-5:59"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "bubbles"
+   ]
+  },
+  {
+   "id": 5,
+   "type": "story",
+   "text": "And to his surprise it fires up and runs the mower on pure vapor.",
+   "beats": [
+    [
+     "and",
+     "5:27-5:33"
+    ],
+    [
+     "runs",
+     "7:13-7:18"
+    ]
+   ],
+   "red": [
+    "surprise"
+   ]
+  },
+  {
+   "id": 6,
+   "type": "analysis",
+   "text": "Which makes sense because gas has to become vapor to burn anyway and a carburetor already does that job.",
+   "beats": [
+    [
+     "which",
+     "ai:macro of fine gasoline mist spraying inside the throat of a small engine carburetor"
+    ],
+    [
+     "carburetor",
+     "3:30-3:36"
+    ]
+   ]
+  },
+  {
+   "id": 7,
+   "type": "story",
+   "text": "Then both setups get the same fuel and the vapor jar runs 27 and a half minutes while the normal tank dies at 26 minutes 47 seconds.",
+   "beats": [
+    [
+     "then",
+     "10:09-10:14"
+    ],
+    [
+     "vapor",
+     "9:21-9:27"
+    ],
+    [
+     "while",
+     "10:42-10:48"
+    ],
+    [
+     "26",
+     "11:12-11:17"
+    ]
+   ],
+   "blue": [
+    "27"
+   ],
+   "red": [
+    "26"
+   ]
+  },
+  {
+   "id": 8,
+   "type": "analysis",
+   "text": "So vapor only buys 43 extra seconds which is 2 to 3 percent and nowhere near hundreds of miles per gallon.",
+   "beats": [
+    [
+     "so",
+     "9:15-9:20"
+    ],
+    [
+     "2",
+     "11:34-11:39",
+     0.75
+    ]
+   ],
+   "mark": [
+    "x",
+    "nowhere"
+   ]
+  },
+  {
+   "id": 9,
+   "type": "analysis",
+   "text": "Because the energy is locked inside the gasoline so turning it into vapor can't magically create more.",
+   "beats": [
+    [
+     "because",
+     "ai:single drop of gasoline glowing with warm light falling into a pool macro"
+    ],
+    [
+     "vapor",
+     "6:33-6:38"
+    ]
+   ]
+  },
+  {
+   "id": 10,
+   "type": "story",
+   "text": "He went from skeptic to believer but would you trust a vapor jar in your car?",
+   "beats": [
+    [
+     "he",
+     "11:24-11:30",
+     0.8
+    ]
+   ],
+   "mark": [
+    "q",
+    "car"
+   ]
+  }
+ ],
+ "facts_checked": "Transcript IuGWHfWqWtg + scan frames: commenters claim engine on gas vapor -> hundreds of mpg vs 20-30 (0:26-0:38); Todd: car makers would have switched years ago (0:13-0:26); JB Weld seals container (2:13-2:30, frames 2:12-2:30); fuel line blocked off (2:32-3:19, caption 3:03 'Fuel tank is not needed', caption 6:15 'Fuel line is blocked off'); how it works: engine vacuum draws air down two pipes into fuel, bubbles -> vapor -> single line -> valve -> engine (3:41-4:47, Todd pointing 4:15-4:48); valve close-up 5:54; bubbling jar 6:03-6:36; engine runs on vapor and mower driven across lawn (5:00, 6:45-7:18); fuel economy test: vapor ran 27.5 min (9:58, caption 9:24 'Engine ran for 27.5 minutes, but did not use all fuel'), same amount of fuel (blue tape line) in normal tank ran out at 26 min 47 s (caption 11:15/11:18); difference 43 s = ~2.7% (our calc), caption 11:36 'Only 2-3% fuel savings at most'; claims of 400-500% savings not seen (11:36-11:47); 'came in a total skeptic and now I'm a believer' (11:24-11:32). Gasoline must vaporize to burn and carburetor atomizes fuel; vaporizing does not add chemical energy (standard combustion physics, our commentary).",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "Can a GAS VAPOR Jar Really Boost MPG? 🤯 (@ProjectFarm/YT)",
+ "description": "Project Farm blocked off a mower's fuel line, ran it on nothing but gas vapor and timed it against liquid fuel to test the big MPG claims. Original video: @ProjectFarm https://youtu.be/IuGWHfWqWtg | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #mpg #gasvapor #engine #myth #mower #science",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}

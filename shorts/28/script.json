@@ -1,0 +1,235 @@
+{
+ "short": "28",
+ "source": "https://youtu.be/a9DWGtXpYUc",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "Amazon sells 5 quarts of full synthetic for under 20 bucks so can it really beat Mobil 1?",
+   "beats": [
+    [
+     "amazon",
+     "0:04-0:09",
+     0.8
+    ],
+    [
+     "mobil",
+     "1:37-1:42"
+    ]
+   ],
+   "red": [
+    "20"
+   ],
+   "mark": [
+    "q",
+    "1"
+   ]
+  },
+  {
+   "id": 2,
+   "type": "story",
+   "text": "So he freezes all 3 oils at minus 15 degrees for 24 hours and races them down a ramp.",
+   "beats": [
+    [
+     "so",
+     "0:43-0:48"
+    ],
+    [
+     "freezes",
+     "1:00-1:05"
+    ],
+    [
+     "races",
+     "5:48-5:53"
+    ]
+   ],
+   "blue": [
+    "15"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "analysis",
+   "text": "Because a cold engine needs oil flowing right away or the moving parts run dry.",
+   "beats": [
+    [
+     "because",
+     "ai:frosty car engine bay on a frozen winter morning with ice crystals on the metal"
+    ],
+    [
+     "dry",
+     "ai:macro of two steel engine parts rubbing with a very thin film of amber oil"
+    ]
+   ],
+   "red": [
+    "dry"
+   ]
+  },
+  {
+   "id": 4,
+   "type": "story",
+   "text": "And the cheap Amazon oil hits the bottom first and beats Mobil 1 by 2 inches.",
+   "beats": [
+    [
+     "and",
+     "5:52-5:57"
+    ],
+    [
+     "beats",
+     "5:56-6:01"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "amazon"
+   ]
+  },
+  {
+   "id": 5,
+   "type": "analysis",
+   "text": "While Valvoline's conventional oil lands 6 inches behind so synthetic clearly flows better in the cold.",
+   "beats": [
+    [
+     "while",
+     "5:58-6:03"
+    ],
+    [
+     "synthetic",
+     "ai:two glass tubes of motor oil side by side one flowing freely one thick and sluggish in frosty air"
+    ]
+   ],
+   "red": [
+    "6"
+   ]
+  },
+  {
+   "id": 6,
+   "type": "story",
+   "text": "But on the wear tester Mobil 1 leaves the smallest scar on the bearing.",
+   "beats": [
+    [
+     "but",
+     "3:00-3:06"
+    ],
+    [
+     "smallest",
+     "5:15-5:20"
+    ],
+    [
+     "bearing",
+     "4:57-5:02"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "scar"
+   ]
+  },
+  {
+   "id": 7,
+   "type": "analysis",
+   "text": "Its scar is about 9 percent smaller than Amazon's but Amazon beats Valvoline by 17 percent which is wild for the price.",
+   "beats": [
+    [
+     "its",
+     "5:21-5:27"
+    ],
+    [
+     "valvoline",
+     "5:06-5:11"
+    ]
+   ],
+   "blue": [
+    "9",
+    "17"
+   ]
+  },
+  {
+   "id": 8,
+   "type": "analysis",
+   "text": "Then he cooks each oil at 400 degrees for 2 hours because that's how hot it gets near the piston rings.",
+   "beats": [
+    [
+     "then",
+     "7:12-7:17"
+    ],
+    [
+     "400",
+     "7:31-7:36"
+    ],
+    [
+     "because",
+     "7:39-7:45"
+    ],
+    [
+     "piston",
+     "ai:cutaway of a glowing hot engine piston with its metal rings inside a cylinder"
+    ]
+   ],
+   "red": [
+    "400"
+   ]
+  },
+  {
+   "id": 9,
+   "type": "analysis",
+   "text": "Valvoline loses 3 grams to vapor while both synthetics lose just 1 gram which is oil that would vanish from your engine.",
+   "beats": [
+    [
+     "valvoline",
+     "8:21-8:26"
+    ],
+    [
+     "vanish",
+     "ai:close up of a car engine oil dipstick pulled out showing a low oil level"
+    ]
+   ],
+   "mark": [
+    "x",
+    "3"
+   ]
+  },
+  {
+   "id": 10,
+   "type": "analysis",
+   "text": "After cooking he freezes them again and Amazon still wins so the cheap oil holds up under heat.",
+   "beats": [
+    [
+     "after",
+     "8:30-8:35"
+    ],
+    [
+     "wins",
+     "9:37-9:41"
+    ]
+   ],
+   "red": [
+    "wins"
+   ]
+  },
+  {
+   "id": 11,
+   "type": "story",
+   "text": "So would you put 20 dollar oil in your car?",
+   "beats": [
+    [
+     "so",
+     "9:59-10:04",
+     0.8
+    ]
+   ],
+   "mark": [
+    "q",
+    "car"
+   ]
+  }
+ ],
+ "facts_checked": "Transcript a9DWGtXpYUc + scan frames: Amazon Basics full synthetic 5 qt under $20 (0:08-0:14); cold flow test freezer -15F for 24 h (0:56-1:00, caption 1:00); API donut / Mobil 1 label 1:36-1:42; cold flow race Amazon hit slide first, beat Mobil 1 by 2 in, both beat Valvoline (conventional) by 6 in (5:46-6:01, ramp 5:45-6:03); lubricity scars: Mobil 1 scar ~9% smaller than Amazon, Amazon 17% smaller than Valvoline (5:30-5:41; captions 5:06 Valvoline 6.7x3.17mm, 5:12 Amazon 6.2x2.86mm, 5:18 Mobil 1 5.99x2.63mm; chart 5:21); heat test 400F/204C for 2 h (7:28-7:33, caption 7:33) simulating conditions near top of piston rings (7:33-7:42); weights Valvoline 442->439 g, Amazon 407->406 g, Mobil 1 431->430 g (8:02-8:26, chart 8:21 0.50/0.50/1.51%); re-freeze + flow after cooking, Amazon wins (8:29-8:33, caption 9:39 '3x speed: Amazon wins', 9:50-9:54); Todd would use it 9:59. Oil lost to evaporation is oil consumed between changes (Todd 10:04-10:17); cold-start lubrication reason (0:49-0:56).",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "Can CHEAP Amazon Oil Beat Mobil 1? 😳 (@ProjectFarm/YT)",
+ "description": "Project Farm froze, cooked and wear-tested Amazon Basics full synthetic against Mobil 1 and Valvoline to see if the cheap oil holds up. Original video: @ProjectFarm https://youtu.be/a9DWGtXpYUc | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #motoroil #mobil1 #amazonbasics #cars #engine #test",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}
