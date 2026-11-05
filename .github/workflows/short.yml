@@ -74,24 +74,38 @@ jobs:
         run: |
           python tools/ai_gen.py shorts/$S
           ffmpeg -v error -y -pattern_type glob -i "shorts/$S/build/ai/*.jpg" -vf "scale=256:256,tile=6x4" -frames:v 1 ai_sheet.jpg
-      - name: Assemble
-        run: python tools/assemble.py shorts/$S
+      - name: Assemble (shots)
+        run: python tools/assemble.py shorts/$S --stage video
+      - name: Object-locked marks (Grounding DINO tiny, Apache 2.0)
+        run: |
+          pip install -q torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -q transformers
+          python tools/marks.py shorts/$S
+          python tools/overlay.py shorts/$S
+      - name: Assemble (captions + audio)
+        run: python tools/assemble.py shorts/$S --stage finish
       - name: Fast version (1.15x, owner 4 Nov 2026)
         run: |
           ffmpeg -v error -y -i shorts/$S/build/final.mp4 -filter_complex "[0:v]setpts=PTS/1.15[v];[0:a]atempo=1.15[a]" -map "[v]" -map "[a]" -r 30             -c:v libx264 -preset veryfast -crf 19 -pix_fmt yuv420p -c:a aac -b:a 192k -movflags +faststart shorts/$S/build/final_fast.mp4
       - name: Pacing check
         run: python tools/pace_check.py shorts/$S | tee pace.txt
+      - name: No-swipe check (owner rule - any FAIL blocks upload)
+        id: swipe
+        continue-on-error: true
+        run: |
+          sudo apt-get install -y -qq tesseract-ocr >/dev/null
+          python tools/swipe_check.py shorts/$S | tee swipe.txt
       - name: Encrypt outputs
         run: |
           mkdir -p out
           for f in final.mp4 final_fast.mp4 final_sheet.jpg src_sheet.jpg; do
             openssl enc -aes-256-cbc -pbkdf2 -pass env:SRC_KEY -in shorts/$S/build/$f -out out/$f.enc
           done
-          cp shorts/$S/durations.json shorts/$S/build/plan.json gate.txt pace.txt ai_sheet.jpg out/
+          cp shorts/$S/durations.json shorts/$S/build/plan.json gate.txt pace.txt swipe.txt ai_sheet.jpg out/
           mkdir -p review
           ffmpeg -v error -y -i shorts/$S/build/final.mp4 -vf "fps=1.2,scale=96:-1,tile=20x3" -frames:v 1 /tmp/review.jpg
           openssl enc -aes-256-cbc -pbkdf2 -pass env:SRC_KEY -in /tmp/review.jpg -out review/review.jpg.enc
-          cp gate.txt pace.txt shorts/$S/build/plan.json shorts/$S/durations.json review/
+          cp gate.txt pace.txt swipe.txt shorts/$S/build/plan.json shorts/$S/build/marks.json shorts/$S/durations.json review/
       - uses: actions/upload-artifact@v4
         with:
           name: short-${{ inputs.short }}
@@ -102,3 +116,8 @@ jobs:
           name: review-${{ inputs.short }}
           path: review
           retention-days: 7
+      - name: Block if the no-swipe check failed
+        if: steps.swipe.outcome == 'failure'
+        run: |
+          echo "::error::NO-SWIPE CHECK FAILED - see swipe.txt in the review artifact"
+          exit 1

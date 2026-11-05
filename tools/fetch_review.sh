@@ -9,5 +9,5 @@ GH="$LOCALAPPDATA/ghcli/bin/gh.exe"
 cd "$ROOT"; OUT="shorts/$N/build"; mkdir -p "$OUT"; rm -rf "$OUT/rv"
 "$GH" run download "$RUN" -R hamlou/shortssecondchannel -n "review-$N" -D "$OUT/rv"
 openssl enc -d -aes-256-cbc -pbkdf2 -pass file:tools/.srckey -in "$OUT/rv/review.jpg.enc" -out "$OUT/review.jpg"
-cp "$OUT/rv/durations.json" "shorts/$N/durations.json"; tail -1 "$OUT/rv/gate.txt"
+cp "$OUT/rv/durations.json" "shorts/$N/durations.json"; tail -1 "$OUT/rv/gate.txt"; cat "$OUT/rv/swipe.txt" 2>/dev/null
 echo "-> $OUT/review.jpg"

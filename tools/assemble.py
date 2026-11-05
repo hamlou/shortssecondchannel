@@ -198,13 +198,16 @@ def main():
     rnd = random.Random(d["short"])
     src = os.path.join(sd, "source", "source.mp4")
 
+    stage = sys.argv[sys.argv.index("--stage") + 1] if "--stage" in sys.argv else "all"
     shots = []
-    for l, dur in zip(lines, durs):
+    for l, dur in ([] if stage == "finish" else zip(lines, durs)):
         sh = plan_line(l, dur, rnd)
         frames = [max(round(x[2] * FPS), 1) for x in sh]
         frames[-1] += round(dur * FPS) - sum(frames)
         shots += [(l, s, nf) for s, nf in zip(sh, frames)]
     segs, plan, ev, t, last_tr, prev, ai_frames, n_tr = [], [], [], 0.0, -9.0, None, 0, 0
+    if stage == "finish":
+        ev = json.load(open(os.path.join(b, "events.json")))
     for j, (l, s, nf) in enumerate(shots):
         tr = None
         if prev and prev != s[0] and t - last_tr >= 5.0:
@@ -222,38 +225,31 @@ def main():
         plan.append({"line": l["id"], "t": round(t, 2), "kind": s[0], "s": round(nf / FPS, 2), "what": s[1] if s[0] == "ai" else round(s[1], 2), "trans": tr})
         prev = s[0]
         t += nf / FPS
-    print(f"{len(segs)} shots, {n_tr} transitions, ORIGINAL (AI) {ai_frames / FPS:.1f}s = {ai_frames / FPS / total:.0%} of runtime", flush=True)
-    json.dump(plan, open(os.path.join(b, "plan.json"), "w"), indent=1)
-    lst = os.path.join(seg, "list.txt")
-    open(lst, "w").write("".join(f"file '{os.path.abspath(x)}'\n".replace("\\", "/") for x in segs))
-    ff("-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", os.path.join(b, "video.mp4"))
+    if stage != "finish":
+        print(f"{len(segs)} shots, {n_tr} transitions, ORIGINAL (AI) {ai_frames / FPS:.1f}s = {ai_frames / FPS / total:.0%} of runtime", flush=True)
+        json.dump(plan, open(os.path.join(b, "plan.json"), "w"), indent=1)
+        json.dump(ev, open(os.path.join(b, "events.json"), "w"))
+        lst = os.path.join(seg, "list.txt")
+        open(lst, "w").write("".join(f"file '{os.path.abspath(x)}'\n".replace("\\", "/") for x in segs))
+        ff("-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", os.path.join(b, "video.mp4"))
+    if stage == "video":
+        return
 
-    overlays(b)
     os.makedirs(os.path.join(b, "fonts"), exist_ok=True)
     shutil.copy(FONT, os.path.join(b, "fonts", os.path.basename(FONT)))
     captions(lines, starts, durs, os.path.join(b, "captions.ass"))
-
     at = lambda st, du_, s: st + (s if s >= 0 else du_ + s)
-    wins = {"arrows": [(0, 1.6)], "q": [], "x": [], "circle": []}
     for l, st, du_ in zip(lines, starts, durs):
         ev += [(k, at(st, du_, s)) for k, s in l.get("sfx", [])]
-        if l.get("mark"):
-            k, s = l["mark"]
-            if isinstance(s, str):
-                ws, wt = word_times(l["text"], du_)
-                s = wt[ws.index(s.lower())]
-            a = at(st, du_, s)
-            wins[k].append((a, min(a + 1.5, st + du_)))
-            ev.append(("buzz" if k == "x" else "pop", a))
-    ev.append(("pop", 0.05))
-    win = lambda ws: "+".join(f"between(t,{a:.2f},{c:.2f})" for a, c in ws) or "0"
+    mk = os.path.join(b, "marks.json")
+    for m in (json.load(open(mk)) if os.path.exists(mk) else []):
+        if m.get("found"):
+            ev.append(("buzz" if m["kind"] == "x" else "pop", m["t0"]))
+    base = "video_marked.mp4" if os.path.exists(os.path.join(b, "video_marked.mp4")) else "video.mp4"
     cwd = os.getcwd()
     os.chdir(b)
-    fc = ("[0:v][1:v]overlay=x='8*sin(t*18)':y='8*sin(t*18)':enable='{a}'[v1];[v1][2:v]overlay=0:0:enable='{q}'[v2];"
-          "[v2][3:v]overlay=0:0:enable='{x}'[v3];[v3][4:v]overlay=0:0:enable='{c}'[v4];[v4]subtitles=captions.ass:fontsdir=fonts[v]").format(
-        a=win(wins["arrows"]), q=win(wins["q"]), x=win(wins["x"]), c=win(wins["circle"]))
-    ff("-filter_threads", "1", "-i", "video.mp4", *[x for k in ("arrows", "q", "x", "circle") for x in ("-i", f"ov_{k}.png")],
-       "-filter_complex", fc, "-map", "[v]", "-t", f"{total:.3f}", *X264[:5], "19", *X264[6:], "video_fx.mp4")
+    ff("-filter_threads", "1", "-i", base, "-vf", "subtitles=captions.ass:fontsdir=fonts", "-t", f"{total:.3f}",
+       *X264[:5], "19", *X264[6:], "video_fx.mp4")
 
     kinds = sorted({k for k, _ in ev})
     for k in kinds:
