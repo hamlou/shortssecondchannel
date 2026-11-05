@@ -1,0 +1,180 @@
+{
+ "short": "23",
+ "source": "https://youtu.be/lHb-Tcvkn7M",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "Is a 50 pound drywall anchor really good for 50 pounds?",
+   "beats": [
+    [
+     "is",
+     "1:54-1:59"
+    ],
+    [
+     "really",
+     "2:18-2:24"
+    ]
+   ]
+  },
+  {
+   "id": 2,
+   "type": "story",
+   "text": "He hangs weight on every kind of anchor in real half inch drywall until it starts to slip.",
+   "beats": [
+    [
+     "he",
+     "1:33-1:39"
+    ],
+    [
+     "half",
+     "0:39-0:45"
+    ],
+    [
+     "slip",
+     "2:21-2:24"
+    ]
+   ]
+  },
+  {
+   "id": 3,
+   "type": "analysis",
+   "text": "The cheap 50 pound anchor holds 105 pounds before it moves which is twice its rating.",
+   "beats": [
+    [
+     "the",
+     "1:54-1:59"
+    ],
+    [
+     "105",
+     "2:21-2:24"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "105"
+   ]
+  },
+  {
+   "id": 4,
+   "type": "analysis",
+   "text": "Because the rating has a safety margin built in since drywall is just chalky gypsum pressed between two sheets of paper.",
+   "beats": [
+    [
+     "because",
+     "ai:extreme macro of crumbly white gypsum inside a broken drywall panel between paper layers"
+    ],
+    [
+     "paper",
+     "2:27-2:33"
+    ]
+   ]
+  },
+  {
+   "id": 5,
+   "type": "analysis",
+   "text": "Almost every anchor beats its rating when the weight pulls straight down along the wall.",
+   "beats": [
+    [
+     "almost",
+     "15:27-15:33"
+    ],
+    [
+     "down",
+     "3:36-3:42"
+    ]
+   ]
+  },
+  {
+   "id": 6,
+   "type": "story",
+   "text": "But then he pulls them straight out of the wall like a shelf would.",
+   "beats": [
+    [
+     "but",
+     "10:16-10:22"
+    ],
+    [
+     "out",
+     "12:03-12:09"
+    ]
+   ]
+  },
+  {
+   "id": 7,
+   "type": "analysis",
+   "text": "And now the 50 pound anchor lets go at just 39 because pulling outward only fights a tiny ring of gypsum.",
+   "beats": [
+    [
+     "and",
+     "16:00-16:04"
+    ],
+    [
+     "ring",
+     "ai:a small plastic wall anchor ripping out of drywall with crumbling white powder in slow motion"
+    ]
+   ],
+   "red": [
+    "39"
+   ]
+  },
+  {
+   "id": 8,
+   "type": "story",
+   "text": "The big snap toggle is the strongest but when it rips out it leaves a crater four inches wide.",
+   "beats": [
+    [
+     "the",
+     "14:30-14:36"
+    ],
+    [
+     "crater",
+     "15:00-15:06"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "crater"
+   ]
+  },
+  {
+   "id": 9,
+   "type": "analysis",
+   "text": "So for anything that pulls away from the wall use a toggle that spreads the load behind the drywall.",
+   "beats": [
+    [
+     "so",
+     "14:09-14:15"
+    ],
+    [
+     "toggle",
+     "13:39-13:45"
+    ]
+   ]
+  },
+  {
+   "id": 10,
+   "type": "story",
+   "text": "Which anchor would you trust with your TV?",
+   "beats": [
+    [
+     "which",
+     "16:24-16:30",
+     0.75
+    ]
+   ],
+   "mark": [
+    "q",
+    "tv"
+   ]
+  }
+ ],
+ "facts_checked": "Whisper transcript lHb-Tcvkn7M + frames: EZ Anchor rated 50 lb 1:55 -> began moving 105/110 lb 2:21-2:36 captions, Toggler 69 lb in drywall 2:58 -> 73-82 lb 3:24-3:48, chart 'Rating vs Vertical strength' 15:27 all except Snaptoggle (238 rated, 224) exceeded rating 15:28-15:36, pull-out chart 16:00: EZ 50->39, Toggler 69->58, Blue Hawk 70->142, Snaptoggle 238->159, EZ toggle cam 100->119; Snaptoggle crater ~4x4 in 15:03; favourite EZ Anchor toggle 16:28.",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "Are Drywall Anchor Weight Ratings Real? 😳 (@ProjectFarm/YT)",
+ "description": "Project Farm pulled every type of drywall anchor down and straight out of half-inch drywall until it failed, and measured the damage. Original video: @ProjectFarm https://youtu.be/lHb-Tcvkn7M | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #drywall #diy #homeimprovement #tools",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}
