@@ -88,8 +88,17 @@ jobs:
             openssl enc -aes-256-cbc -pbkdf2 -pass env:SRC_KEY -in shorts/$S/build/$f -out out/$f.enc
           done
           cp shorts/$S/durations.json shorts/$S/build/plan.json gate.txt pace.txt ai_sheet.jpg out/
+          mkdir -p review
+          ffmpeg -v error -y -i shorts/$S/build/final.mp4 -vf "fps=1.2,scale=96:-1,tile=20x3" -frames:v 1 /tmp/review.jpg
+          openssl enc -aes-256-cbc -pbkdf2 -pass env:SRC_KEY -in /tmp/review.jpg -out review/review.jpg.enc
+          cp gate.txt pace.txt shorts/$S/build/plan.json shorts/$S/durations.json review/
       - uses: actions/upload-artifact@v4
         with:
           name: short-${{ inputs.short }}
           path: out
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        with:
+          name: review-${{ inputs.short }}
+          path: review
           retention-days: 7
