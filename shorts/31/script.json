@@ -1,0 +1,215 @@
+{
+ "short": "31",
+ "source": "https://youtu.be/_vR15u0vmms",
+ "max_seconds": 59,
+ "source_audio": false,
+ "lines": [
+  {
+   "id": 1,
+   "type": "story",
+   "text": "The original super glue claims one drop can lift a ton so he puts one drop of 6 brands on steel bolts.",
+   "beats": [
+    [
+     "the",
+     "0:30-0:35",
+     0.8
+    ],
+    [
+     "drop",
+     "1:55-2:00"
+    ],
+    [
+     "steel",
+     "2:01-2:06"
+    ]
+   ],
+   "red": [
+    "ton"
+   ]
+  },
+  {
+   "id": 2,
+   "type": "story",
+   "text": "Then he pushes each bolt sideways and Gorilla snaps off at just 15 pounds.",
+   "beats": [
+    [
+     "then",
+     "4:31-4:36"
+    ],
+    [
+     "gorilla",
+     "5:31-5:35"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "15"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "analysis",
+   "text": "That's nowhere near a ton because he pushes at the tip of a 4 inch bolt which acts like a lever on that tiny drop.",
+   "beats": [
+    [
+     "that's",
+     "ai:a single tiny bead of clear super glue on the head of a steel bolt extreme macro"
+    ],
+    [
+     "lever",
+     "ai:a long steel bolt glued flat to a steel bar being pushed sideways at its tip close up"
+    ]
+   ]
+  },
+  {
+   "id": 4,
+   "type": "analysis",
+   "text": "And Scotch wins at 36 pounds which is more than double Gorilla.",
+   "beats": [
+    [
+     "and",
+     "5:55-5:59"
+    ],
+    [
+     "double",
+     "6:06-6:09",
+     0.5
+    ]
+   ],
+   "mark": [
+    "circle",
+    "36"
+   ]
+  },
+  {
+   "id": 5,
+   "type": "story",
+   "text": "Next he twists the bolts with a torque wrench and Krazy Glue lets go at just 40 inch pounds.",
+   "beats": [
+    [
+     "next",
+     "6:12-6:17"
+    ],
+    [
+     "krazy",
+     "6:32-6:36"
+    ]
+   ]
+  },
+  {
+   "id": 6,
+   "type": "analysis",
+   "text": "But Elmer's holds 90 so the brand famous for school glue beats Krazy Glue at its own game.",
+   "beats": [
+    [
+     "but",
+     "6:53-6:57"
+    ],
+    [
+     "school",
+     "ai:a plain unlabeled white bottle of school glue on a classroom desk next to colored paper"
+    ]
+   ],
+   "red": [
+    "school"
+   ]
+  },
+  {
+   "id": 7,
+   "type": "analysis",
+   "text": "Then he pulls each bolt straight up with a lever that multiplies his pull 20 times because no arm can pull 600 pounds.",
+   "beats": [
+    [
+     "then",
+     "7:24-7:30"
+    ],
+    [
+     "20",
+     "8:16-8:20"
+    ],
+    [
+     "arm",
+     "8:12-8:16"
+    ]
+   ]
+  },
+  {
+   "id": 8,
+   "type": "analysis",
+   "text": "And Loctite wins with 616 pounds while Scotch which won the first test only manages 266.",
+   "beats": [
+    [
+     "and",
+     "8:31-8:35"
+    ],
+    [
+     "scotch",
+     "8:38-8:42"
+    ]
+   ],
+   "mark": [
+    "circle",
+    "616"
+   ]
+  },
+  {
+   "id": 9,
+   "type": "story",
+   "text": "On PVC pipe every other glue snaps under a 25 pound weight but Loctite survives the whole round.",
+   "beats": [
+    [
+     "on",
+     "9:45-9:50"
+    ],
+    [
+     "snaps",
+     "10:18-10:22"
+    ],
+    [
+     "loctite",
+     "10:13-10:17"
+    ]
+   ]
+  },
+  {
+   "id": 10,
+   "type": "analysis",
+   "text": "So he adds plates and it holds 40 pounds which is 60 percent more than broke the rest.",
+   "beats": [
+    [
+     "so",
+     "10:40-10:45"
+    ],
+    [
+     "40",
+     "10:59-11:04"
+    ]
+   ],
+   "red": [
+    "40"
+   ]
+  },
+  {
+   "id": 11,
+   "type": "story",
+   "text": "So which super glue would you grab?",
+   "beats": [
+    [
+     "so",
+     "11:15-11:20",
+     0.8
+    ]
+   ],
+   "mark": [
+    "q",
+    "grab"
+   ]
+  }
+ ],
+ "facts_checked": "Whisper transcript _vR15u0vmms + frames: claim 'one drop can lift a ton' 0:31-0:36; brands on board 0:15-0:39 = Elmer's, Gorilla, Krazy, Loctite, Scotch, Original Super Glue; 'Only 1 drop used per bolt' caption 1:57; downward force on 4 in bolt, force applied near 4 in mark 4:45-5:16; captions Elmers 119 N/26.8 lb 5:27, Gorilla 69 N/15.5 lb 5:33, Krazy 110 N/24.7 lb 5:42, Loctite 109 N 5:48, Scotch 161 N/36.2 lb 5:57, Original 151 N/33.9 lb 6:00, chart 6:06; twist test start 10 in-lb +5 steps 6:22, captions Krazy 40 in-lbf 6:33, Loctite 50 6:39, Gorilla 85 6:48, Elmers 90 in-lbf/10.2 Nm 6:54, chart 6:57; tensile jig 20:1 mechanical advantage 7:40, 'no way I'd pull 1000-2000 lb' 7:45; captions Elmers x20=548 lb 8:18, Gorilla 350 8:24, Krazy 418 8:27, Loctite 137 N/30.8 lb x20=616 lb 8:33, Scotch 59 N/13.3 lb x20=266 lb 8:39, chart 8:45; PVC 25 lb plate 8:58, captions Elmers 9 in 9:48, Gorilla 21 in 10:00, Krazy 19 in 10:09, Loctite 'Need more weight' 10:15, Scotch 9 in 10:18, Loctite only survivor 10:25, 40 lb at 22 in caption 11:03; 40 vs 25 = +60 %. Lever effect on bolt = basic physics (force applied ~4 in from glue joint).",
+ "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
+ "title": "Can ONE Drop of Super Glue Really Lift a TON? 😳 (@ProjectFarm/YT)",
+ "description": "Project Farm tested 6 super glue brands on steel bolts and PVC pipe with push, twist, pull and hanging weight tests. Original video: @ProjectFarm https://youtu.be/_vR15u0vmms | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #superglue #glue #loctite #test #diy",
+ "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
+ "notes": "Footage-first (owner 4 Nov 2026)."
+}
