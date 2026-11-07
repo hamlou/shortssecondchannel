@@ -11,20 +11,18 @@
    "beats": [
     [
      "why",
-     "1:33-1:39"
+     "1:02-1:05"
     ],
     [
      "brand",
-     "1:57-2:03"
+     "2:09-2:12",
+     0.25
     ]
    ],
    "red": [
     "dead"
    ],
-   "mark": [
-    "q",
-    "thuds"
-   ]
+   "hook": "AA battery"
   },
   {
    "id": 2,
@@ -42,7 +40,8 @@
    ],
    "mark": [
     "circle",
-    "1.2"
+    "1.2",
+    "digital multimeter"
    ]
   },
   {
@@ -75,7 +74,8 @@
     ],
     [
      "bounces",
-     "2:06-2:12"
+     "2:10-2:13",
+     0.75
     ]
    ]
   },
@@ -135,7 +135,7 @@
   {
    "id": 8,
    "type": "analysis",
-   "text": "The Energizer lithium lasts 723 minutes which is almost double the Duracell but it costs a dollar fifty each.",
+   "text": "The Energizer lithium lasts 723 minutes which is almost double the Duracell.",
    "beats": [
     [
      "the",
@@ -144,9 +144,16 @@
     [
      "723",
      "5:54-6:00"
-    ],
+    ]
+   ]
+  },
+  {
+   "id": 13,
+   "type": "analysis",
+   "text": "But it costs a dollar fifty each which is double a regular Energizer.",
+   "beats": [
     [
-     "costs",
+     "but",
      "5:15-5:18.5"
     ]
    ]
@@ -158,11 +165,7 @@
    "beats": [
     [
      "but",
-     "7:03-7:06"
-    ],
-    [
-     "nobody",
-     "7:06-7:09"
+     "9:00-9:05"
     ]
    ],
    "mark": [
@@ -173,24 +176,16 @@
   {
    "id": 10,
    "type": "analysis",
-   "text": "Amazon Basics gives you 32 milliamp hours for every single penny which beats every brand he tested.",
+   "text": "Amazon Basics squeezes the most power out of every single penny which beats every brand he tested.",
    "beats": [
     [
      "amazon",
-     "7:09-7:12"
-    ],
-    [
-     "32",
-     "7:48-7:54"
+     "7:10-7:14"
     ],
     [
      "penny",
      "ai:a single shiny copper penny standing next to an AA battery macro"
     ]
-   ],
-   "mark": [
-    "circle",
-    "32"
    ]
   },
   {
@@ -200,12 +195,12 @@
    "beats": [
     [
      "so",
-     "8:51-8:57",
+     "8:52-8:57",
      1.0
     ],
     [
      "different",
-     "7:33-7:39"
+     "7:17-7:21"
     ]
    ]
   },
@@ -216,7 +211,8 @@
    "beats": [
     [
      "and",
-     "1:39-1:45"
+     "2:11-2:14",
+     0.75
     ]
    ],
    "red": [
@@ -224,7 +220,7 @@
    ]
   }
  ],
- "facts_checked": "transcript V7-ghrTqA44 + frames: drop test 1:30-2:15, used 1.22 V vs new 1.62 V 1:18, Dollar General 8 for $1 = 13 c, 26 min 3:45, Duracell 381 min 4:00 (=14.7x), Energizer lithium 723 min 5:54 and $1.50 each 5:13, Amazon Basics 32.37 mAh per penny 7:54. Zinc gel -> zinc oxide bounce = published explanation (Bhadra et al. 2015, J. Mater. Chem. A).",
+ "facts_checked": "transcript V7-ghrTqA44 + frames: drop test 1:30-2:15, used 1.22 V vs new 1.62 V 1:18, Dollar General 8 for $1 = 13 c, 26 min 3:45, Duracell 381 min 4:00 (=14.7x), Energizer lithium 723 min 5:54 and $1.50 each 5:13, Amazon Basics 32.37 mAh per penny 7:54. Zinc gel -> zinc oxide bounce = published explanation (Bhadra et al. 2015, J. Mater. Chem. A). Amazon Basics best value per penny 7:47-7:54 (said without chart number). Lithium $1.50 vs regular Energizer 75 c (5:13) = 2x.",
  "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
  "title": "Why Dead Batteries BOUNCE 🔋 + Which AA Lasts Longest (@ProjectFarm/YT)",
  "description": "A dead AA bounces and a new one thuds, and there's real chemistry behind it. Then Project Farm drained every brand to find the best battery per penny. Original video: @ProjectFarm https://youtu.be/V7-ghrTqA44 | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #batteries #science #experiment #lifehack",

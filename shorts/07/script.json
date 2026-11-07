@@ -11,21 +11,14 @@
    "beats": [
     [
      "can",
-     "9:51-9:55"
+     "1:42-1:45"
     ],
     [
      "hydrogen",
-     "0:57-1:00"
-    ],
-    [
-     "35",
-     "0:30-0:34"
+     "10:55-10:57"
     ]
    ],
-   "mark": [
-    "circle",
-    "35"
-   ]
+   "hook": "black cylinder"
   },
   {
    "id": 2,
@@ -38,11 +31,11 @@
     ],
     [
      "splits",
-     "4:06-4:12"
+     "9:51-9:53"
     ],
     [
      "feeds",
-     "3:03-3:09"
+     "2:54-2:57"
     ]
    ],
    "blue": [
@@ -56,7 +49,7 @@
    "beats": [
     [
      "but",
-     "ai:a water molecule splitting into glowing hydrogen and oxygen atoms in the dark"
+     "ai:a water molecule splitting into glowing hydrogen and oxygen atoms on a bright white lab background"
     ],
     [
      "energy",
@@ -64,7 +57,8 @@
     ],
     [
      "math",
-     "1:18-1:24"
+     "0:06-0:09",
+     0.75
     ]
    ],
    "red": [
@@ -73,34 +67,37 @@
   },
   {
    "id": 4,
-   "type": "analysis",
-   "text": "On the 0 to 60 runs the truck is slower with hydrogen three out of four times so the power claim falls flat right away.",
+   "type": "story",
+   "text": "On the 0 to 60 runs the truck is slower with hydrogen three out of four times.",
    "beats": [
     [
      "on",
-     "4:36-4:42"
+     "6:12-6:15"
     ],
     [
      "slower",
-     "5:57-6:00"
-    ],
-    [
-     "power",
-     "6:15-6:18"
+     "4:45-4:48"
     ]
-   ],
-   "mark": [
-    "x",
-    "flat"
    ]
   },
   {
    "id": 5,
-   "type": "story",
-   "text": "So he tests it on a fuel injected generator with half a liter of gas.",
+   "type": "analysis",
+   "text": "So the extra power claim falls flat right away.",
    "beats": [
     [
      "so",
+     "6:15-6:18"
+    ]
+   ]
+  },
+  {
+   "id": 6,
+   "type": "story",
+   "text": "Next he tests it on a fuel injected generator with half a liter of gas.",
+   "beats": [
+    [
+     "next",
      "6:33-6:39"
     ],
     [
@@ -110,32 +107,32 @@
    ]
   },
   {
-   "id": 6,
+   "id": 7,
    "type": "story",
    "text": "Without hydrogen it runs 19 minutes and 46 seconds.",
    "beats": [
     [
      "without",
-     "7:12-7:18"
+     "7:12-7:16"
     ],
     [
      "19",
-     "7:52-7:56"
+     "7:53.5-7:56"
     ]
    ]
   },
   {
-   "id": 7,
+   "id": 8,
    "type": "analysis",
    "text": "And with hydrogen it dies nine seconds sooner so the kit made it slightly worse.",
    "beats": [
     [
      "and",
-     "9:51-9:55"
+     "9:53-9:56"
     ],
     [
      "nine",
-     "9:57-10:01"
+     "9:58-10:01"
     ]
    ],
    "red": [
@@ -143,7 +140,7 @@
    ]
   },
   {
-   "id": 8,
+   "id": 9,
    "type": "analysis",
    "text": "Then he doubles the electrolyte to make twice the gas and it runs 21 seconds shorter.",
    "beats": [
@@ -153,7 +150,7 @@
     ],
     [
      "twice",
-     "10:21-10:27"
+     "10:21-10:22.6"
     ],
     [
      "21",
@@ -161,12 +158,13 @@
     ]
    ],
    "mark": [
-    "circle",
-    "21"
+    "arrow",
+    "twice",
+    "power meter"
    ]
   },
   {
-   "id": 9,
+   "id": 10,
    "type": "analysis",
    "text": "Because the generator has to make the power for the kit so the engine just burns extra fuel to feed it.",
    "beats": [
@@ -176,31 +174,31 @@
     ],
     [
      "power",
-     "ai:a glowing electric current flowing from a small engine into a box of wires in the dark"
+     "ai:bright blue electric current flowing from a yellow generator into a small black box in a sunlit workshop"
     ],
     [
      "burns",
-     "ai:a small engine burning extra fuel with a bright orange flame inside the cylinder"
-    ]
-   ]
-  },
-  {
-   "id": 10,
-   "type": "analysis",
-   "text": "And after 250 miles the piston looks exactly the same so it didn't even clean the engine.",
-   "beats": [
-    [
-     "and",
-     "6:24-6:27"
-    ],
-    [
-     "same",
-     "6:27-6:33"
+     "ai:close up of a small engine exhaust puffing in a bright sunny workshop with a fuel gauge dropping"
     ]
    ]
   },
   {
    "id": 11,
+   "type": "analysis",
+   "text": "And after 250 miles the spark plug looks exactly the same so it didn't even clean the engine.",
+   "beats": [
+    [
+     "and",
+     "4:29-4:32"
+    ],
+    [
+     "same",
+     "8:01.6-8:03"
+    ]
+   ]
+  },
+  {
+   "id": 12,
    "type": "story",
    "text": "So would you put 200 dollars of hydrogen on your car?",
    "beats": [
@@ -221,5 +219,5 @@
  "title": "Can a $200 HYDROGEN Kit Really Save 35% Fuel? 😳 (@ProjectFarm/YT)",
  "description": "Project Farm put a $200 HHO hydrogen kit on a Suburban and a generator to check its 35 percent fuel savings claim. Original video: @ProjectFarm https://youtu.be/dOiXpCpVofQ | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #hydrogen #hho #cars #science",
  "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons",
- "notes": "Footage-first (owner 4 Nov 2026). Transcript made with faster-whisper on GitHub (captions were rate-limited)."
+ "notes": "Footage-first (owner 4 Nov 2026). Transcript made with faster-whisper on GitHub (captions were rate-limited). No-swipe fix 5 Nov 2026: ad text card (35 %), paper schematic, blurry intake/electrolyte/piston macro and MUSIC-caption road shot removed; hook on the HHO dry cell."
 }

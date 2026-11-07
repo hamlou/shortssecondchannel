@@ -11,11 +11,11 @@
    "beats": [
     [
      "two",
-     "11:54-11:58"
+     "12:03-12:06"
     ],
     [
      "run",
-     "9:18-9:24"
+     "9:24-9:28"
     ],
     [
      "additive",
@@ -25,7 +25,8 @@
    ],
    "red": [
     "blow"
-   ]
+   ],
+   "hook": "crankshaft"
   },
   {
    "id": 2,
@@ -50,7 +51,7 @@
   {
    "id": 3,
    "type": "analysis",
-   "text": "First the friction tester shows both pure additives leave a smaller scar than plain oil and pure STP scars the least.",
+   "text": "First the friction tester shows both pure additives leave a smaller scar than plain oil.",
    "beats": [
     [
      "first",
@@ -59,26 +60,32 @@
     [
      "scar",
      "2:51-2:57"
-    ],
-    [
-     "stp",
-     "13:50-13:53",
-     0.5
     ]
    ]
   },
   {
    "id": 4,
    "type": "analysis",
+   "text": "And pure STP leaves the smallest scar of all.",
+   "beats": [
+    [
+     "and",
+     "5:15-5:19"
+    ]
+   ]
+  },
+  {
+   "id": 5,
+   "type": "analysis",
    "text": "Both are mostly thick petroleum oil so they cling to metal and keep a film between the parts.",
    "beats": [
     [
      "both",
-     "6:39-6:45"
+     "6:15-6:21"
     ],
     [
      "cling",
-     "4:24-4:30"
+     "4:30-4:34"
     ],
     [
      "film",
@@ -87,7 +94,7 @@
    ]
   },
   {
-   "id": 5,
+   "id": 6,
    "type": "analysis",
    "text": "Then he drains every drop of oil and starts both engines together which is the cruelest test you can do.",
    "beats": [
@@ -97,12 +104,12 @@
     ],
     [
      "starts",
-     "9:18-9:24"
+     "9:18-9:22"
     ]
    ]
   },
   {
-   "id": 6,
+   "id": 7,
    "type": "story",
    "text": "The STP engine starts smoking and knocking first and then the Lucas engine starts knocking too.",
    "beats": [
@@ -120,7 +127,7 @@
    ]
   },
   {
-   "id": 7,
+   "id": 8,
    "type": "analysis",
    "text": "Without oil the metal parts heat up from friction until the connecting rod tears itself apart.",
    "beats": [
@@ -130,12 +137,12 @@
     ],
     [
      "rod",
-     "12:03-12:09"
+     "12:06-12:09"
     ]
    ]
   },
   {
-   "id": 8,
+   "id": 9,
    "type": "story",
    "text": "Inside the STP engine the rod is in pieces and the aluminum got so hot it melted.",
    "beats": [
@@ -145,16 +152,12 @@
     ],
     [
      "aluminum",
-     "12:09-12:14"
+     "12:10-12:14"
     ]
-   ],
-   "mark": [
-    "circle",
-    "melted"
    ]
   },
   {
-   "id": 9,
+   "id": 10,
    "type": "analysis",
    "text": "And the Lucas engine exploded too so no additive can save an engine that has no oil.",
    "beats": [
@@ -164,16 +167,12 @@
     ],
     [
      "no",
-     "13:39-13:45"
+     "13:24-13:28"
     ]
-   ],
-   "mark": [
-    "x",
-    "no"
    ]
   },
   {
-   "id": 10,
+   "id": 11,
    "type": "story",
    "text": "So which one would you put in your engine?",
    "beats": [
@@ -189,7 +188,7 @@
    ]
   }
  ],
- "facts_checked": "Whisper transcript x3CfLBkew2c + frames: thousands asked 0:24, lubricity tester 1:01-5:40, scar chart 13:48 (STP 100% 1.90x3.81 mm smallest, Lucas 100% 2.18x4.36, oil 2.46x6.03), MSDS both 60-100 % petroleum oil 6:41-6:56, oil drained + both started together 8:14-8:49, 'STP engine smoking and knocking' caption 9:51, 'Lucas engine beginning to knock' 10:36, STP rod blew apart + aluminum melted 11:56-12:11, Lucas engine exploded too 12:31.",
+ "facts_checked": "Whisper transcript x3CfLBkew2c + frames: thousands asked 0:24, lubricity tester 1:01-5:40, scar chart 13:48 (STP 100% 1.90x3.81 mm smallest, Lucas 100% 2.18x4.36, oil 2.46x6.03), MSDS both 60-100 % petroleum oil 6:41-6:56, oil drained + both started together 8:14-8:49, 'STP engine smoking and knocking' caption 9:51, 'Lucas engine beginning to knock' 10:36, STP rod blew apart + aluminum melted 11:56-12:11, Lucas engine exploded too 12:31. Scar chart + MSDS used for facts only, never shown.",
  "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
  "title": "Lucas vs STP: He Ran Both Engines With NO Oil 😱 (@ProjectFarm/YT)",
  "description": "Project Farm tested Lucas and STP oil additives on a friction tester, then drained two new engines and ran them until they destroyed themselves. Original video: @ProjectFarm https://youtu.be/x3CfLBkew2c | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #lucas #stp #engine #oil #science",
