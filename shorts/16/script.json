@@ -11,34 +11,36 @@
    "beats": [
     [
      "is",
-     "5:30-5:33"
+     "9:39-9:42",
+     0.62
     ],
     [
      "cheap",
-     "5:36-5:39"
+     "9:03-9:06",
+     0.4
     ]
    ],
-   "hook": "glass jar of yellow gasoline"
+   "hook": "glass jar"
   },
   {
    "id": 2,
    "type": "story",
-   "text": "In a see through engine the flame looks exactly the same with both fuels.",
+   "text": "So he runs a generator on each gas and lets a space heater drain the tank.",
    "beats": [
     [
-     "in",
-     "0:54-0:57"
+     "so",
+     "2:42-2:48"
     ],
     [
-     "same",
-     "1:06-1:09"
+     "heater",
+     "2:30-2:36"
     ]
    ]
   },
   {
    "id": 3,
    "type": "analysis",
-   "text": "And a generator runs 71 minutes on each so there's zero gain in fuel efficiency.",
+   "text": "And it runs 71 minutes on each so there's zero gain in fuel efficiency.",
    "beats": [
     [
      "and",
@@ -61,7 +63,8 @@
     ],
     [
      "burns",
-     "ai:orange and blue combustion flame inside a small engine cylinder seen through glass"
+     "4:48-4:54",
+     0.35
     ]
    ]
   },
@@ -78,6 +81,11 @@
      "greasy",
      "5:33-5:36"
     ]
+   ],
+   "mark": [
+    "arrow",
+    "bolts",
+    "black bolt"
    ]
   },
   {
@@ -87,7 +95,7 @@
    "beats": [
     [
      "the",
-     "9:39-9:45"
+     "10:03-10:09"
     ],
     [
      "detergents",
@@ -104,48 +112,61 @@
      "and",
      "10:09-10:15"
     ]
-   ],
-   "mark": [
-    "circle",
-    "dirt",
-    "dark stain on the white paper"
    ]
   },
   {
    "id": 8,
    "type": "analysis",
-   "text": "So Shell really does clean better which helps keep injectors and valves clean over time.",
+   "text": "So Shell really does clean better which helps keep an engine clean inside over time.",
    "beats": [
     [
      "so",
-     "8:39-8:45"
+     "10:27-10:33"
     ],
     [
-     "injectors",
-     "ai:close up of a car fuel injector nozzle spraying a fine cone of gasoline mist"
+     "engine",
+     "8:24-8:30",
+     0.55
     ]
    ]
   },
   {
    "id": 9,
    "type": "analysis",
-   "text": "But a cheap bottle of fuel cleaner does the same job so the extra 50 cents a gallon isn't worth it.",
+   "text": "But a cheap bottle of fuel cleaner from the store does the same job.",
    "beats": [
     [
      "but",
      "11:00-11:06",
-     0.75
+     0.85
+    ],
+    [
+     "bottle",
+     "ai:a hand pouring a bottle of fuel system cleaner into the gas filler of a car in bright daylight sharp focus"
     ]
    ]
   },
   {
    "id": 10,
+   "type": "analysis",
+   "text": "So the extra 50 cents a gallon just isn't worth it.",
+   "beats": [
+    [
+     "so",
+     "0:12-0:18",
+     0.4
+    ]
+   ]
+  },
+  {
+   "id": 11,
    "type": "story",
    "text": "Would you still pay for premium?",
    "beats": [
     [
      "would",
-     "10:36-10:41"
+     "11:39-11:44",
+     0.95
     ]
    ],
    "mark": [
@@ -159,5 +180,5 @@
  "title": "Is Shell V-Power Worth 50¢ More Than Cheap Gas? 🤔 (@ProjectFarm/YT)",
  "description": "Project Farm compared Shell V-Power NiTRO+ to cheap 87 octane in a see-through engine, a generator and a dirty-bolt soak. Original video: @ProjectFarm https://youtu.be/8uIsbRaArvk | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #gasoline #shell #engine #cars #science",
  "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
- "notes": "Footage-first (owner 4 Nov 2026)."
+ "notes": "Footage-first (owner 4 Nov 2026). Fix 5 Nov: no see-through flame/AI blur; hook on Shell jar; marks object-locked."
 }

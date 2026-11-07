@@ -11,16 +11,17 @@
    "beats": [
     [
      "which",
-     "7:09-7:15"
+     "0:21-0:24"
     ],
     [
-     "hair",
-     "0:21-0:27"
+     "cleaner",
+     "0:51-0:54"
     ]
    ],
    "red": [
     "hair"
-   ]
+   ],
+   "hook": "white hair clump"
   },
   {
    "id": 2,
@@ -29,7 +30,11 @@
    "beats": [
     [
      "he",
-     "0:27-0:31"
+     "0:33-0:35"
+    ],
+    [
+     "soap",
+     "0:35-0:37"
     ],
     [
      "grease",
@@ -61,6 +66,11 @@
    ],
    "red": [
     "lye"
+   ],
+   "mark": [
+    "arrow",
+    "lye",
+    "white lye bottle"
    ]
   },
   {
@@ -97,7 +107,7 @@
     ],
     [
      "bleach",
-     "10:49.5-10:55"
+     "9:57-10:00"
     ]
    ]
   },
@@ -138,7 +148,7 @@
     ],
     [
      "pipe",
-     "7:54-7:58"
+     "7:45-7:48"
     ]
    ]
   },
@@ -171,7 +181,11 @@
    "beats": [
     [
      "nothing",
-     "11:30-11:33"
+     "0:45-0:47"
+    ],
+    [
+     "paper",
+     "0:48-0:52"
     ],
     [
      "snake",
@@ -180,7 +194,8 @@
    ],
    "mark": [
     "x",
-    "nothing"
+    "nothing",
+    "roll of duct tape"
    ]
   },
   {
@@ -219,7 +234,7 @@
    ]
   }
  ],
- "facts_checked": "transcript fm2CE2e_3To + frames + grade charts 10:48-11:36: hair Drano A / Liquid Plumr A / Lye A, Clobber+HCl B, sticks+Roebic C; paper towel/tape all C; metal: lye/sticks/Roebic A, Clobber/HCl C; 12 h soak 6:51; sticks turned water blue 3:29; Drano/LP = NaOH + NaOCl (labels); never mix bleach + acid (chlorine gas) = standard safety (CDC).",
+ "facts_checked": "transcript fm2CE2e_3To + frames + grade charts 10:48-11:36 (charts used for facts only, never shown): hair Drano A / Liquid Plumr A / Lye A, Clobber+HCl B, sticks+Roebic C; paper towel/tape all C; metal: lye/sticks/Roebic A, Clobber/HCl C; 12 h soak 6:51; sticks turned water blue 3:29; Drano/LP = NaOH + NaOCl (labels); never mix bleach + acid (chlorine gas) = standard safety (CDC).",
  "safety": "on-screen safety where relevant; no step-by-step dangerous settings",
  "title": "Which Drain Cleaner Actually Eats Hair? 🧪 (@ProjectFarm/YT)",
  "description": "Project Farm soaked hair, soap, grease and even tape in every kind of drain opener. Plain lye won on hair, and the reason is simple chemistry. Original video: @ProjectFarm https://youtu.be/fm2CE2e_3To | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #plumbing #chemistry #home #science",

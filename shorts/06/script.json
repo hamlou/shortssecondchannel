@@ -11,18 +11,15 @@
    "beats": [
     [
      "is",
-     "2:36-2:41"
+     "4:04-4:07"
     ],
     [
      "ethanol",
-     "0:03-0:09",
-     0.4
+     "0:00-0:03",
+     0.2
     ]
    ],
-   "mark": [
-    "q",
-    "money"
-   ]
+   "hook": "glass jar"
   },
   {
    "id": 2,
@@ -31,7 +28,7 @@
    "beats": [
     [
      "first",
-     "0:18-0:24"
+     "0:20-0:24"
     ],
     [
      "water",
@@ -71,7 +68,7 @@
    "beats": [
     [
      "and",
-     "1:51-1:57"
+     "1:24-1:30"
     ],
     [
      "ten",
@@ -79,46 +76,28 @@
     ]
    ],
    "mark": [
-    "circle",
-    "ten"
+    "arrow",
+    "alcohol",
+    "glass cylinder"
    ]
   },
   {
    "id": 5,
-   "type": "story",
-   "text": "Then he looks inside a see through engine and the flame changes color with each fuel.",
+   "type": "analysis",
+   "text": "Ethanol carries oxygen inside its molecule but it also packs about a third less energy than gasoline.",
    "beats": [
     [
-     "then",
-     "2:21-2:27"
+     "ethanol",
+     "ai:a glowing 3D model of an ethanol molecule with a red oxygen atom on a bright white studio background"
     ],
     [
-     "flame",
-     "2:39-2:45"
+     "packs",
+     "ai:two clear fuel drops side by side on a bright white surface one glowing brighter with energy macro"
     ]
    ]
   },
   {
    "id": 6,
-   "type": "analysis",
-   "text": "Ethanol carries oxygen inside its molecule so it burns differently but it also packs about a third less energy than gasoline.",
-   "beats": [
-    [
-     "ethanol",
-     "ai:a glowing 3D model of an ethanol molecule with a red oxygen atom floating in the dark"
-    ],
-    [
-     "burns",
-     "2:45-2:51"
-    ],
-    [
-     "packs",
-     "ai:two clear fuel drops side by side one glowing brighter with energy macro"
-    ]
-   ]
-  },
-  {
-   "id": 7,
    "type": "story",
    "text": "So he runs a fuel injected generator on each gas with the exact same load.",
    "beats": [
@@ -133,7 +112,7 @@
    ]
   },
   {
-   "id": 8,
+   "id": 7,
    "type": "analysis",
    "text": "The ethanol free tank lasts 35 minutes while the E10 dies almost two minutes sooner.",
    "beats": [
@@ -151,7 +130,7 @@
    ]
   },
   {
-   "id": 9,
+   "id": 8,
    "type": "analysis",
    "text": "That's about 4 percent more running time which matches the energy missing from the ethanol.",
    "beats": [
@@ -162,12 +141,12 @@
     ],
     [
      "matches",
-     "4:21-4:27"
+     "4:48-4:50"
     ]
    ]
   },
   {
-   "id": 10,
+   "id": 9,
    "type": "analysis",
    "text": "But the engine kept the same compression and almost the same carbon so it didn't hurt anything in this test.",
    "beats": [
@@ -177,12 +156,17 @@
     ],
     [
      "carbon",
-     "8:00-8:05"
+     "8:01-8:04"
     ]
+   ],
+   "mark": [
+    "circle",
+    "compression",
+    "pressure gauge"
    ]
   },
   {
-   "id": 11,
+   "id": 10,
    "type": "story",
    "text": "So is ethanol free gas worth it for you?",
    "beats": [
@@ -203,5 +187,5 @@
  "title": "Is Ethanol-Free Gas Really Worth It? 🤔 (@ProjectFarm/YT)",
  "description": "Project Farm tested ethanol-free gas against E10 with a water test, a see-through engine and a generator run until empty. Original video: @ProjectFarm https://youtu.be/bEf9Fdvx_Sc | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #gasoline #ethanol #engine #science",
  "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons",
- "notes": "Footage-first (owner 4 Nov 2026)."
+ "notes": "Footage-first (owner 4 Nov 2026). No-swipe fix 5 Nov 2026: dark see-through engine flame shots and blurry meter close-up removed; hook = fuel pouring into glass jar."
 }

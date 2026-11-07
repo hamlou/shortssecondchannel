@@ -18,10 +18,7 @@
      "1:16-1:21"
     ]
    ],
-   "mark": [
-    "circle",
-    "225"
-   ]
+   "hook": "red car battery"
   },
   {
    "id": 2,
@@ -59,11 +56,16 @@
   {
    "id": 4,
    "type": "analysis",
-   "text": "The Optima and DieHard are AGM batteries which soak their acid into glass mats so they push out current with less resistance.",
+   "text": "The Optima and DieHard soak their acid into glass mats so they push current out with less resistance.",
    "beats": [
     [
      "the",
-     "4:45-4:48"
+     "5:51-5:54"
+    ],
+    [
+     "diehard",
+     "4:48-4:51",
+     0.5
     ],
     [
      "soak",
@@ -86,13 +88,9 @@
     ],
     [
      "diehard",
-     "8:00-8:05",
-     0.2
+     "8:12-8:17",
+     0.5
     ]
-   ],
-   "mark": [
-    "circle",
-    "half"
    ]
   },
   {
@@ -117,8 +115,7 @@
    "beats": [
     [
      "and",
-     "9:22-9:27",
-     0.2
+     "9:00-9:05"
     ],
     [
      "optima",
@@ -140,8 +137,7 @@
     ],
     [
      "diehard",
-     "10:40-10:45",
-     0.9
+     "11:51-11:54"
     ],
     [
      "chemical",
@@ -150,7 +146,8 @@
    ],
    "mark": [
     "x",
-    "580"
+    "drops",
+    "car battery"
    ]
   },
   {
@@ -160,12 +157,15 @@
    "beats": [
     [
      "meanwhile",
-     "10:46-10:51",
-     0.15
+     "1:24-1:26.5"
+    ],
+    [
+     "duralast",
+     "2:18-2:21"
     ],
     [
      "cheapest",
-     "11:22-11:26"
+     "1:30-1:33"
     ]
    ]
   },
@@ -214,5 +214,5 @@
  "title": "$225 Optima vs $120 Walmart Battery… The Cheap One Won 😳 (@ProjectFarm/YT)",
  "description": "Project Farm tested six car batteries for cranking amps, charging speed and freezer cold cranking amps, and the cheapest one kept winning. Original video: @ProjectFarm https://youtu.be/h7rTcBanpMk | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #carbattery #optima #walmart #diehard #cars #diy",
  "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
- "notes": "Footage-first (owner 4 Nov 2026)."
+ "notes": "Footage-first (owner 4 Nov 2026). No-swipe fix 5 Nov 2026: chart/table/dark/black beats replaced with real footage; TNP hook arrow + object-locked marks."
 }

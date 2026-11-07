@@ -11,13 +11,14 @@
    "beats": [
     [
      "is",
-     "1:54-1:59"
+     "1:54-1:57"
     ],
     [
      "really",
-     "2:18-2:24"
+     "1:42-1:45"
     ]
-   ]
+   ],
+   "hook": "anchor package"
   },
   {
    "id": 2,
@@ -34,7 +35,7 @@
     ],
     [
      "slip",
-     "2:21-2:24"
+     "2:18-2:21"
     ]
    ]
   },
@@ -45,15 +46,14 @@
    "beats": [
     [
      "the",
-     "1:54-1:59"
+     "2:12-2:14.5"
     ],
     [
      "105",
      "2:21-2:24"
     ]
    ],
-   "mark": [
-    "circle",
+   "red": [
     "105"
    ]
   },
@@ -68,7 +68,8 @@
     ],
     [
      "paper",
-     "2:27-2:33"
+     "0:51-0:54",
+     0.5
     ]
    ]
   },
@@ -79,11 +80,11 @@
    "beats": [
     [
      "almost",
-     "15:27-15:33"
+     "4:48-4:53"
     ],
     [
      "down",
-     "3:36-3:42"
+     "3:36-3:41"
     ]
    ]
   },
@@ -109,7 +110,7 @@
    "beats": [
     [
      "and",
-     "16:00-16:04"
+     "10:30-10:35"
     ],
     [
      "ring",
@@ -136,7 +137,8 @@
    ],
    "mark": [
     "circle",
-    "crater"
+    "crater",
+    "hole in drywall"
    ]
   },
   {
@@ -146,11 +148,11 @@
    "beats": [
     [
      "so",
-     "14:09-14:15"
+     "13:06-13:09"
     ],
     [
      "toggle",
-     "13:39-13:45"
+     "13:39-13:42"
     ]
    ]
   },
@@ -176,5 +178,5 @@
  "title": "Are Drywall Anchor Weight Ratings Real? 😳 (@ProjectFarm/YT)",
  "description": "Project Farm pulled every type of drywall anchor down and straight out of half-inch drywall until it failed, and measured the damage. Original video: @ProjectFarm https://youtu.be/lHb-Tcvkn7M | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #drywall #diy #homeimprovement #tools",
  "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
- "notes": "Footage-first (owner 4 Nov 2026)."
+ "notes": "Footage-first (owner 4 Nov 2026). No-swipe fix 5 Nov 2026: chart/table/dark/black beats replaced with real footage; TNP hook arrow + object-locked marks."
 }

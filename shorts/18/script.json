@@ -7,21 +7,22 @@
   {
    "id": 1,
    "type": "story",
-   "text": "He saws a bucket clean in half and tries to make it hold water with a can of spray.",
+   "text": "Can one can of spray make a bucket that was sawn in half hold water?",
    "beats": [
     [
-     "he",
+     "can",
+     "5:24-5:28"
+    ],
+    [
+     "sawn",
      "0:30-0:36"
     ],
     [
      "hold",
-     "5:00-5:06"
-    ],
-    [
-     "spray",
-     "1:39-1:45"
+     "5:06-5:10"
     ]
-   ]
+   ],
+   "hook": "bucket"
   },
   {
    "id": 2,
@@ -30,12 +31,11 @@
    "beats": [
     [
      "flex",
-     "5:24-5:30"
+     "5:36-5:41"
     ],
     [
      "three",
-     "5:33-5:36",
-     0.5
+     "4:12-4:17"
     ]
    ],
    "blue": [
@@ -45,15 +45,15 @@
   {
    "id": 3,
    "type": "analysis",
-   "text": "Because it sprays on so thick that it bridges the gap like a rubber skin instead of just coating the edges.",
+   "text": "Because it goes on thick enough to bridge the gap like a rubber skin instead of just coating the edges.",
    "beats": [
     [
      "because",
      "1:42-1:48"
     ],
     [
-     "bridges",
-     "ai:thick black rubber coating stretching across a crack in white plastic macro"
+     "bridge",
+     "ai:thick black rubber coating stretching across a crack in white plastic macro bright light sharp focus"
     ],
     [
      "edges",
@@ -64,7 +64,7 @@
   {
    "id": 4,
    "type": "analysis",
-   "text": "But on a cracked pipe underwater Rust-Oleum holds all the way to 43 psi which is about the water pressure in a house.",
+   "text": "But on a cracked pipe underwater Rust-Oleum holds all the way to 43 psi.",
    "beats": [
     [
      "but",
@@ -72,16 +72,28 @@
     ],
     [
      "43",
-     "8:03-8:09"
+     "8:05-8:08.5"
     ]
    ],
    "mark": [
     "circle",
-    "43"
+    "43",
+    "pressure gauge"
    ]
   },
   {
    "id": 5,
+   "type": "analysis",
+   "text": "That's about the water pressure in your house.",
+   "beats": [
+    [
+     "that's",
+     "ai:a kitchen faucet running at full pressure into a steel sink bright daylight sharp focus"
+    ]
+   ]
+  },
+  {
+   "id": 6,
    "type": "analysis",
    "text": "And Flex Seal scrapes right off the smooth PVC because it barely bonds to slick plastic.",
    "beats": [
@@ -91,22 +103,22 @@
     ],
     [
      "bonds",
-     "ai:a rubber coating peeling off smooth white plastic pipe macro"
+     "ai:a black rubber coating peeling off smooth white plastic pipe macro bright light sharp focus"
     ]
    ]
   },
   {
-   "id": 6,
+   "id": 7,
    "type": "story",
    "text": "On a metal tank Flex Seal starts leaking at just 2 psi.",
    "beats": [
     [
      "on",
-     "8:42-8:48"
+     "8:42-8:47"
     ],
     [
-     "2",
-     "7:42-7:46"
+     "leaking",
+     "8:50-8:54"
     ]
    ],
    "red": [
@@ -114,13 +126,13 @@
    ]
   },
   {
-   "id": 7,
+   "id": 8,
    "type": "analysis",
    "text": "That's less pressure than you blow into a balloon so it fills gaps well but it doesn't stick to everything.",
    "beats": [
     [
      "that's",
-     "ai:a person blowing up a red balloon"
+     "ai:a person blowing up a red balloon in a bright room sharp focus"
     ],
     [
      "fills",
@@ -129,30 +141,30 @@
    ]
   },
   {
-   "id": 8,
+   "id": 9,
    "type": "analysis",
    "text": "In the end Flex Seal and Rust-Oleum tie with two wins each so the TV hype is only half true.",
    "beats": [
     [
      "in",
-     "9:33-9:36",
-     0.5
+     "1:24-1:30"
     ],
     [
      "half",
-     "9:39-9:45"
+     "9:42-9:47",
+     0.8
     ]
    ]
   },
   {
-   "id": 9,
+   "id": 10,
    "type": "story",
    "text": "Would you trust it on your roof?",
    "beats": [
     [
      "would",
-     "9:48-9:54",
-     0.75
+     "10:30-10:36",
+     0.8
     ]
    ],
    "mark": [
@@ -166,5 +178,5 @@
  "title": "Is Flex Seal Really As Good As the TV Says? 🤔 (@ProjectFarm/YT)",
  "description": "Project Farm sawed buckets in half and sprayed them with Flex Seal, Perma-Seal and Rust-Oleum LeakSeal, then pressure tested pipes and a tank underwater. Original video: @ProjectFarm https://youtu.be/PNDnV4qxK_U | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #flexseal #diy #repair #leak",
  "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
- "notes": "Footage-first (owner 4 Nov 2026)."
+ "notes": "Footage-first (owner 4 Nov 2026). Fix 5 Nov: black text cards 5:33/9:33 + chart 9:36 + dark 8:09 removed, hook on water-holding bucket, gauge circle object-locked, long lines split."
 }

@@ -7,18 +7,24 @@
   {
    "id": 1,
    "type": "story",
-   "text": "MacGyver could fix anything with duct tape but which brand would he actually trust?",
+   "text": "This tape holds a pile of wrenches and a jug of water so which duct tape would MacGyver trust?",
    "beats": [
     [
-     "macgyver",
-     "0:03-0:09",
-     0.75
+     "this",
+     "3:06-3:09"
     ],
     [
-     "brand",
-     "2:30-2:36"
+     "jug",
+     "2:57-3:00",
+     0.4
+    ],
+    [
+     "macgyver",
+     "0:03-0:08",
+     0.75
     ]
-   ]
+   ],
+   "hook": "pile of wrenches"
   },
   {
    "id": 2,
@@ -31,11 +37,11 @@
     ],
     [
      "jug",
-     "2:15-2:21"
+     "2:16-2:21"
     ],
     [
      "peels",
-     "2:36-2:42"
+     "2:36-2:41"
     ]
    ],
    "blue": [
@@ -49,21 +55,25 @@
    "beats": [
     [
      "t-rex",
-     "3:06-3:12"
+     "3:30-3:33"
+    ],
+    [
+     "10",
+     "3:34-3:39"
     ],
     [
      "twice",
-     "3:39-3:42"
+     "2:45-2:48"
     ],
     [
      "scotch",
-     "10:12-10:15",
-     0.5
+     "2:54-2:57"
     ]
    ],
    "mark": [
-    "circle",
-    "10"
+    "arrow",
+    "10",
+    "plastic water jug"
    ]
   },
   {
@@ -77,7 +87,7 @@
     ],
     [
      "grips",
-     "2:42-2:45"
+     "0:48-0:54"
     ]
    ]
   },
@@ -92,7 +102,8 @@
     ],
     [
      "snaps",
-     "5:15-5:21"
+     "5:09-5:12",
+     0.5
     ]
    ]
   },
@@ -103,26 +114,22 @@
    "beats": [
     [
      "gorilla",
-     "6:39-6:42"
+     "6:21-6:27"
     ],
     [
      "rip",
-     "5:39-5:45"
+     "5:39-5:44"
     ],
     [
      "mesh",
      "ai:macro of tightly woven grey fabric threads inside duct tape"
     ]
-   ],
-   "mark": [
-    "circle",
-    "142"
    ]
   },
   {
    "id": 7,
    "type": "analysis",
-   "text": "But tearing it across is a different story and Duck tape rips at just 12 pounds which is why you can tear it by hand.",
+   "text": "But tearing it across is different and Duck tape rips at just 12 pounds so you can tear it by hand.",
    "beats": [
     [
      "but",
@@ -145,13 +152,12 @@
    "beats": [
     [
      "so",
-     "10:15-10:18",
-     0.5
+     "10:30-10:35",
+     0.75
     ],
     [
      "gorilla",
-     "10:21-10:24",
-     0.5
+     "11:46-11:49"
     ]
    ]
   },
@@ -162,7 +168,7 @@
    "beats": [
     [
      "which",
-     "10:24-10:30",
+     "11:00-11:06",
      0.75
     ]
    ],
@@ -177,5 +183,5 @@
  "title": "Which DUCT TAPE Is Actually the Strongest? 🤔 (@ProjectFarm/YT)",
  "description": "Project Farm tested six duct tapes for how well they stick, how much they hold lengthwise and how easily they tear across. Original video: @ProjectFarm https://youtu.be/UbXy3c2oAfA | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #ducttape #diy #tools #gorilla",
  "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
- "notes": "Footage-first (owner 4 Nov 2026)."
+ "notes": "Footage-first (owner 4 Nov 2026). No-swipe fix 5 Nov 2026: chart/table/dark/black beats replaced with real footage; TNP hook arrow + object-locked marks."
 }

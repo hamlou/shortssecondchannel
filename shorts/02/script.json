@@ -15,7 +15,7 @@
     ],
     [
      "free",
-     "10:51-10:55"
+     "6:09-6:13"
     ],
     [
      "stuff",
@@ -24,7 +24,8 @@
    ],
    "red": [
     "rusted"
-   ]
+   ],
+   "hook": "brake fluid bottle"
   },
   {
    "id": 2,
@@ -80,10 +81,6 @@
      "like",
      "3:24-3:29"
     ]
-   ],
-   "mark": [
-    "q",
-    "gave"
    ]
   },
   {
@@ -99,6 +96,11 @@
      "crawled",
      "5:15-5:21"
     ]
+   ],
+   "mark": [
+    "arrow",
+    "block",
+    "clear plastic block"
    ]
   },
   {
@@ -118,10 +120,6 @@
      "never",
      "ai:thick honey sitting on top of a narrow crack in rusty metal and not going in"
     ]
-   ],
-   "mark": [
-    "x",
-    "never"
    ]
   },
   {
@@ -183,8 +181,9 @@
     ]
    ],
    "mark": [
-    "circle",
-    "56"
+    "arrow",
+    "56",
+    "red torque wrench"
    ]
   },
   {
@@ -203,6 +202,11 @@
    ],
    "blue": [
     "seafoam"
+   ],
+   "mark": [
+    "circle",
+    "seafoam",
+    "spray can"
    ]
   },
   {

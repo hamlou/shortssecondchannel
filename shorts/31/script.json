@@ -7,12 +7,11 @@
   {
    "id": 1,
    "type": "story",
-   "text": "The original super glue claims one drop can lift a ton so he puts one drop of 6 brands on steel bolts.",
+   "text": "The original super glue claims one drop lifts a ton so he puts one drop of 6 brands on steel bolts.",
    "beats": [
     [
      "the",
-     "0:30-0:35",
-     0.8
+     "5:45-5:49"
     ],
     [
      "drop",
@@ -25,7 +24,8 @@
    ],
    "red": [
     "ton"
-   ]
+   ],
+   "hook": "orange digital scale"
   },
   {
    "id": 2,
@@ -38,12 +38,8 @@
     ],
     [
      "gorilla",
-     "5:31-5:35"
+     "5:30-5:34"
     ]
-   ],
-   "mark": [
-    "circle",
-    "15"
    ]
   },
   {
@@ -68,17 +64,13 @@
    "beats": [
     [
      "and",
-     "5:55-5:59"
-    ],
-    [
-     "double",
-     "6:06-6:09",
-     0.5
+     "5:54-5:59"
     ]
    ],
    "mark": [
     "circle",
-    "36"
+    "36",
+    "orange digital scale"
    ]
   },
   {
@@ -103,7 +95,7 @@
    "beats": [
     [
      "but",
-     "6:53-6:57"
+     "6:51-6:55.5"
     ],
     [
      "school",
@@ -117,7 +109,7 @@
   {
    "id": 7,
    "type": "analysis",
-   "text": "Then he pulls each bolt straight up with a lever that multiplies his pull 20 times because no arm can pull 600 pounds.",
+   "text": "Then he pulls each bolt up with a lever that multiplies his pull 20 times because no arm can do 600 pounds.",
    "beats": [
     [
      "then",
@@ -144,12 +136,8 @@
     ],
     [
      "scotch",
-     "8:38-8:42"
+     "8:37-8:41"
     ]
-   ],
-   "mark": [
-    "circle",
-    "616"
    ]
   },
   {
@@ -182,11 +170,16 @@
     ],
     [
      "40",
-     "10:59-11:04"
+     "10:58-11:03"
     ]
    ],
    "red": [
     "40"
+   ],
+   "mark": [
+    "arrow",
+    "plates",
+    "weight plates"
    ]
   },
   {

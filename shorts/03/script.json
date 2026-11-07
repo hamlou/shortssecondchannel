@@ -11,20 +11,22 @@
    "beats": [
     [
      "this",
-     "1:12-1:15"
+     "0:39-0:42"
     ],
     [
      "claims",
-     "0:54-0:59"
+     "2:09-2:12"
     ],
     [
      "real",
-     "1:06-1:09"
+     "1:06-1:09",
+     0.35
     ]
    ],
    "red": [
     "fake"
-   ]
+   ],
+   "hook": "blue impact wrench"
   },
   {
    "id": 2,
@@ -33,7 +35,7 @@
    "beats": [
     [
      "and",
-     "1:06-1:11"
+     "1:09-1:12"
     ],
     [
      "crazy",
@@ -61,8 +63,9 @@
     ]
    ],
    "mark": [
-    "q",
-    "gram"
+    "arrow",
+    "weigh",
+    "digital scale"
    ]
   },
   {
@@ -88,30 +91,27 @@
    ],
    "mark": [
     "circle",
-    "91"
+    "91",
+    "pressure gauge"
    ]
   },
   {
    "id": 5,
    "type": "analysis",
-   "text": "That's less than a quarter of what the box promised so the spec sheet is basically fan fiction.",
+   "text": "That's less than a quarter of what its listing promised so those specs are basically fan fiction.",
    "beats": [
     [
      "that's",
      "5:30-5:33"
     ],
     [
-     "box",
-     "0:54-0:59"
+     "promised",
+     "0:45-0:51"
     ],
     [
      "fan",
      "ai:an open glowing fantasy storybook with magic sparkles on a dark workbench"
     ]
-   ],
-   "mark": [
-    "x",
-    "less"
    ]
   },
   {
@@ -129,7 +129,7 @@
     ],
     [
      "210",
-     "1:00-1:03"
+     "2:12-2:15"
     ]
    ]
   },
@@ -201,19 +201,24 @@
    "beats": [
     [
      "then",
-     "9:39-9:45"
+     "10:36-10:40"
     ],
     [
      "until",
-     "10:09-10:14"
+     "10:54-10:57"
     ],
     [
      "snaps",
-     "10:21-10:26"
+     "10:00-10:04"
     ]
    ],
    "red": [
     "snaps"
+   ],
+   "mark": [
+    "arrow",
+    "handle",
+    "impact wrench"
    ]
   },
   {

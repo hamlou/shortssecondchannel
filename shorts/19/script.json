@@ -11,17 +11,14 @@
    "beats": [
     [
      "what",
-     "1:45-1:51"
-    ],
-    [
-     "diesel",
-     "1:09-1:14"
+     "1:09-1:12"
     ],
     [
      "mower",
-     "1:24-1:30"
+     "5:21-5:26"
     ]
-   ]
+   ],
+   "hook": "glass jar"
   },
   {
    "id": 2,
@@ -36,10 +33,6 @@
      "chokes",
      "1:45-1:51"
     ]
-   ],
-   "mark": [
-    "x",
-    "smoke"
    ]
   },
   {
@@ -49,12 +42,11 @@
    "beats": [
     [
      "because",
-     "5:44-5:50",
-     0.75
+     "0:12-0:15"
     ],
     [
      "floods",
-     "ai:unburned liquid fuel pooling inside an engine cylinder around a spark plug macro"
+     "ai:unburned liquid fuel pooling inside an engine cylinder around a spark plug macro brightly lit cutaway sharp focus"
     ]
    ]
   },
@@ -65,11 +57,11 @@
    "beats": [
     [
      "diesel",
-     "ai:a diesel engine piston compressing glowing hot air inside a cylinder cutaway"
+     "ai:a diesel engine piston compressing glowing hot air inside a cylinder cutaway bright studio light sharp focus"
     ],
     [
      "ignite",
-     "ai:fuel spray igniting by itself inside a red hot compressed cylinder"
+     "ai:fuel spray igniting by itself inside a red hot compressed cylinder bright orange flame sharp focus"
     ]
    ]
   },
@@ -88,7 +80,7 @@
     ],
     [
      "mows",
-     "3:27-3:33"
+     "3:38-3:42"
     ]
    ]
   },
@@ -99,16 +91,17 @@
    "beats": [
     [
      "and",
-     "5:27-5:33"
+     "0:18-0:24"
     ],
     [
      "115",
-     "5:33-5:36"
+     "5:27-5:32"
     ]
    ],
    "mark": [
     "circle",
-    "115"
+    "115",
+    "pressure gauge"
    ]
   },
   {
@@ -151,7 +144,7 @@
    "beats": [
     [
      "that's",
-     "ai:a big diesel pickup truck driving down an open highway at sunset"
+     "ai:a big diesel pickup truck driving down an open highway in bright daylight sharp focus"
     ],
     [
      "burns",
@@ -167,7 +160,7 @@
     [
      "so",
      "6:51-6:57",
-     0.4
+     0.35
     ]
    ],
    "mark": [
@@ -181,5 +174,5 @@
  "title": "What Happens If You Put DIESEL in a Gas Engine? 😱 (@ProjectFarm/YT)",
  "description": "Project Farm ran a gas mower engine on pure diesel, a 50/50 gas-diesel mix and a mothball mix, then compared how gas and diesel burn. Original video: @ProjectFarm https://youtu.be/PXLWLXz0iY4 | Science explained + AI visuals by our channel. Narration: synthetic voice (Kokoro, Apache 2.0). #shorts #diesel #engine #mower #science",
  "speech_rules": "zero commas, no fragment chains, no dashes/semicolons/colons; connected sentences with and/so/but/because/which",
- "notes": "Footage-first (owner 4 Nov 2026)."
+ "notes": "Footage-first (owner 4 Nov 2026). Fix 5 Nov: hook on diesel jar, far lawn shot 3:27 and caption-number circle removed, gauge circle object-locked."
 }

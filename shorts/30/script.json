@@ -7,20 +7,19 @@
   {
    "id": 1,
    "type": "story",
-   "text": "This 40 year old motor oil has graphite in it and the can promises better gas mileage so he tests it against modern oil.",
+   "text": "This 40 year old oil has graphite in it and promises better gas mileage so he tests it against modern oil.",
    "beats": [
     [
      "this",
-     "0:54-0:59"
+     "2:12-2:16"
     ],
     [
      "graphite",
-     "0:03-0:08",
-     0.7
+     "0:54-0:58"
     ],
     [
      "promises",
-     "1:04-1:09"
+     "1:00-1:02.5"
     ],
     [
      "modern",
@@ -29,7 +28,8 @@
    ],
    "red": [
     "graphite"
-   ]
+   ],
+   "hook": "oil can"
   },
   {
    "id": 2,
@@ -38,7 +38,7 @@
    "beats": [
     [
      "graphite",
-     "1:29-1:34"
+     "1:29-1:32"
     ],
     [
      "pencil",
@@ -65,16 +65,12 @@
     ],
     [
      "400",
-     "2:51-2:56"
+     "3:20-3:25"
     ],
     [
      "arco",
-     "3:45-3:49"
+     "3:42-3:48"
     ]
-   ],
-   "mark": [
-    "circle",
-    "30"
    ]
   },
   {
@@ -110,12 +106,13 @@
     ],
     [
      "expected",
-     "5:37-5:41"
+     "5:27-5:32"
     ]
    ],
    "mark": [
     "circle",
-    "smaller"
+    "smaller",
+    "wear scar"
    ]
   },
   {
@@ -125,13 +122,11 @@
    "beats": [
     [
      "because",
-     "11:52-11:57",
-     0.6
+     "2:19-2:23"
     ],
     [
      "zinc",
-     "12:00-12:05",
-     0.6
+     "ai:tiny white zinc and phosphorus additive crystals swirling in golden motor oil macro"
     ],
     [
      "coat",
@@ -165,16 +160,12 @@
    "beats": [
     [
      "so",
-     "1:05-1:10"
+     "7:12-7:16"
     ],
     [
      "never",
      "8:20-8:23"
     ]
-   ],
-   "mark": [
-    "x",
-    "never"
    ]
   },
   {
@@ -192,12 +183,13 @@
     ],
     [
      "105",
-     "10:56-11:00"
+     "10:56.5-10:59.5"
     ]
    ],
    "mark": [
     "circle",
-    "105"
+    "105",
+    "pressure gauge"
    ]
   },
   {

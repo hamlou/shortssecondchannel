@@ -7,12 +7,11 @@
   {
    "id": 1,
    "type": "story",
-   "text": "Commenters swear a jar of gas vapor can get a car hundreds of miles per gallon so he tests it on a mower.",
+   "text": "Commenters swear a jar of gas vapor gets hundreds of miles per gallon so he tests it on a mower.",
    "beats": [
     [
      "commenters",
-     "0:03-0:09",
-     0.8
+     "6:33-6:37"
     ],
     [
      "hundreds",
@@ -20,12 +19,13 @@
     ],
     [
      "tests",
-     "4:00-4:05"
+     "4:00-4:04"
     ]
    ],
    "red": [
     "hundreds"
-   ]
+   ],
+   "hook": "glass jar"
   },
   {
    "id": 2,
@@ -77,7 +77,7 @@
     ],
     [
      "bubbles",
-     "6:04-6:09"
+     "6:04-6:08"
     ],
     [
      "valve",
@@ -85,8 +85,9 @@
     ]
    ],
    "mark": [
-    "circle",
-    "bubbles"
+    "arrow",
+    "valve",
+    "blue valve"
    ]
   },
   {
@@ -100,7 +101,7 @@
     ],
     [
      "runs",
-     "7:13-7:18"
+     "6:39-6:43"
     ]
    ],
    "red": [
@@ -125,10 +126,10 @@
   {
    "id": 7,
    "type": "story",
-   "text": "Then both setups get the same fuel and the vapor jar runs 27 and a half minutes while the normal tank dies at 26 minutes 47 seconds.",
+   "text": "On the same fuel the vapor jar runs 27 and a half minutes and the normal tank dies at 26 minutes 47.",
    "beats": [
     [
-     "then",
+     "on",
      "10:09-10:14"
     ],
     [
@@ -136,12 +137,12 @@
      "9:21-9:27"
     ],
     [
-     "while",
-     "10:42-10:48"
+     "normal",
+     "10:42-10:47"
     ],
     [
      "26",
-     "11:12-11:17"
+     "11:06-11:11"
     ]
    ],
    "blue": [
@@ -165,10 +166,6 @@
      "11:34-11:39",
      0.75
     ]
-   ],
-   "mark": [
-    "x",
-    "nowhere"
    ]
   },
   {
@@ -182,7 +179,7 @@
     ],
     [
      "vapor",
-     "6:33-6:38"
+     "8:18-8:23"
     ]
    ]
   },
